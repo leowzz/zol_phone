@@ -4,6 +4,7 @@
 # @date 2023/5/23
 import scrapy
 from loguru import logger
+from apps.crawler.items import PhoneBrandItem
 
 
 class PhoneBrandSpider(scrapy.Spider):
@@ -14,25 +15,25 @@ class PhoneBrandSpider(scrapy.Spider):
     ]
     start_urls = [
         # "https://mobile.zol.com.cn/manu_list.html",
-        "http://localhost:8080/brands.html"
+        # "https://top.zol.com.cn/compositor/57/manu_attention.html",
+        # "http://localhost:8080/brands.html",
+        "http://localhost:8080/phone_brand_rank_list.html",
+
     ]
 
     @logger.catch
     def parse(self, response):
-        for product in response.css('.BrandsList li'):
-            # print(f"{product=}")
-            yield {
-                # 'name' : product.css('li a::text').extract(),
-                # 品牌名称 正则匹配中文
-                'name': product.css('li a::text').re_first(r"[\u4e00-\u9fa5]+"),
-                # 'price': product.css('.price-box .price-type::text').get(),
-                'img' : product.css('li img::attr(src)').get(),
-                # "image": scrapy.Request(product.css('li img::attr(src)').get(), callback=self.parse_image)
-            }
+        for product in response.css('.rank-list__item'):
+            item = PhoneBrandItem()
+            item['name'] = product.css('.cell-2 p a::text').get().strip()
+            item['img_url'] = product.css('.cell-2 img::attr(src)').get()
+            item['img_local'] = None
+            # item.name = product.css('a::text').get()
+            # print(f"{item=}")
+            yield item
 
     def parse_image(self, response):
         print(f"{response=}")
-
 
 
 if __name__ == '__main__':

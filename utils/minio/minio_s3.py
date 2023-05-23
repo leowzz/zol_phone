@@ -94,20 +94,15 @@ class MinioS3(BaseOssClient):
         else:
             return False
 
-    def upload_file_obj(self, file, upload_path, **kwargs):
-        """
-        :param file: 文件对象
-        :param upload_path: 文件的上传位置
-        :return:
-        """
+    def upload_file_obj(self, file, upload_path, length, content_type, **kwargs):
         s3_key = make_s3_key(upload_path)
         print(s3_key)
         if self.client.put_object(
                 bucket_name=self.bucket_name,
                 object_name=s3_key,
                 data=file,
-                length=file.size,
-                content_type=file.content_type,
+                length=length,
+                content_type=content_type,
                 num_parallel_uploads=5
         ):
             return s3_key

@@ -44,11 +44,9 @@ class BaseOssClient(object):
         """
         raise NotImplementedError()
 
-    def upload_file_obj(self, file, upload_path, **kwargs):
+    def upload_file_obj(self, file, upload_path, length, content_type, **kwargs):
         """
-        :param file: 文件对象
-        :param upload_path: 文件的上传位置
-        :return:
+        上传文件对象, file: An object having callable read() returning bytes object.
         """
         raise NotImplementedError()
 
