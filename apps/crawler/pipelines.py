@@ -28,8 +28,6 @@ class PhoneBrandPipeline:
     """
 
     def process_item(self, item, spider):
-        logger.debug(f"{item=}")
-        # print(f"{item=}")
         # try:
         #     Brand.objects.create(**item)
         # except IntegrityError:

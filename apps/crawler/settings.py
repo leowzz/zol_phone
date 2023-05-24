@@ -34,13 +34,14 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 import os
 from zol_phone.settings import *
 
-LOG_LEVEL = 'INFO'
+# LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'WARNING'
 
 # 图片本地下载路径
 # IMAGES_STORE = os.path.abspath('images')
 IMAGES_STORE = f's3://{AWS_BUCKET_NAME}/{IMAGES_DIR}/'
 
-# 图片过期时间, 90天内 抓取的都不会被重抓
+# 图片过期时间, 90天内抓取的都不会重复存储
 IMAGES_EXPIRES = 90
 
 ITEM_PIPELINES = {

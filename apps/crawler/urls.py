@@ -4,8 +4,9 @@
 # @date 2023/5/22
 from django.urls import path
 
-from apps.users.views import *
+from apps.crawler.views import SpiderView
 
 urlpatterns = [
     # path('', CenterView.as_view()),
+    path('spiders/', SpiderView.as_view()),
 ]
