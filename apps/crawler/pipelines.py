@@ -22,29 +22,28 @@ from apps.crawler import settings
 # from apps.crawler.models import Brand
 
 
-class CrawlerPipeline:
+class PhoneBrandPipeline:
+    """
+    使用mysql数据库存储品牌数据
+    """
+
     def process_item(self, item, spider):
-        return item
+        logger.debug(f"{item=}")
+        # print(f"{item=}")
         # try:
-        #     product = Brand(**item)
-        #     product.save()
+        #     Brand.objects.create(**item)
         # except IntegrityError:
-        #     raise DropItem("Duplicate item found: %s" % item['name'])
-        # return item
+        #     pass
+        return item
 
 
-class MyImagePipeline(ImagesPipeline, ):
+class BrandImagePipeline(ImagesPipeline, ):
     def get_media_requests(self, item, info):
         """
-        重写get_media_requests方法, 用于下载图片, 生成一个request,
-        当一个单独项目中的所有图片请求完成时，该方法会被调用。
-        处理结果会以二元组的方式返回给 item_completed() 函数。这个二元组定义如下：(success, image_info_or_failure: dict)
-        其中，第一个元素表示图片是否下载成功；第二个元素是一个字典，包含三个属性：
-        1) url - 图片下载的url。这是从 get_media_requests() 方法返回请求的url。
-        2) path - 图片存储的路径（类似 IMAGES_STORE）
-        3) checksum - 图片内容的 MD5 hash
+        获取图片url, 返回对应的Request对象
         """
         img_url = item.get("img_url")
+        logger.debug(f"{img_url=}")
         yield Request(img_url, meta={'item': item})
 
     # @logger.catch()
@@ -53,16 +52,16 @@ class MyImagePipeline(ImagesPipeline, ):
         重写file_path方法, 用于自定义图片存储路径及文件名
         """
         _file_name = request.meta['item']['name']
+        logger.debug(f"{_file_name=}")
         name_md5 = md5()  # 使用MD5加密模式
         name_md5.update(_file_name.encode('utf-8'))  # 将参数字符串传入
         name_md5 = name_md5.hexdigest()  # 获取加密串
         md5_file_name = f"{name_md5}.{request.url.split('.')[-1]}"
-        print(f"{md5_file_name=}")
+        logger.debug(f"{md5_file_name=}")
         return md5_file_name
 
     def item_completed(self, results, item, info):
-        images = [x for ok, x in results if ok]
-        # print(f"{images=}")
+        logger.info(f"item completed: {item=}")
         return item
 
     @logger.catch
@@ -80,5 +79,6 @@ class MyImagePipeline(ImagesPipeline, ):
                 meta={"width": width, "height": height},
                 headers={"Content-Type": "image/jpeg"},
             )
-            item["img_local"] = get_public_url(path)
+            item["img_url_s3"] = get_public_url(path)
+            logger.debug(f"{item=}")
         return checksum
