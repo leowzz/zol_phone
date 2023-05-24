@@ -128,6 +128,8 @@ AWS_ENDPOINT_URL = f"{MINIO_SCHEME}://{MINIO_POINT_URL}"
 AWS_URI = f"s3://{MINIO_BUCKET_NAME}"
 AWS_USE_SSL = False
 
+IMAGES_DIR = "images"
+
 DEFAULT_FILE_STORAGE = "utils.minio.storage.MinioStorage"
 
 if __name__ == '__main__':

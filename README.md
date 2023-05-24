@@ -12,3 +12,6 @@ pip install -r requirements.txt
 
 更改`apps.crawler.setting`中的爬虫配置
 如果不想用对象存储, 可以将`IMAGES_STORE`更改为本地路径
+
+## 总结
+

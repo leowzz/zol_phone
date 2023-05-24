@@ -5,6 +5,7 @@ from zol_phone import settings
 from minio import Minio
 
 from utils.minio.base import BaseOssClient, make_s3_key
+from loguru import logger
 
 
 # 获取S3的url
@@ -18,8 +19,11 @@ def get_private_url(key: str) -> str:
 
 
 def get_public_url(key: str) -> str:
-    url = f"{settings.MINIO_SCHEME}://{settings.MINIO_POINT_URL}/" \
-          f"{settings.MINIO_BUCKET_NAME.replace('_', '-')}/{key}"
+    url = f"{settings.MINIO_SCHEME}://" \
+          f"{settings.MINIO_POINT_URL}/" \
+          f"{settings.MINIO_BUCKET_NAME.replace('_', '-')}/" \
+          f"{settings.IMAGES_DIR}/" \
+          f"{key}"
     return url
 
 
@@ -95,17 +99,15 @@ class MinioS3(BaseOssClient):
             return False
 
     def upload_file_obj(self, file, upload_path, length, content_type, **kwargs):
-        s3_key = make_s3_key(upload_path)
-        print(s3_key)
         if self.client.put_object(
                 bucket_name=self.bucket_name,
-                object_name=s3_key,
+                object_name=upload_path,
                 data=file,
                 length=length,
                 content_type=content_type,
                 num_parallel_uploads=5
         ):
-            return s3_key
+            return upload_path
         return False
 
     def download_file(self, download_path, key):
@@ -154,6 +156,7 @@ class MinioS3(BaseOssClient):
         :return:
         """
         stat = self.client.stat_object(self.bucket_name, key)
+        print(f"get file info: {stat}")
         return stat
 
     def check_key_is_exist(self, key):
@@ -163,6 +166,7 @@ class MinioS3(BaseOssClient):
         :return:
         """
         from minio.error import S3Error
+        print(f"check key is exist: {key}")
         try:
             self.client.stat_object(self.bucket_name, key) is not None
         except S3Error as e:
@@ -177,7 +181,7 @@ class MinioS3(BaseOssClient):
         获取文件列表
         :param prefix: 文件前缀, 例如test文件夹下的文件, 则prefix为test/
         """
-
+        print(f"get object list: {prefix}")
         _objs = self.client.list_objects(
             self.bucket_name,
             prefix=prefix,

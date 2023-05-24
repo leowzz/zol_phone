@@ -109,7 +109,6 @@ LOG_LEVEL = 'WARNING'
 
 # 图片本地下载路径
 # IMAGES_STORE = os.path.abspath('images')
-IMAGES_DIR = "images"
 IMAGES_STORE = f's3://{AWS_BUCKET_NAME}/{IMAGES_DIR}/'
 
 # 图片过期时间, 90天内 抓取的都不会被重抓
