@@ -1,0 +1,14 @@
+.bsa-page-wrapper {
+  position: fixed;
+  top: $header-height;
+  bottom: 38px;
+  left: $sidebar-width;
+  right: 0;
+  @include media-breakpoint-down(lg) {
+    left: 0;
+  }
+}
+
+
+
+

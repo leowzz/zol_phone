@@ -2,6 +2,8 @@
 
 使用Django, Scrapy
 
+前端页面使用 [欲饮琵琶码上催/bootstrap-admin](https://gitee.com/ajiho/bootstrap-admin.git) 模板
+
 ## 项目配置
 
 ```bash
@@ -15,3 +17,44 @@ pip install -r requirements.txt
 
 ## 总结
 
+### ... in a frame because it set 'X-Frame-Options' to 'deny'.
+
+将某个页面放到框架中报错,
+
+处理方法：
+
+> 1.注释掉上面中间件，但是这样不好，容易出现中间人攻击。
+>
+>   最好的方法：
+>
+> ```python
+> MIDDLEWARE = [
+>   ..., 
+>   # 注释掉这一行
+>   'django.middleware.clickjacking.XFrameOptionsMiddleware',
+>   ]
+> ```
+>
+> 2.在view中添加装饰器
+>
+> ```python
+> from django.shortcuts import render
+> from django.views.decorators.clickjacking import xframe_options_exempt
+>  
+> @xframe_options_exempt
+> def add_staff(request):
+>     pass
+>     return render(request, 'login/admin-list.html')
+> ```
+> 中规中矩的方法，貌似跟第一种一样，不清楚没测试，希望能帮助到大家，毕竟百度不到：
+>
+> 3.在setting中设置：
+>
+> X_FRAME_OPTIONS = 'SAMEORIGIN'
+>
+> X-Frame-Options 有三个值:
+> DENY ：表示该页面不允许在 frame 中展示，即便是在相同域名的页面中嵌套也不允许
+> SAMEORIGIN ：表示该页面可以在相同域名页面的 frame 中展示
+> ALLOW-FROM uri ：表示该页面可以在指定来源的 frame 中展示
+> 换一句话说，如果设置为 DENY，不光在别人的网站 frame 嵌入时会无法加载，在同域名页面中同样会无法加载。
+> 另一方面，如果设置为 SAMEORIGIN，那么页面就可以在同域名页面的 frame 中嵌套。
