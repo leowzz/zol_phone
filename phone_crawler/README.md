@@ -46,16 +46,24 @@ setup(
 )
 ```
 
+Scrapy pipelines 中使用 Django ORM 存储数据
+
+参考:
+
+Scrapy pipelines 中使用 Django ORM 存储数据
+
+参考: https://blog.csdn.net/weixin_35757704/article/details/78922114
+
 ## 2. Scrapyd 的功能
 
-Scrapyd 提供了一系列 HTTP 接口来实现各种操作，在这里我们可以将接口的功能梳理一下，以 Scrapyd 所在的 IP 为 120.27.34.25 为例进行讲解。
+Scrapyd 提供了一系列 HTTP 接口来实现各种操作，在这里我们可以将接口的功能梳理一下，以 Scrapyd 所在的 IP 为 12 为例进行讲解。
 
 ### 2.1 daemonstatus.json
 
 这个接口负责查看 Scrapyd 当前服务和任务的状态，我们可以用 curl 命令来请求这个接口，命令如下：
 
 ```python
-curl http://139.217.26.30:6800/daemonstatus.json 
+curl http://127.0.0.1:6800/daemonstatus.json 
 1
 ```
 
@@ -75,7 +83,7 @@ curl http://139.217.26.30:6800/daemonstatus.json
 我们可以用如下的方式实现项目部署：
 
 ```python
-curl http://120.27.34.25:6800/addversion.json -F project=wenbo -F version=first -F egg=@weibo.egg 
+curl http://127.0.0.1:6800/addversion.json -F project=wenbo -F version=first -F egg=@weibo.egg 
 1
 ```
 
@@ -94,7 +102,7 @@ curl http://120.27.34.25:6800/addversion.json -F project=wenbo -F version=first 
 这个接口负责调度已部署好的 Scrapy 项目运行。我们可以通过如下接口实现任务调度：
 
 ```python
-curl http://120.27.34.25:6800/schedule.json -d project=weibo -d spider=weibocn 
+curl http://127.0.0.1:6800/schedule.json -d project=weibo -d spider=weibocn 
 1
 ```
 
@@ -114,7 +122,7 @@ status 代表 Scrapy 项目启动情况，jobid 代表当前正在运行的爬�
 我们可以用下面的命令来取消任务的运行：
 
 ```python
-curl http://120.27.34.25:6800/cancel.json -d project=weibo -d job=6487ec79947edab326d6db28a2d86511e8247444 
+curl http://127.0.0.1:6800/cancel.json -d project=weibo -d job=6487ec79947edab326d6db28a2d86511e8247444 
 1
 ```
 
@@ -132,7 +140,7 @@ status 代表请求执行情况，prevstate 代表之前的运行状态。
 这个接口用来列出部署到 Scrapyd 服务上的所有项目描述。我们可以用下面的命令来获取 Scrapyd 服务器上的所有项目描述：
 
 ```python
-curl http://120.27.34.25:6800/listprojects.json 
+curl http://127.0.0.1:6800/listprojects.json 
 1
 ```
 
@@ -152,7 +160,7 @@ status 代表请求执行情况，projects 是项目名称列表。
 我们可以用如下命令来获取项目的版本号：
 
 ```python
-curl http://120.27.34.25:6800/listversions.json?project=weibo 
+curl http://127.0.0.1:6800/listversions.json?project=weibo 
 1
 ```
 
@@ -170,7 +178,7 @@ status 代表请求执行情况，versions 是版本号列表。
 这个接口用来获取某个项目最新的一个版本的所有 Spider 名称。我们可以用如下命令来获取项目的 Spider 名称：
 
 ```python
-curl http://120.27.34.25:6800/listspiders.json?project=weibo 
+curl http://127.0.0.1:6800/listspiders.json?project=weibo 
 1
 ```
 
@@ -188,7 +196,7 @@ status 代表请求执行情况，spiders 是 Spider 名称列表。
 这个接口用来获取某个项目当前运行的所有任务详情。我们可以用如下命令来获取所有任务详情：
 
 ```python
-curl http://120.27.34.25:6800/listjobs.json?project=weibo 
+curl http://127.0.0.1:6800/listjobs.json?project=weibo 
 1
 ```
 
@@ -209,7 +217,7 @@ status 代表请求执行情况，pendings 代表当前正在等待的任务，r
 这个接口用来删除项目的某个版本。我们可以用如下命令来删除项目版本：
 
 ```python
-curl http://120.27.34.25:6800/delversion.json -d project=weibo -d version=v1 
+curl http://127.0.0.1:6800/delversion.json -d project=weibo -d version=v1 
 1
 ```
 
@@ -227,7 +235,7 @@ status 代表请求执行情况，这样就代表删除成功了。
 这个接口用来删除某个项目。我们可以用如下命令来删除某个项目：
 
 ```python
-curl http://120.27.34.25:6800/delproject.json -d project=weibo 
+curl http://127.0.0.1:6800/delproject.json -d project=weibo 
 1
 ```
 
