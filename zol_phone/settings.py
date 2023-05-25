@@ -139,5 +139,9 @@ IMAGES_DIR = "images"
 
 DEFAULT_FILE_STORAGE = "utils.minio.storage.MinioStorage"
 
+SERVER_URL = "http://127.0.0.1:8000"
+
+SCRAPYD_URL = "http://127.0.0.1:6800"
+
 if __name__ == '__main__':
     print(MINIO_URI)

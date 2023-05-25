@@ -1,4 +1,5 @@
 from django.db import models
+from utils.models import BaseModel
 
 
 class Phone_brand(models.Model):
@@ -45,23 +46,17 @@ class Phone_sku(models.Model):
         verbose_name = '手机基本信息'
         verbose_name_plural = verbose_name
 
-# class SPU(models.Model):
-#     """商品SPU"""
-#     name = models.CharField(max_length=50, verbose_name='名称')
-#     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, verbose_name='品牌')
-#     category1 = models.ForeignKey(GoodsCategory, on_delete=models.PROTECT, related_name='cat1_spu', verbose_name='一级类别')
-#     category2 = models.ForeignKey(GoodsCategory, on_delete=models.PROTECT, related_name='cat2_spu', verbose_name='二级类别')
-#     category3 = models.ForeignKey(GoodsCategory, on_delete=models.PROTECT, related_name='cat3_spu', verbose_name='三级类别')
-#     sales = models.IntegerField(default=0, verbose_name='销量')
-#     comments = models.IntegerField(default=0, verbose_name='评价数')
-#     desc_detail = models.TextField(default='', verbose_name='详细介绍')
-#     desc_pack = models.TextField(default='', verbose_name='包装信息')
-#     desc_service = models.TextField(default='', verbose_name='售后服务')
-#
-#     class Meta:
-#         db_table = 'phone_spu'
-#         verbose_name = '手机详细信息SPU'
-#         verbose_name_plural = verbose_name
-#
-#     def __str__(self):
-#         return self.name
+
+class Spider(models.Model):
+    name = models.CharField(max_length=255)
+    status = models.CharField(max_length=255)  # 0:未开始 1:进行中 2:已完成
+    run_times = models.IntegerField(default=0)  # 运行次数
+    last_run_time = models.DateTimeField(auto_now=True)  # 最后一次运行时间
+
+    def __str__(self):
+        return self
+
+    class Meta:
+        db_table = 'spider'
+        verbose_name = '爬虫'
+        verbose_name_plural = verbose_name

@@ -16,42 +16,47 @@ pip install -r requirements.txt
 如果不想用对象存储, 可以将`IMAGES_STORE`更改为本地路径
 
 ## 总结
-
-### ... in a frame because it set 'X-Frame-Options' to 'deny'.
+ 
+### 报错 Refused to display 'http://127.0.0.1:8000/ in a frame because it set 'X-Frame-Option
 
 将某个页面放到框架中报错,
 
-处理方法：
+**处理方法：**
 
-> 1.注释掉上面中间件，但是这样不好，容易出现中间人攻击。
->
->   最好的方法：
->
-> ```python
-> MIDDLEWARE = [
->   ..., 
->   # 注释掉这一行
->   'django.middleware.clickjacking.XFrameOptionsMiddleware',
->   ]
-> ```
->
-> 2.在view中添加装饰器
->
-> ```python
-> from django.shortcuts import render
-> from django.views.decorators.clickjacking import xframe_options_exempt
->  
-> @xframe_options_exempt
-> def add_staff(request):
->     pass
->     return render(request, 'login/admin-list.html')
-> ```
-> 中规中矩的方法，貌似跟第一种一样，不清楚没测试，希望能帮助到大家，毕竟百度不到：
->
-> 3.在setting中设置：
->
-> X_FRAME_OPTIONS = 'SAMEORIGIN'
->
+1. 注释掉上面中间件，但是这样不好，容易出现中间人攻击。
+   最好的方法：
+
+```python
+MIDDLEWARE = [
+    ...,
+    # 注释掉这一行
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+```
+
+2. 在view中添加装饰器
+
+```python
+from django.shortcuts import render
+from django.views.decorators.clickjacking import xframe_options_exempt
+
+
+@xframe_options_exempt
+def add_staff(request):
+    return render(request, 'login/admin-list.html')
+
+
+class SpiderView(View):
+    @xframe_options_exempt
+    def get(self, request):
+        return render(request, 'spiders_list.html')
+
+```
+
+3. 在setting中设置：
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 > X-Frame-Options 有三个值:
 > DENY ：表示该页面不允许在 frame 中展示，即便是在相同域名的页面中嵌套也不允许
 > SAMEORIGIN ：表示该页面可以在相同域名页面的 frame 中展示
