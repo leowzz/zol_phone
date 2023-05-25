@@ -1,0 +1,2 @@
+[scrapy]
+settings = phone_crawler.settings
