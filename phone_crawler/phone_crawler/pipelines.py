@@ -16,7 +16,7 @@ from loguru import logger
 from hashlib import md5
 
 from utils.minio.minio_s3 import MinioS3, get_public_url
-from phone_crawler.phone_crawler import settings
+from phone_crawler import settings
 
 
 # from apps.crawler.models import Brand
@@ -28,6 +28,7 @@ class PhoneBrandPipeline:
     """
 
     def process_item(self, item, spider):
+        item.save()
         # try:
         #     Brand.objects.create(**item)
         # except IntegrityError:

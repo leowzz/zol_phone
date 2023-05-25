@@ -1,6 +1,5 @@
 from scrapy.crawler import CrawlerProcess, CrawlerRunner
 from scrapy.utils.project import get_project_settings
-from apps.crawler.spiders.phone_brand_spider import PhoneBrandSpider
 from django.shortcuts import render, HttpResponse
 from django.views import View
 from django.http import JsonResponse
@@ -8,7 +7,6 @@ from django.http import JsonResponse
 
 from django.views.decorators.clickjacking import xframe_options_exempt
 from loguru import logger
-from twisted.internet import reactor
 
 
 class SpiderView(View):
@@ -30,9 +28,6 @@ def start_spider(request, spider_name):
     spider = globals().get(spider_name)
     crawl(spider)
     return JsonResponse({'msg': 'ok'})
-
-
-from apps.crawler import settings
 
 
 def scrape(request):
