@@ -40,6 +40,7 @@ class SpiderView(View):
 
         return render(request, 'spiders_list.html', context={
             'projects': projects,
+            'title': '爬虫信息',
         })
 
 

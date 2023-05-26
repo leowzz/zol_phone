@@ -16,11 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import apps.crawler
-from apps.control.views import IndexView
 
 urlpatterns = [
     # 主页路由IndexView
-    path('', IndexView.as_view()),
     path('admin/', admin.site.urls),
     # 包含crawler子应用的urls
     path('', include('apps.crawler.urls')),

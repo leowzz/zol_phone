@@ -58,14 +58,6 @@ def spider_list_ver(project):
     return res.json()
 
 
-@req_decorator
-def get_spider_status(spider):
-    # 获取爬虫运行状态
-    url = f"{SCRAPYD_URL}/listjobs.json?project={spider}"
-    res = requests.get(url)
-    return res.json()
-
-
 from loguru import logger
 
 
@@ -139,98 +131,42 @@ def cancel(project, job_id):
 #     return res.json()
 
 if __name__ == '__main__':
-    from pprint import pprint
+    crawl_proj = get_project_list()["projects"][0]
+    print(f"{crawl_proj=}")
+    status = get_status()
+    print(f"{status=}")
+    spiders = get_spider_list(crawl_proj)
+    print(f"{spiders=}")
+    vers = spider_list_ver(crawl_proj)
+    print(f"{vers=}")
+    start_spider_ = start_spider(crawl_proj, 'PhoneBrandSpider')
+    print(f"{start_spider_=}")
+    jobs = get_jobs(crawl_proj)
+    print(f"{jobs=}")
+    import time
 
-    print(get_project_list())
+    time.sleep(10)
+    jobs = get_jobs(crawl_proj)
+    print(f"{jobs=}")
+    cancel = cancel(crawl_proj, '81ed1a0d')
+    print(f"{cancel=}")
 
-    # crawl_proj = get_project_list()["projects"][0]
-    # pprint(crawl_proj, indent=4)
-    # jobs = get_jobs(crawl_proj)
-    # pprint(jobs, indent=4)
-    # status = get_status()
-    # pprint(status, indent=4)
-    # spiders = get_spider_list(crawl_proj)
-    # pprint(spiders, indent=4)
-    # vers = spider_list_ver(crawl_proj)
-    # pprint(vers, indent=4)
-    # t = start_spider(crawl_proj, 'PhoneBrandSpider')
-    # pprint(t, indent=4)
-    # import time
-    #
-    # time.sleep(3)
-    # spider_status = get_spider_status(crawl_proj)
-    # pprint(spider_status, indent=4)
-    #
-    # cancel = cancel(crawl_proj, '81ed1a0d')
-    # pprint(cancel, indent=4)
     """
-    'phone_crawler'
-    {   'finished': [   {   'end_time': '2023-05-26 15:24:06.177533',
-                            'id': '47e5b9b5fb9611edadd58cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/47e5b9b5fb9611edadd58cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/47e5b9b5fb9611edadd58cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:24:01.887765'},
-                        {   'end_time': '2023-05-26 15:24:26.257225',
-                            'id': '54226442fb9611edb7b28cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/54226442fb9611edb7b28cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/54226442fb9611edb7b28cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:24:21.885642'},
-                        {   'end_time': '2023-05-26 15:25:36.181072',
-                            'id': '7de450fdfb9611edacde8cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/7de450fdfb9611edacde8cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/7de450fdfb9611edacde8cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:25:31.885215'},
-                        {   'end_time': '2023-05-26 15:27:16.530945',
-                            'id': 'ac2d14aafb9611edba1e8cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/ac2d14aafb9611edba1e8cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/ac2d14aafb9611edba1e8cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:26:51.884685'},
-                        {   'end_time': '2023-05-26 15:29:11.686875',
-                            'id': 'fd6fe4dffb9611ed840d8cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/fd6fe4dffb9611ed840d8cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/fd6fe4dffb9611ed840d8cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:29:06.885691'},
-                        {   'end_time': '2023-05-26 15:29:41.054349',
-                            'id': '0e6fe24cfb9711ed8acb8cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/0e6fe24cfb9711ed8acb8cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/0e6fe24cfb9711ed8acb8cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:29:36.884546'},
-                        {   'end_time': '2023-05-26 15:32:06.067329',
-                            'id': '66bd8918fb9711edaa038cc681ed1a0d',
-                            'items_url': '/items/phone_crawler/PhoneBrandSpider/66bd8918fb9711edaa038cc681ed1a0d.jl',
-                            'log_url': '/logs/phone_crawler/PhoneBrandSpider/66bd8918fb9711edaa038cc681ed1a0d.log',
-                            'project': 'phone_crawler',
-                            'spider': 'PhoneBrandSpider',
-                            'start_time': '2023-05-26 15:32:01.886946'}],
-        'node_name': 'Leo-LPT',
-        'pending': [],
-        'running': [],
-        'status': 'ok'}
-    {   'finished': 7,
-        'node_name': 'Leo-LPT',
-        'pending': 0,
-        'running': 0,
-        'status': 'ok'}
-    {   'node_name': 'Leo-LPT',
-        'spiders': ['PhoneBrandSpider', 'zol', '\x1b[0m'],
-        'status': 'ok'}
-    {   'node_name': 'Leo-LPT',
-        'status': 'ok',
-        'versions': ['1685085314', '1685085349']}
-    {   'jobid': '9492fddcfb9711eda8d58cc681ed1a0d',
-        'node_name': 'Leo-LPT',
-        'status': 'ok'}
+    crawl_proj='phone_crawler'
+    status={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': 0, 'running': 0, 'finished': 0}
+    spiders={'node_name': 'Leo-LPT', 'status': 'ok', 'spiders': ['PhoneBrandSpider', 'PhoneSpider', '\x1b[0m']}
+    vers={'node_name': 'Leo-LPT', 'status': 'ok', 'versions': ['1685085314', '1685085349', '1685105067']}
+    start_spider_={'node_name': 'Leo-LPT', 'status': 'ok', 'jobid': '5197dfd3fbc411eda66d8cc681ed1a0d'}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d'}], 'running': [], 'finished': []}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [], 'running': [], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}]}
+    cancel={'node_name': 'Leo-LPT', 'status': 'ok', 'prevstate': None}
     
+    crawl_proj='phone_crawler'
+    status={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': 0, 'running': 0, 'finished': 1}
+    spiders={'node_name': 'Leo-LPT', 'status': 'ok', 'spiders': ['PhoneBrandSpider', 'PhoneSpider', '\x1b[0m']}
+    vers={'node_name': 'Leo-LPT', 'status': 'ok', 'versions': ['1685085314', '1685085349', '1685105067']}
+    start_spider_={'node_name': 'Leo-LPT', 'status': 'ok', 'jobid': '85a1742bfbc411ed94908cc681ed1a0d'}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '85a1742bfbc411ed94908cc681ed1a0d'}], 'running': [], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}]}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [], 'running': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '85a1742bfbc411ed94908cc681ed1a0d', 'pid': 19404, 'start_time': '2023-05-26 20:55:03.226823'}], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}]}
+    cancel={'node_name': 'Leo-LPT', 'status': 'ok', 'prevstate': None}
     """

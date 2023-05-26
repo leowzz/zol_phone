@@ -32,7 +32,7 @@ class Phone_brand(models.Model):
 
 
 class Phone_sku(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, primary_key=True)
     price = models.CharField(max_length=255)
     url = models.CharField(max_length=255)
     image = models.ImageField()

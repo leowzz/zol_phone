@@ -6,7 +6,7 @@ import scrapy
 
 
 class ZolSpider(scrapy.Spider):
-    name = "zol"
+    name = "PhoneSpider"
     allowed_domains = ["detail.zol.com.cn"]
     start_urls = [
         "https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_1.html"
