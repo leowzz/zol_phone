@@ -115,7 +115,7 @@ IMAGES_DIR = "images"
 IMAGES_STORE = f's3://{AWS_BUCKET_NAME}/{IMAGES_DIR}/'
 
 # 图片过期时间, 90天内抓取的都不会重复存储
-IMAGES_EXPIRES = 90
+IMAGES_EXPIRES = 0
 
 import sys
 import os

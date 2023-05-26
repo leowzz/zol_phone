@@ -19,9 +19,7 @@ def get_private_url(key: str) -> str:
 
 
 def get_public_url(key: str) -> str:
-    url = f"{settings.MINIO_SCHEME}://" \
-          f"{settings.MINIO_POINT_URL}/" \
-          f"{settings.MINIO_BUCKET_NAME.replace('_', '-')}/" \
+    url = f"{settings.MINIO_BUCKET_NAME.replace('_', '-')}/" \
           f"{settings.IMAGES_DIR}/" \
           f"{key}"
     return url
