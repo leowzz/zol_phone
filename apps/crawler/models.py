@@ -32,13 +32,14 @@ class Phone_brand(models.Model):
 
 
 class Phone_sku(models.Model):
-    name = models.CharField(max_length=255, primary_key=True, verbose_name='手机名称/型号')
+    id = models.CharField(max_length=124, verbose_name='手机id', primary_key=True)
+    name = models.CharField(max_length=255, verbose_name='手机名称/型号')
     intro = models.CharField(max_length=255, null=True, blank=True, verbose_name='手机简介')
-    price = models.IntegerField(max_length=255, null=True, blank=True, verbose_name='手机价格')
-    score = models.FloatField(max_length=255, null=True, blank=True, verbose_name='手机评分')
+    price = models.IntegerField(null=True, blank=True, verbose_name='手机价格')
+    score = models.FloatField(null=True, blank=True, verbose_name='手机评分')
     url = models.CharField(max_length=255, null=True, blank=True, verbose_name='手机详情页url')
     img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
-    comments_num = models.IntegerField(max_length=255, null=True, blank=True, verbose_name='手机评论数')
+    comments_num = models.IntegerField(null=True, blank=True, verbose_name='手机评论数')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间')
 
     def __str__(self):
