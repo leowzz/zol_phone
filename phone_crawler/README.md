@@ -102,7 +102,7 @@ curl http://127.0.0.1:6800/addversion.json -F project=wenbo -F version=first -F 
 这个接口负责调度已部署好的 Scrapy 项目运行。我们可以通过如下接口实现任务调度：
 
 ```python
-curl http://127.0.0.1:6800/schedule.json -d project=weibo -d spider=weibocn 
+curl http://127.0.0.1:6800/schedule.json -d project=phone_crawler -d spider=PhoneBrandSpider 
 1
 ```
 

@@ -6,6 +6,7 @@ Babel==2.12.1
 beautifulsoup4==4.12.2
 black==23.3.0
 bleach==6.0.0
+botocore==1.29.137
 build==0.10.0
 cachetools==5.3.0
 certifi==2023.5.7
@@ -42,6 +43,7 @@ markdown-it-py==2.2.0
 MarkupSafe==2.1.2
 martor==1.6.26
 mdurl==0.1.2
+minio==7.1.14
 mistune==2.0.5
 more-itertools==9.1.0
 mypy-extensions==1.0.0
@@ -61,6 +63,8 @@ Pygments==2.15.1
 pyOpenSSL==23.1.1
 pyproject_api==1.5.1
 pyproject_hooks==1.0.0
+python-dateutil==2.8.2
+pywin32==306
 pywin32-ctypes==0.2.0
 queuelib==1.6.2
 readme-renderer==37.3
@@ -71,6 +75,9 @@ rfc3986==2.0.0
 rich==13.3.5
 ruff==0.0.265
 Scrapy==2.9.0
+scrapy-djangoitem==1.1.1
+scrapyd==1.4.2
+scrapyd-client==1.2.3
 service-identity==21.1.0
 six==1.16.0
 snowballstemmer==2.2.0
@@ -94,7 +101,8 @@ Twisted==22.10.0
 twisted-iocpsupport==1.0.3
 typing_extensions==4.5.0
 tzdata==2023.3
-urllib3==2.0.2
+uberegg==0.1.1
+urllib3==1.26.15
 virtualenv==20.23.0
 w3lib==2.1.1
 webencodings==0.5.1
