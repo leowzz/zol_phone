@@ -35,7 +35,7 @@
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
 2023-05-26 20:50:10 [scrapy.middleware] INFO: Enabled item pipelines:
 ['phone_crawler.pipelines.BrandImagePipeline',
- 'phone_crawler.pipelines.PhoneBrandPipeline']
+ 'phone_crawler.pipelines.MysqlPipeline']
 2023-05-26 20:50:10 [scrapy.core.engine] INFO: Spider opened
 2023-05-26 20:50:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
 2023-05-26 20:50:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023

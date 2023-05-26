@@ -22,7 +22,7 @@ coverage==7.2.5
 cryptography==40.0.2
 cssselect==1.2.0
 distlib==0.3.6
-Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
+Django~=4.1
 django-bootstrap4==23.1
 django-redis==5.2.0
 docutils==0.18.1

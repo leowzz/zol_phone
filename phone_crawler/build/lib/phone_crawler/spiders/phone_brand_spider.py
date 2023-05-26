@@ -15,7 +15,7 @@ class PhoneBrandSpider(scrapy.Spider):
         # 设置使用的管道
         'ITEM_PIPELINES': {
             'phone_crawler.pipelines.BrandImagePipeline': 200,
-            'phone_crawler.pipelines.PhoneBrandPipeline': 300,
+            'phone_crawler.pipelines.MysqlPipeline': 300,
         },
     }
     allowed_domains = [

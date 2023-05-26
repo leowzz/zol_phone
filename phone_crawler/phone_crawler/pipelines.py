@@ -22,17 +22,13 @@ from phone_crawler import settings
 # from apps.crawler.models import Brand
 
 
-class PhoneBrandPipeline:
+class MysqlPipeline:
     """
     使用mysql数据库存储品牌数据
     """
 
     def process_item(self, item, spider):
         item.save()
-        # try:
-        #     Brand.objects.create(**item)
-        # except IntegrityError:
-        #     pass
         return item
 
 

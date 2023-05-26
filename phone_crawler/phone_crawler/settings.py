@@ -96,7 +96,7 @@ LOG_LEVEL = 'INFO'
 
 ITEM_PIPELINES = {
     'phone_crawler.pipelines.BrandImagePipeline': 200,
-    'phone_crawler.pipelines.PhoneBrandPipeline': 300,
+    'phone_crawler.pipelines.MysqlPipeline': 300,
 }
 
 # 使用Minio作为S3对象存储
