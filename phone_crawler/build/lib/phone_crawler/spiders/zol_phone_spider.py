@@ -3,7 +3,7 @@
 # @author LeoWang
 # @date 2023/5/22
 import scrapy
-from phone_crawler.items import Phone_SKU
+from phone_crawler.items import PhoneSkuItem
 from loguru import logger
 
 
@@ -32,7 +32,7 @@ class ZolSpider(scrapy.Spider):
         # 爬取手机列表页
         # 爬取class为pic-mode-box的div下的所有包含data-follow-id属性的li标签
         for product in response.css('.pic-mode-box li[data-follow-id]'):
-            item = Phone_SKU()
+            item = PhoneSkuItem()
             item['id'] = product.css('li::attr(data-follow-id)').get()
             _name = product.css('li h3 a::text').get().strip()
             item['name'] = _name.strip() if _name else None
