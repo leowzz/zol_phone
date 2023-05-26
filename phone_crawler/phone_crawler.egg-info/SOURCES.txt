@@ -3,7 +3,6 @@ setup.py
 phone_crawler/__init__.py
 phone_crawler/items.py
 phone_crawler/middlewares.py
-phone_crawler/models.py
 phone_crawler/pipelines.py
 phone_crawler/settings.py
 phone_crawler.egg-info/PKG-INFO
@@ -13,4 +12,5 @@ phone_crawler.egg-info/entry_points.txt
 phone_crawler.egg-info/top_level.txt
 phone_crawler/spiders/__init__.py
 phone_crawler/spiders/phone_brand_spider.py
+phone_crawler/spiders/phone_detail.py
 phone_crawler/spiders/zol_phone_spider.py

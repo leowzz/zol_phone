@@ -30,7 +30,7 @@ class PhoneBrandSpider(scrapy.Spider):
 
     ]
 
-    def parse(self, response):
+    def parse(self, response, **kwargs):
         for product in response.css('.rank-list__item'):
             item = PhoneBrandItem()
             item['name'] = product.css('.cell-2 p a::text').get().strip()
@@ -45,9 +45,4 @@ class PhoneBrandSpider(scrapy.Spider):
             logger.debug(f"parse: {item=}")
             yield item
 
-    def parse_image(self, response):
-        print(f"{response=}")
 
-
-if __name__ == '__main__':
-    ...

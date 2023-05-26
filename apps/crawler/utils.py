@@ -139,8 +139,8 @@ if __name__ == '__main__':
     print(f"{spiders=}")
     vers = spider_list_ver(crawl_proj)
     print(f"{vers=}")
-    start_spider_ = start_spider(crawl_proj, 'PhoneBrandSpider')
-    print(f"{start_spider_=}")
+    # start_spider_ = start_spider(crawl_proj, 'PhoneBrandSpider')
+    # print(f"{start_spider_=}")
     jobs = get_jobs(crawl_proj)
     print(f"{jobs=}")
     import time

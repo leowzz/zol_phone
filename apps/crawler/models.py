@@ -23,7 +23,7 @@ class Phone_brand(models.Model):
     phone_num = models.CharField(max_length=255, verbose_name='机型数量')
 
     def __str__(self):
-        return self
+        return self.name
 
     class Meta:
         db_table = 'phone_brand'
@@ -44,11 +44,37 @@ class Phone_sku(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间', null=True, blank=True, )
 
     def __str__(self):
-        return self
+        return self.name
 
     class Meta:
         db_table = 'phone_sku'
         verbose_name = '手机基本信息'
+        verbose_name_plural = verbose_name
+
+
+class Phone_spu(models.Model):
+    _id = models.CharField(max_length=124, verbose_name='手机id', primary_key=True)
+    phone_id = models.ForeignKey(Phone_sku, on_delete=models.PROTECT, verbose_name='手机id')
+    name = models.CharField(max_length=255, verbose_name='手机名称/型号')
+    url = models.CharField(max_length=255, verbose_name='页面url')
+    img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
+    img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间', null=True, blank=True, )
+    mall_price = models.IntegerField(null=True, blank=True, verbose_name='商城价格')
+    basic_info = models.TextField(null=True, blank=True, verbose_name='基本信息, json格式')
+    outline = models.TextField(null=True, blank=True, verbose_name='外形, json格式')
+    hardware = models.TextField(null=True, blank=True, verbose_name='硬件, json格式')
+    screen = models.TextField(null=True, blank=True, verbose_name='屏幕, json格式')
+    camera = models.TextField(null=True, blank=True, verbose_name='摄像头, json格式')
+    network = models.TextField(null=True, blank=True, verbose_name='网络, json格式')
+    battery = models.TextField(null=True, blank=True, verbose_name='电池, json格式')
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        db_table = 'phone_detail'
+        verbose_name = '手机详细参数'
         verbose_name_plural = verbose_name
 
 
