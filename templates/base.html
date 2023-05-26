@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -10,14 +11,7 @@
     <script src="/static/js/bootstrap.min.js"></script>
 </head>
 <body class="bg-light pt-2">
-<div class="container-fluid">
-    <div class="card border-0 shadow-sm">
-        <div class="card-body">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </div>
-</div>
+{% block content %}{% endblock %}
 <script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/static/dist/js/BSA.js"></script>
 </body>

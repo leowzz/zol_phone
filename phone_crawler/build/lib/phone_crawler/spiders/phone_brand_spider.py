@@ -14,7 +14,7 @@ class PhoneBrandSpider(scrapy.Spider):
     custom_settings = {
         # 设置使用的管道
         'ITEM_PIPELINES': {
-            # 'apps.crawler.pipelines.BrandImagePipeline': 200,
+            'phone_crawler.pipelines.BrandImagePipeline': 200,
             'phone_crawler.pipelines.PhoneBrandPipeline': 300,
         },
     }
@@ -30,8 +30,6 @@ class PhoneBrandSpider(scrapy.Spider):
 
     ]
 
-
-    @logger.catch
     def parse(self, response):
         for product in response.css('.rank-list__item'):
             item = PhoneBrandItem()
@@ -51,16 +49,5 @@ class PhoneBrandSpider(scrapy.Spider):
         print(f"{response=}")
 
 
-# @logger.catch
-# def main():
-#     from scrapy.crawler import CrawlerProcess
-#     from scrapy.utils.project import get_project_settings
-#
-#     process = CrawlerProcess(get_project_settings())
-#     process.crawl(PhoneBrandSpider)
-#     process.start()
-
-
 if __name__ == '__main__':
-    # main()
     ...

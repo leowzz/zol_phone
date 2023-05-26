@@ -88,7 +88,7 @@ ROBOTSTXT_OBEY = True
 
 # Set settings whose default value is deprecated to a future-proof value
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
-TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+# TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
 
 # LOG_LEVEL = 'INFO'
@@ -115,4 +115,19 @@ IMAGES_DIR = "images"
 IMAGES_STORE = f's3://{AWS_BUCKET_NAME}/{IMAGES_DIR}/'
 
 # 图片过期时间, 90天内抓取的都不会重复存储
-IMAGES_EXPIRES = 90
+IMAGES_EXPIRES = 0
+
+import sys
+import os
+
+# 为了能够在scrapy中使用django的model
+sys.path.append('../../zol_phone')
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PRO_ROOT = os.path.dirname(BASE_DIR)
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'zol_phone.settings'
+
+import django
+
+django.setup()

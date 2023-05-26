@@ -30,7 +30,6 @@ class PhoneBrandSpider(scrapy.Spider):
 
     ]
 
-    @logger.catch
     def parse(self, response):
         for product in response.css('.rank-list__item'):
             item = PhoneBrandItem()

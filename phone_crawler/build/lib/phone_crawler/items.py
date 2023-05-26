@@ -4,6 +4,10 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy_djangoitem import DjangoItem
+
+# 这里能够导入到django的model, 说明scrapy的设置中已经配置了django的环境
+from crawler.models import Phone_brand
 
 
 class CrawlerItem(scrapy.Item):
@@ -12,15 +16,8 @@ class CrawlerItem(scrapy.Item):
     pass
 
 
-class PhoneBrandItem(scrapy.Item):
-    name = scrapy.Field()  # 品牌名称
-    img_url = scrapy.Field()  # 品牌图片 公网url
-    img_url_s3 = scrapy.Field()  # 品牌图片 本地url
-    market_share = scrapy.Field()  # 市场占有率
-    feedback = scrapy.Field()  # 好评率
-    price_min = scrapy.Field()  # 最低价
-    price_max = scrapy.Field()  # 最高价
-    phone_num = scrapy.Field()  # 机型数量
+class PhoneBrandItem(DjangoItem):
+    django_model = Phone_brand
 
 
 class ImageItem(scrapy.Item):
