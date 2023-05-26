@@ -6,7 +6,7 @@ from zol_phone.settings import BASE_DIR, SCRAPYD_PROJECT_NAME
 
 import os
 from loguru import logger
-from crawler.models import Phone_sku, Phone_brand
+from apps.crawler.models import Phone_sku, Phone_brand
 
 
 # Create your views here.
