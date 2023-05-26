@@ -16,10 +16,17 @@ pip install -r requirements.txt
 如果不想用对象存储, 可以将`IMAGES_STORE`更改为本地路径
 
 ## 总结
- 
+
 ### 报错 Refused to display 'http://127.0.0.1:8000/ in a frame because it set 'X-Frame-Option
 
 将某个页面放到框架中报错,
+
+### Django Scrapy apps.*.models 兼容问题
+
+https://www.cnblogs.com/lewangchen/p/15049778.html
+
+删除apps.your_app.apps.py中的内容, 使用项目根路径方式导入, INSTALLED_APPS中添加apps.your_app
+
 
 **处理方法：**
 
