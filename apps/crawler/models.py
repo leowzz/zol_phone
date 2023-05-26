@@ -13,10 +13,10 @@ class Phone_brand(models.Model):
     price_max = scrapy.Field()  # 最高价
     phone_num = scrapy.Field()  # 机型数量
     """
-    name = models.CharField(max_length=255, verbose_name='品牌名称')
+    name = models.CharField(max_length=255, verbose_name='品牌名称', primary_key=True)
     img_url = models.CharField(max_length=255, verbose_name='品牌图片')
-    img_url_s3 = models.ImageField(max_length=255, verbose_name='品牌图片local')
-    market_share = models.CharField(max_length=255, verbose_name='市场占有率')
+    img_url_s3 = models.ImageField(max_length=255, verbose_name='品牌图片local', null=True, blank=True, )
+    market_share = models.FloatField(max_length=255, verbose_name='市场占有率', null=True, blank=True, )
     feedback = models.CharField(max_length=255, verbose_name='好评率')
     price_min = models.CharField(max_length=255, verbose_name='最低价')
     price_max = models.CharField(max_length=255, verbose_name='最高价')

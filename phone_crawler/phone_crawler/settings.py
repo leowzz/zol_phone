@@ -118,9 +118,13 @@ IMAGES_STORE = f's3://{AWS_BUCKET_NAME}/{IMAGES_DIR}/'
 IMAGES_EXPIRES = 90
 
 import sys
-
-sys.path.append('../../zol_phone')
 import os
+
+# 为了能够在scrapy中使用django的model
+sys.path.append('../../zol_phone')
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PRO_ROOT = os.path.dirname(BASE_DIR)
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'zol_phone.settings'
 
