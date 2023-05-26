@@ -39,8 +39,9 @@ class Phone_sku(models.Model):
     score = models.FloatField(null=True, blank=True, verbose_name='手机评分')
     url = models.CharField(max_length=255, null=True, blank=True, verbose_name='手机详情页url')
     img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
+    img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
     comments_num = models.IntegerField(null=True, blank=True, verbose_name='手机评论数')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间', null=True, blank=True, )
 
     def __str__(self):
         return self
