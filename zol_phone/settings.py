@@ -82,6 +82,82 @@ DATABASES = {
     }
 }
 
+# session 保存在redis中
+CACHES = {
+    'default': {
+        'BACKEND' : 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://cent:6379/1',
+        'OPTIONS' : {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
+    },
+}
+
+log_path = os.path.join(BASE_DIR, 'logs')
+LOGGING = {
+    'version'                 : 1,
+    'disable_existing_loggers': False,  # 是否禁用已经存在的日志器
+    'formatters'              : {  # 日志信息显示的格式
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
+        },
+        'simple' : {
+            'format': '%(levelname)s %(module)s %(lineno)d %(message)s'
+        },
+    },
+    'filters'                 : {  # 对日志进行过滤
+        'require_debug_true': {  # django在debug模式下才输出日志
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'handlers'                : {  # 日志处理方法
+        # 默认记录所有日志
+        'default': {
+            'level'      : 'INFO',
+            'class'      : 'logging.handlers.RotatingFileHandler',
+            'filename'   : os.path.join(log_path, 'all-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'maxBytes'   : 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份数
+            'formatter'  : 'verbose',  # 输出格式
+            'encoding'   : 'utf-8',  # 设置默认编码，否则打印出来汉字乱码
+        },
+        # 输出错误日志
+        'error'  : {
+            'level'      : 'ERROR',
+            'class'      : 'logging.handlers.RotatingFileHandler',
+            'filename'   : os.path.join(log_path, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'maxBytes'   : 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份数
+            'formatter'  : 'verbose',  # 输出格式
+            'encoding'   : 'utf-8',  # 设置默认编码
+        },
+        # 输出info日志
+        'info'   : {
+            'level'      : 'INFO',
+            'class'      : 'logging.handlers.RotatingFileHandler',
+            'filename'   : os.path.join(log_path, 'info-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'maxBytes'   : 1024 * 1024 * 5,
+            'backupCount': 5,
+            'formatter'  : 'simple',
+            'encoding'   : 'utf-8',  # 设置默认编码
+        },
+        # 控制台输出
+        'console': {
+            'level'    : 'DEBUG',
+            'filters'  : ['require_debug_true'],
+            'class'    : 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
+    },
+    'loggers'                 : {  # 日志器
+        'django': {  # 定义了一个名为django的日志器
+            'handlers' : ['console', 'error', 'info', 'default'],  # 使用的日志处理器, 可以同时向终端与文件中输出日志
+            'propagate': True,  # 是否继续传递日志信息
+            'level'    : 'INFO',  # 日志器接收的最低日志级别
+        },
+    }
+}
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 

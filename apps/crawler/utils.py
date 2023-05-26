@@ -160,7 +160,8 @@ if __name__ == '__main__':
     jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d'}], 'running': [], 'finished': []}
     jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [], 'running': [], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}]}
     cancel={'node_name': 'Leo-LPT', 'status': 'ok', 'prevstate': None}
-    
+    """
+    """
     crawl_proj='phone_crawler'
     status={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': 0, 'running': 0, 'finished': 1}
     spiders={'node_name': 'Leo-LPT', 'status': 'ok', 'spiders': ['PhoneBrandSpider', 'PhoneSpider', '\x1b[0m']}
@@ -170,3 +171,14 @@ if __name__ == '__main__':
     jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [], 'running': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '85a1742bfbc411ed94908cc681ed1a0d', 'pid': 19404, 'start_time': '2023-05-26 20:55:03.226823'}], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}]}
     cancel={'node_name': 'Leo-LPT', 'status': 'ok', 'prevstate': None}
     """
+
+    """
+    crawl_proj='phone_crawler'
+    status={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': 0, 'running': 0, 'finished': 2}
+    spiders={'node_name': 'Leo-LPT', 'status': 'ok', 'spiders': ['PhoneBrandSpider', 'PhoneSpider', '\x1b[0m']}
+    vers={'node_name': 'Leo-LPT', 'status': 'ok', 'versions': ['1685085314', '1685085349', '1685105067']}
+    start_spider_={'node_name': 'Leo-LPT', 'status': 'ok', 'jobid': '527eb7c7fbd111ed91888cc681ed1a0d'}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '527eb7c7fbd111ed91888cc681ed1a0d'}], 'running': [], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}, {'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '85a1742bfbc411ed94908cc681ed1a0d', 'start_time': '2023-05-26 20:55:03.226823', 'end_time': '2023-05-26 20:55:11.954153', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/85a1742bfbc411ed94908cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/85a1742bfbc411ed94908cc681ed1a0d.jl'}]}
+    jobs={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': [], 'running': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '527eb7c7fbd111ed91888cc681ed1a0d', 'pid': 36708, 'start_time': '2023-05-26 22:26:38.227264'}], 'finished': [{'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '5197dfd3fbc411eda66d8cc681ed1a0d', 'start_time': '2023-05-26 20:53:33.227064', 'end_time': '2023-05-26 20:53:41.825362', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/5197dfd3fbc411eda66d8cc681ed1a0d.jl'}, {'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '85a1742bfbc411ed94908cc681ed1a0d', 'start_time': '2023-05-26 20:55:03.226823', 'end_time': '2023-05-26 20:55:11.954153', 'log_url': '/logs/phone_crawler/PhoneBrandSpider/85a1742bfbc411ed94908cc681ed1a0d.log', 'items_url': '/items/phone_crawler/PhoneBrandSpider/85a1742bfbc411ed94908cc681ed1a0d.jl'}]}
+    cancel={'node_name': 'Leo-LPT', 'status': 'ok', 'prevstate': None}
+"""
