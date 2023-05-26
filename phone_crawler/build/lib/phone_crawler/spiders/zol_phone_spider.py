@@ -5,6 +5,7 @@
 import scrapy
 from phone_crawler.items import PhoneSkuItem
 from loguru import logger
+import datetime
 
 
 class ZolSpider(scrapy.Spider):
@@ -33,22 +34,18 @@ class ZolSpider(scrapy.Spider):
         # 爬取class为pic-mode-box的div下的所有包含data-follow-id属性的li标签
         for product in response.css('.pic-mode-box li[data-follow-id]'):
             item = PhoneSkuItem()
-            item['id'] = product.css('li::attr(data-follow-id)').get()
+            _id = product.css('li::attr(data-follow-id)').get()
+            item['id'] = _id[1:] if _id else None
             _name = product.css('li h3 a::text').get().strip()
             item['name'] = _name.strip() if _name else None
             item['intro'] = product.css('li h3 a span::text').get()
             _price = product.css('.price-type::text').get()
             item['price'] = _price if _price != '暂无报价' else None
             item['score'] = product.css('.score::text').get()
-            item['url'] = r"https://detail.zol.com.cn" + product.css('li a::attr(href)').get()
+            _url = product.css('li a[title]::attr(href)').get()
+            item['url'] = r"https://detail.zol.com.cn" + _url
             item['img_url'] = product.css('img').re_first(r'src="(.+?)"')
             comments_num = product.css('.comment-num::text').re_first(r'\d+')
             item['comments_num'] = comments_num if comments_num else '0'
-            item['created_at'] = product.css('.date::text').get()
+            item['created_at'] = datetime.datetime.now()
             yield item
-
-
-if __name__ == '__main__':
-    from scrapy import cmdline
-
-    cmdline.execute("scrapy crawl PhoneSpider".split())
