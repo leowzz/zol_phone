@@ -95,17 +95,21 @@ CACHES = {
 
 import time
 import logging
+import loguru
 
-log_path = os.path.join(BASE_DIR, 'logs')
+LOG_PATH = os.path.join(BASE_DIR, 'logs')
 LOGGING = {
     'version'                 : 1,
     'disable_existing_loggers': False,  # 是否禁用已经存在的日志器
     'formatters'              : {  # 日志信息显示的格式
-        'verbose': {
+        'verbose' : {
             'format': '%(levelname)s %(asctime)s %(module)s %(lineno)d %(message)s'
         },
-        'simple' : {
+        'simple'  : {
             'format': '%(levelname)s %(module)s %(lineno)d %(message)s'
+        },
+        'standard': {
+            'format': '%(asctime)s | %(levelname)-8s | %(module)s:%(funcName)s:%(lineno)d - %(message)s'
         },
     },
     'filters'                 : {  # 对日志进行过滤
@@ -115,46 +119,74 @@ LOGGING = {
     },
     'handlers'                : {  # 日志处理方法
         # 默认记录所有日志
-        'default': {
-            'level'      : 'INFO',
+        'default'    : {
+            'level'      : 'DEBUG',
             'class'      : 'logging.handlers.RotatingFileHandler',
-            'filename'   : os.path.join(log_path, 'all-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'filename'   : os.path.join(LOG_PATH, 'debug-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes'   : 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份数
             'formatter'  : 'verbose',  # 输出格式
             'encoding'   : 'utf-8',  # 设置默认编码，否则打印出来汉字乱码
         },
         # 输出错误日志
-        'error'  : {
+        'error'      : {
             'level'      : 'ERROR',
             'class'      : 'logging.handlers.RotatingFileHandler',
-            'filename'   : os.path.join(log_path, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'filename'   : os.path.join(LOG_PATH, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes'   : 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份数
-            'formatter'  : 'verbose',  # 输出格式
+            'formatter'  : 'standard',  # 输出格式
             'encoding'   : 'utf-8',  # 设置默认编码
         },
+        'error-uru'  : {
+            'level'      : 'ERROR',
+            'class'      : 'utils.log_.InterceptTimedRotatingFileHandler',
+            'filename'   : os.path.join(LOG_PATH, '.log'),
+            'when'       : "D",
+            'interval'   : 1,
+            'backupCount': 5,
+            'encoding'   : 'utf-8',
+            'formatter'  : 'standard',
+        },
+        'warning-uru': {
+            'level'      : 'ERROR',
+            'class'      : 'utils.log_.InterceptTimedRotatingFileHandler',
+            'filename'   : os.path.join(LOG_PATH, '.log'),
+            'when'       : "D",
+            'interval'   : 1,
+            'backupCount': 5,
+            'encoding'   : 'utf-8',
+            'formatter'  : 'standard',
+        },
         # 输出info日志
-        'info'   : {
+        'info'       : {
             'level'      : 'INFO',
             'class'      : 'logging.handlers.RotatingFileHandler',
-            'filename'   : os.path.join(log_path, 'info-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'filename'   : os.path.join(LOG_PATH, 'info-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes'   : 1024 * 1024 * 5,
             'backupCount': 5,
             'formatter'  : 'simple',
             'encoding'   : 'utf-8',  # 设置默认编码
         },
+
         # 控制台输出
-        'console': {
+        'console'    : {
             'level'    : 'DEBUG',
             'filters'  : ['require_debug_true'],
             'class'    : 'logging.StreamHandler',
-            'formatter': 'verbose'
+            'formatter': 'standard'
         },
     },
     'loggers'                 : {  # 日志器
         'django': {  # 定义了一个名为django的日志器
-            'handlers' : ['console', 'error', 'info', 'default'],  # 使用的日志处理器, 可以同时向终端与文件中输出日志
+            'handlers' : [
+                'console',
+                # 'error',
+                'info',
+                'default',
+                'error-uru',
+                'warning-uru',
+            ],  # 使用的日志处理器, 可以同时向终端与文件中输出日志
             'propagate': True,  # 是否继续传递日志信息
             'level'    : 'INFO',  # 日志器接收的最低日志级别
         },

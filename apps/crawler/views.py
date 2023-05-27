@@ -19,7 +19,7 @@ class SpiderView(View):
     @xframe_options_exempt
     def get(self, request):
         # 获取所有项目名称
-
+        raise Exception('test')
         # 缓存处理
         cache_projects = cache_handler('projects', get_project_list, 20 * 60)
         logger.debug(f"{cache_projects=}")

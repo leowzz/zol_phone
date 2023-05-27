@@ -18,3 +18,513 @@ Traceback (most recent call last):
     raise ValueError(
 ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
 ERROR 2023-05-27 13:36:26,793 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 74117
+ERROR 2023-05-27 15:25:04,919 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:25:04,945 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75404
+ERROR 2023-05-27 15:27:24,075 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:27:24,119 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75393
+[2023-05-27 15:31:45,577] [log.py:241] [log:log_response] [ERROR]- Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+[2023-05-27 15:31:45,594] [basehttp.py:187] [basehttp:log_message] [ERROR]- "GET /spiders/ HTTP/1.1" 500 75395
+2023-05-27 15:33:06,487 | ERROR | log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:33:06,503 | ERROR | basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75340
+2023-05-27 15:38:31,039 | {levelname:8s} | log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:38:31,060 | {levelname:8s} | basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75341
+2023-05-27 15:38:38,894 | {levelname:8s} | log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:38:38,918 | {levelname:8s} | basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75341
+2023-05-27 15:40:02,491 | ERROR    | log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:40:02,512 | ERROR    | basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75342
+2023-05-27 15:41:20,297 | ERROR    | django.request:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:41:20,338 | ERROR    | django.server:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75338
+2023-05-27 15:41:40,505 | ERROR    | {level} | {name}:{function}:{line} - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:41:40,524 | ERROR    | {level} | {name}:{function}:{line} - "GET /spiders/ HTTP/1.1" 500 75329
+2023-05-27 15:44:09,690 | ERROR    | C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:44:09,707 | ERROR    | C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75342
+2023-05-27 15:45:12,484 | ERROR    | log.py:241 log:log_response - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:45:12,497 | ERROR    | basehttp.py:187 basehttp:log_message - "GET /spiders/ HTTP/1.1" 500 75342
+2023-05-27 15:48:44,668 | ERROR    | log:log_response:241 - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:48:44,684 | ERROR    | basehttp:log_message:187 - "GET /spiders/ HTTP/1.1" 500 75329
+2023-05-27 15:52:49,477 | ERROR    | log:log_response:241 - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:52:49,495 | ERROR    | basehttp:log_message:187 - "GET /spiders/ HTTP/1.1" 500 75320
+2023-05-27 15:52:49.478 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000022C1F3BD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 44144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000022C1F3BD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 44144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 44144)>
+    │    │        │    └ (<socket.socket fd=1568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 44144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000022C2245D300>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 44144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 10988)
+    │    │              └ <socket.socket fd=1568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000022C21D67EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000022C2245D300>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000022C2245D300>
+    │    │                   │        └ ('127.0.0.1', 10988)
+    │    │                   └ <socket.socket fd=1568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000022C2245D300>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000022C22464D30>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000022C243B3E20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000022C22464DC0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000022C243B3E20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000022C22464040>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000022C2245D300>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000022C243B3E20>
+    │       └ <function BaseHandler.run at 0x0000022C224508B0>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000022C243B3D30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000022C22450C10>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000022C243B3D30>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000022C243B3D30>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000022C2245D330>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000022C243B3D30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000022C243B3D30>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000022C23E9BDC0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000022C2245D330>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/'>
+               │    └ <function BaseHandler.get_response at 0x0000022C2240F370>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000022C23E9BDC0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8AF80>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000022C23E9BDC0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8AEF0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8AE60>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8ADD0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8AD40>
+               │           └ <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8A950>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000022C23E8AB00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function BaseHandler._get_response at 0x0000022C23E884C0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000022C23E9BDC0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    │    │              │         └ <function View.as_view.<locals>.view at 0x0000022C22465AB0>
+    │    │              └ None
+    │    └ <function BaseHandler.check_response at 0x0000022C2240F640>
+    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000022C23E9BDC0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:52:49.497 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/ HTTP/1.1" 500 75320
+2023-05-27 15:54:28,427 | ERROR    | log:log_response:241 - Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:54:28.428 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000020C1355D3F0>
+    └ <Thread(Thread-4 (process_request_thread), started daemon 42840)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000020C1355D6C0>
+    └ <Thread(Thread-4 (process_request_thread), started daemon 42840)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-4 (process_request_thread), started daemon 42840)>
+    │    │        │    └ (<socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-4 (process_request_thread), started daemon 42840)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000020C1668D1E0>>
+    └ <Thread(Thread-4 (process_request_thread), started daemon 42840)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 11172)
+    │    │              └ <socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000020C15F97EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000020C1668D1E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000020C1668D1E0>
+    │    │                   │        └ ('127.0.0.1', 11172)
+    │    │                   └ <socket.socket fd=1484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000020C1668D1E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000020C16694D30>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000020C1960D4B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000020C16694DC0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000020C1960D4B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000020C16694040>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000020C1668D1E0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000020C1960D4B0>
+    │       └ <function BaseHandler.run at 0x0000020C166808B0>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000020C1960D990>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000020C16680C10>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000020C1960D990>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000020C1960D990>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000020C17E7BC70>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000020C1960D990>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000020C1960D990>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000020C180CFD90>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000020C17E7BC70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/'>
+               │    └ <function BaseHandler.get_response at 0x0000020C1663F370>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000020C180CFD90>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BB250>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000020C180CFD90>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BB010>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BAF80>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BAEF0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BAE60>
+               │           └ <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BAC20>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000020C180BA830>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/'>
+               │           │    └ <function BaseHandler._get_response at 0x0000020C180BAB90>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000020C180CFD90>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    │    │              │         └ <function View.as_view.<locals>.view at 0x0000020C16696F80>
+    │    │              └ None
+    │    └ <function BaseHandler.check_response at 0x0000020C1663F640>
+    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000020C180CFD90>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+2023-05-27 15:54:28,447 | ERROR    | basehttp:log_message:187 - "GET /spiders/ HTTP/1.1" 500 75320
+2023-05-27 15:54:28.448 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/ HTTP/1.1" 500 75320

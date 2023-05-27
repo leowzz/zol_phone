@@ -1086,3 +1086,443 @@ INFO 2023-05-27 14:14:54,883 basehttp 187 "GET /static/plugins/bootstrap/js/boot
 INFO 2023-05-27 14:14:54,896 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
 INFO 2023-05-27 14:19:15,039 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
 INFO 2023-05-27 14:19:15,804 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:12:57,223 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:15:06,426 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:15:18,651 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:15:19,449 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:16:27,304 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:21:32,675 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:21:35,277 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:21:54,441 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:21:54,669 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:21:54,681 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:21:54,684 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:21:54,708 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:21:54,708 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:21:54,713 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:21:54,764 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:21:54,800 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:21:54,845 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:21:54,902 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:21:54,931 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7193
+INFO 2023-05-27 15:21:54,933 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:21:54,982 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-27 15:21:54,988 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:21:54,991 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-27 15:21:55,145 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:21:55,146 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:21:55,201 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-27 15:21:55,228 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:21:55,233 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-27 15:21:55,236 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:21:57,869 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:22:08,931 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-27 15:22:08,959 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2089
+INFO 2023-05-27 15:22:08,989 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:22:08,993 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-27 15:22:09,074 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:22:09,074 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-27 15:22:09,078 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:22:09,085 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-27 15:22:09,213 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-27 15:22:09,217 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:22:09,221 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:23:29,167 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:23:29,987 autoreload 677 Watching for file changes with StatReloader
+WARNING 2023-05-27 15:23:34,234 log 241 Not Found: /spiders/logs
+WARNING 2023-05-27 15:23:34,235 basehttp 187 "GET /spiders/logs HTTP/1.1" 404 3068
+WARNING 2023-05-27 15:24:14,327 log 241 Not Found: /home_page2
+WARNING 2023-05-27 15:24:14,328 basehttp 187 "GET /home_page2 HTTP/1.1" 404 3062
+WARNING 2023-05-27 15:24:24,934 log 241 Not Found: /home_page/12
+WARNING 2023-05-27 15:24:24,934 basehttp 187 "GET /home_page/12 HTTP/1.1" 404 3068
+WARNING 2023-05-27 15:24:33,480 log 241 Not Found: /jobs
+WARNING 2023-05-27 15:24:33,481 basehttp 187 "GET /jobs HTTP/1.1" 404 3044
+INFO 2023-05-27 15:24:52,936 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-27 15:24:53,773 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:25:04,360 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:25:04,712 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:25:04,725 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:25:04,725 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:25:04,726 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:25:04,728 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:25:04,729 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:25:04,777 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:25:04,795 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:25:04,919 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:25:04,945 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75404
+INFO 2023-05-27 15:25:04,953 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:25:05,118 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:25:05,123 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:25:18,982 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:26:09,650 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:26:10,481 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:27:17,284 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:27:18,111 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:27:20,164 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:27:23,714 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:27:23,818 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:27:23,828 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:27:23,830 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:27:23,857 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:27:23,858 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:27:23,860 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:27:23,882 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:27:23,953 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:27:24,075 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:27:24,119 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75393
+INFO 2023-05-27 15:27:24,124 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:27:24,276 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:27:24,280 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:27:27,085 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:27:43,339 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:28:18,762 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:31:40,878 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:31:41,723 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:31:45,196 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:31:45,316 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:31:45,329 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:31:45,331 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:31:45,361 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:31:45,362 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:31:45,364 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:31:45,456 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:31:45,459 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+ERROR 2023-05-27 15:31:45,577 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:31:45,594 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75395
+INFO 2023-05-27 15:31:45,664 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:31:45,822 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:31:45,827 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:31:48,650 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:33:01,169 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:33:02,096 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:33:06,049 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:33:06,269 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:33:06,283 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:33:06,285 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:33:06,319 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:33:06,321 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:33:06,322 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:33:06,351 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:33:06,386 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:33:06,487 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:33:06,503 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75340
+INFO 2023-05-27 15:33:06,589 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:33:06,741 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:33:06,744 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:33:08,794 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:36:28,087 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:36:28,897 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:36:36,381 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:36:36,875 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:36:36,892 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:36:36,894 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:36:36,894 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:36:36,895 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:36:36,897 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:36:36,950 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:36:37,000 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:36:37,022 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:36:37,304 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:36:37,307 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-27 15:36:37,485 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:36:37,505 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75345
+INFO 2023-05-27 15:36:37,981 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:36:44,796 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:36:45,710 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:38:25,287 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:38:26,153 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:38:30,646 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:38:30,826 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:38:30,833 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:38:30,838 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:38:30,840 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:38:30,856 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:38:30,858 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:38:30,901 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:38:30,927 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:38:30,949 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+ERROR 2023-05-27 15:38:31,039 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:38:31,060 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75341
+INFO 2023-05-27 15:38:31,071 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:38:31,082 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:38:31,957 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:38:36,693 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:38:38,653 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:38:38,721 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:38:38,731 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:38:38,733 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:38:38,766 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:38:38,767 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:38:38,769 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:38:38,790 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:38:38,818 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:38:38,894 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:38:38,918 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75341
+INFO 2023-05-27 15:38:38,924 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:38:39,086 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:38:39,093 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:38:39,209 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:39:53,129 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:39:53,960 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:40:02,140 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:40:02,289 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:40:02,297 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:40:02,299 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:40:02,338 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:40:02,339 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:40:02,341 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:40:02,407 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:40:02,407 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:40:02,491 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+INFO 2023-05-27 15:40:02,505 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+ERROR 2023-05-27 15:40:02,512 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75342
+INFO 2023-05-27 15:40:02,639 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:40:02,644 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:40:41,495 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:41:15,949 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:41:16,808 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:41:19,732 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:41:19,861 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:41:19,876 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:41:19,878 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:41:19,929 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:41:19,935 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:41:19,936 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:41:19,975 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:41:20,124 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:41:20,249 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+ERROR 2023-05-27 15:41:20,297 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:41:20,338 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75338
+INFO 2023-05-27 15:41:20,484 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:41:20,616 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:41:20,619 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:41:37,057 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:41:37,961 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:41:40,262 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:41:40,341 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:41:40,346 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:41:40,348 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:41:40,379 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:41:40,379 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:41:40,381 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:41:40,412 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:41:40,432 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:41:40,505 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:41:40,524 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75329
+INFO 2023-05-27 15:41:40,601 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:41:40,713 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:41:40,812 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:41:40,817 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:41:45,691 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:41:46,600 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:44:05,992 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:44:09,028 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:44:09,469 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:44:09,482 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:44:09,487 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:44:09,487 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:44:09,531 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:44:09,533 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:44:09,540 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:44:09,590 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-27 15:44:09,594 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:44:09,659 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:44:09,660 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+ERROR 2023-05-27 15:44:09,690 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:44:09,707 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75342
+INFO 2023-05-27 15:44:10,846 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:45:08,133 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:45:08,998 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:45:11,932 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:45:12,320 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:45:12,322 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:45:12,325 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:45:12,348 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:45:12,374 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:45:12,375 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:45:12,377 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:45:12,411 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:45:12,484 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:45:12,497 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75342
+INFO 2023-05-27 15:45:12,615 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:45:12,748 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:45:12,751 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:45:12,944 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:46:37,500 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:46:38,333 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:46:42,093 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:46:42,915 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:46:50,854 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:46:51,669 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:48:40,175 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:48:44,240 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:48:44,502 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:48:44,506 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:48:44,508 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:48:44,524 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:48:44,526 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:48:44,528 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:48:44,556 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:48:44,599 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:48:44,668 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:48:44,684 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75329
+INFO 2023-05-27 15:48:44,818 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:48:44,961 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:48:44,964 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:48:45,704 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:51:43,098 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-27 15:51:43,915 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:52:42,255 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\log_.py changed, reloading.
+INFO 2023-05-27 15:52:43,107 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:52:49,073 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:52:49,236 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:52:49,249 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:52:49,251 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:52:49,292 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:52:49,310 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:52:49,310 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:52:49,346 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:52:49,377 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:52:49,477 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:52:49,495 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75320
+INFO 2023-05-27 15:52:49,667 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:52:49,842 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:52:49,844 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:52:50,272 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:54:22,092 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-27 15:54:27,844 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-27 15:54:28,216 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-27 15:54:28,217 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-27 15:54:28,222 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-27 15:54:28,245 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-27 15:54:28,246 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-27 15:54:28,246 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-27 15:54:28,300 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-27 15:54:28,327 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-27 15:54:28,427 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 15:54:28,447 basehttp 187 "GET /spiders/ HTTP/1.1" 500 75320
+INFO 2023-05-27 15:54:28,632 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-27 15:54:28,916 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-27 15:54:28,984 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-27 15:54:28,989 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-27 15:55:49,354 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
