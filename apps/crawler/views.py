@@ -8,6 +8,8 @@ from collections import defaultdict
 from django.views.decorators.clickjacking import xframe_options_exempt
 from loguru import logger
 from apps.crawler.utils import *
+from django.core.cache import cache
+from utils.cacher import cache_handler
 
 
 class SpiderView(View):
@@ -17,30 +19,56 @@ class SpiderView(View):
     @xframe_options_exempt
     def get(self, request):
         # 获取所有项目名称
-        res = get_project_list()
-        logger.debug(f"{res=}")
+
+        # 缓存处理
+        cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+        logger.debug(f"{cache_projects=}")
         # 如果scrapyd服务没有启动，返回错误页面
-        if res.get('status') != 'ok':
+        if cache_projects.get('status') != 'ok':
             return render(request, '50x.html', context={
                 'code': 500,
-                'msg' : res.get('scrapyd error')
+                'msg' : cache_projects.get('scrapyd error')
             }, status=500)
-        project_names = res["projects"]
+        project_names = cache_projects["projects"]
         # 获取项目名称, 过滤掉 default
         projects = {project: {"spiders": []} for project in project_names if project != 'default'}
         logger.debug(f"{projects=}")
 
         # 获取每个项目下的爬虫名称
         for project in projects:
-            res = get_spider_list(project)
-            logger.debug(f"{res=}")
-            if res.get('status') == 'ok':
-                projects[project]['spiders'].extend([_ for _ in res.get('spiders') if _ != '\x1b[0m'])
+            spider_list = cache_handler(
+                f'spiders_{project}',
+                get_spider_list,
+                20,
+                project)
+            logger.debug(f"{spider_list=}")
+            if spider_list.get('status') == 'ok':
+                projects[project]['spiders'].extend([_ for _ in spider_list.get('spiders') if _ != '\x1b[0m'])
         logger.debug(f"{projects=}")
 
         return render(request, 'spiders_list.html', context={
             'projects': projects,
-            'title': '爬虫信息',
+            'title'   : '爬虫信息',
+        })
+
+
+class JobsView(View):
+    @logger.catch
+    @xframe_options_exempt
+    def get(self, request):
+        # 获取爬虫运行状态
+        job_status = get_status()
+        logger.debug(f"{job_status=}")
+        # 如果scrapyd服务没有启动，返回错误页面
+        if job_status.get('status') != 'ok':
+            return render(request, '50x.html', context={
+                'code': 500,
+                'msg' : job_status.get('status')
+            }, status=500)
+
+        return render(request, 'jobs_list.html', context={
+            'job_status': job_status,
+            'title'     : '爬虫运行状态',
         })
 
 
@@ -62,15 +90,6 @@ def scrape(request):
     process.crawl(PhoneBrandSpider)
     process.start()
     return jsonify({'msg': 'ok'})
-
-
-@logger.catch
-def get_status(request):
-    """
-    获取爬虫运行状态
-    """
-    logger.debug(f"{request.data}")
-    return JsonResponse({'status': status})
 
 
 if __name__ == '__main__':

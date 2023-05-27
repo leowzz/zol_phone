@@ -41,7 +41,7 @@ class Phone_sku(models.Model):
     img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
     img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
     comments_num = models.IntegerField(null=True, blank=True, verbose_name='手机评论数')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间', null=True, blank=True, )
+    last_modify = models.DateTimeField(auto_now_add=True, verbose_name='此条信息最后更新时间', null=True, blank=True, )
 
     def __str__(self):
         return self.name
@@ -58,7 +58,7 @@ class Phone_spu(models.Model):
     url = models.CharField(max_length=255, verbose_name='页面url')
     img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
     img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name='此条信息创建时间', null=True, blank=True, )
+    last_modify = models.DateTimeField(auto_now_add=True, verbose_name='此条信息最后更新时间', null=True, blank=True, )
     mall_price = models.IntegerField(null=True, blank=True, verbose_name='商城价格')
     # 详细参数
     basic_info = models.TextField(null=True, blank=True, verbose_name='基本信息, json格式')

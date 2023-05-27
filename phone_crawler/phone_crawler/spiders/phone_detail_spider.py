@@ -7,6 +7,7 @@ from phone_crawler.items import PhoneSpuItem
 from loguru import logger
 from apps.crawler.models import Phone_sku
 import json
+import datetime
 
 
 class PhoneDetail(scrapy.Spider):
@@ -47,7 +48,8 @@ class PhoneDetail(scrapy.Spider):
         item['name'] = breadcrumb_a.css('a::text').get()
         item['url'] = r"https://detail.zol.com.cn" + breadcrumb_a.css('a::attr(href)').get()
         item['img_url'] = response.css('.big-pic-fl a img::attr(src)').get()
-        _price = response.css('#param-list-b2c-jd a::text')
+        item['last_modify'] = datetime.datetime.now()
+        _price = response.css('#param-list-b2c-jd::text')
         item['mall_price'] = _price.re_first(r"\d+") if _price else None
         tables = response.css('.detailed-parameters table')
         # 详情页的表格

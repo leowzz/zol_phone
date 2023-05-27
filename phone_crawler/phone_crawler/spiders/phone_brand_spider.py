@@ -15,7 +15,7 @@ class PhoneBrandSpider(scrapy.Spider):
         # 设置使用的管道
         'ITEM_PIPELINES': {
             'phone_crawler.pipelines.BrandImagePipeline': 200,
-            'phone_crawler.pipelines.MysqlPipeline': 300,
+            'phone_crawler.pipelines.MysqlPipeline'     : 300,
         },
     }
     allowed_domains = [
@@ -23,11 +23,7 @@ class PhoneBrandSpider(scrapy.Spider):
         "mobile.zol.com.cn",
     ]
     start_urls = [
-        # "https://mobile.zol.com.cn/manu_list.html",
-        # "https://top.zol.com.cn/compositor/57/manu_attention.html",
-        # "http://localhost:8080/brands.html",
-        "http://localhost:8080/phone_brand_rank_list.html",
-
+        "https://top.zol.com.cn/compositor/57/manu_attention.html",
     ]
 
     def parse(self, response, **kwargs):
@@ -44,5 +40,3 @@ class PhoneBrandSpider(scrapy.Spider):
             item['phone_num'] = product.css('.rank__price span::text').re_first(r'共(\d+)款')
             logger.debug(f"parse: {item=}")
             yield item
-
-

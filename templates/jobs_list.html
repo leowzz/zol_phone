@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <!--四个信息卡-->
+                <!--status={'node_name': 'Leo-LPT', 'status': 'ok', 'pending': 0, 'running': 0, 'finished': 1}-->
+                <div class="row row-cols-3 row-cols-md-3 row-cols-lg-2 g-2 mb-3">
+                    <div class="col">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    等待中: {{ job_status.pending }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    运行中: {{ job_status.running }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    已完成: {{ job_status.finished }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--表格-->
+            </div>
+        </div>
+    </div>
+{% endblock %}

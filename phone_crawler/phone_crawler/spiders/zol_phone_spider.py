@@ -47,5 +47,5 @@ class ZolSpider(scrapy.Spider):
             item['img_url'] = product.css('img').re_first(r'src="(.+?)"')
             comments_num = product.css('.comment-num::text').re_first(r'\d+')
             item['comments_num'] = comments_num if comments_num else '0'
-            item['created_at'] = datetime.datetime.now()
+            item['last_modify'] = datetime.datetime.now()
             yield item

@@ -6,7 +6,7 @@ from zol_phone.settings import BASE_DIR, SCRAPYD_PROJECT_NAME
 
 import os
 from loguru import logger
-from apps.crawler.models import Phone_sku, Phone_brand
+from apps.crawler.models import Phone_sku, Phone_brand, Phone_spu
 
 
 # Create your views here.
@@ -21,10 +21,10 @@ class IndexView(View):
 def home_page(request):
     # 获取手机信息数
     phone_info_cnt = Phone_sku.objects.all().count()
+    phone_detail_cnt = Phone_spu.objects.all().count()
+    brand_info_cnt = Phone_brand.objects.all().count()
     # 获取数据条数
-    data_cnt = 0
-    data_cnt += Phone_brand.objects.all().count()
-    data_cnt += phone_info_cnt
+    data_cnt = sum([phone_info_cnt, phone_detail_cnt, brand_info_cnt])
     # 获取爬虫信息
     proj_names = [_ for _ in get_project_list()['projects'] if _ != 'default']
     spider_cnt = 0

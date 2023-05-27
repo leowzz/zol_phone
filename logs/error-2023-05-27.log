@@ -1,0 +1,20 @@
+ERROR 2023-05-27 13:35:36,640 log 241 Internal Server Error: /spiders/jobs
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 13:35:36,642 basehttp 187 "GET /spiders/jobs HTTP/1.1" 500 74239
+ERROR 2023-05-27 13:36:26,792 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-27 13:36:26,793 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 74117
