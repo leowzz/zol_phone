@@ -1,6 +1,6 @@
 # 中关村在线 手机信息爬取
 
-使用Django, Scrapy
+基于 Django Scrapy Bootstrap Chart.js MySQL Redis Minio 等技术开发的 手机信息采集与可视化系统
 
 前端页面使用 [欲饮琵琶码上催/bootstrap-admin](https://gitee.com/ajiho/bootstrap-admin.git) 模板
 
