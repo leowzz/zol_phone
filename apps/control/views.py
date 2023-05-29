@@ -39,7 +39,7 @@ def home_page(request):
                 log_cnt += 1
     return render(request, 'home_page.html', context={
         'data_cnt'  : data_cnt,
-        'phone_cnt' : phone_info_cnt,
+        'phone_cnt' : phone_info_cnt + phone_detail_cnt,
         'spider_cnt': spider_cnt,
         'log_cnt'   : log_cnt,
     })

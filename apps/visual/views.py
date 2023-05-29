@@ -33,13 +33,13 @@ def get_phone_cmt():
     for name in ['cmt', 'price', 'score', 'jd_price']:
         res[name] = {'xAxis': [], 'series': []}
     # 获取手机中评论数最多的前10个品牌
-    phone_cmt = Phone_sku.objects.order_by('-comments_num')[:10]
+    phone_cmt = Phone_sku.objects.order_by('-comments_num')[:8]
     # 获取价格最高的前10个手机
-    phone_price = Phone_sku.objects.order_by('-price')[:10]
+    phone_price = Phone_sku.objects.order_by('-price')[:12]
     # 获取手机中评分最高的前10个手机
-    phone_score = Phone_sku.objects.order_by('-score')[:10]
+    phone_score = Phone_sku.objects.order_by('-score')[:15]
     # 获取手机详细信息中京东售价前十的手机
-    phone_jd_price = Phone_spu.objects.order_by('-mall_price')[:10]
+    phone_jd_price = Phone_spu.objects.order_by('-mall_price')[:12]
 
     for phone in phone_cmt:
         res['cmt']['xAxis'].append(phone.name)

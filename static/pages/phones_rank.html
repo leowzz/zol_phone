@@ -17,7 +17,7 @@
 <div class="container-fluid" id="app">
     <div class="card border-0 shadow-sm">
         <div class="card-body">
-            <div class="row row-cols-1 row-cols-lg-2 g-3">
+            <div class="row row-cols-1 row-cols-lg-1 g-3">
                 <div class="col">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white">
@@ -77,7 +77,7 @@
 
     echarts1.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
     echarts2.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
-    echarts3.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
+    echarts3.setOption({xAxis: {type: 'category',}, yAxis: {type: 'value',}, tooltip: {trigger: 'item'},});
     echarts4.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
     $.ajax({
         url: '/phones/echarts',
@@ -87,7 +87,7 @@
             console.log(res);
             if (res.code === 200) {
                 echarts1.setOption({
-                    grid: {left: '50%',},
+                    grid: {left: '30%',},
                     yAxis: {
                         data: res.cmt.xAxis,
                         inverse: true,
@@ -105,7 +105,7 @@
                         type: 'category',
                         inverse: true,
                         data: res.price.xAxis,
-                        axisLabel: {interval: 0, rotate: -30},
+                        axisLabel: {interval: 0, rotate: -25},
                     },
                     series: [{
                         name: '价格',
@@ -114,15 +114,13 @@
                     }]
                 });
                 echarts3.setOption({
-                    grid: {left: '50%',},
-                    yAxis: {
-                        data: res.score.xAxis,
-                        inverse: true,
-                    },
                     xAxis: {
-                        type: 'value',
-                        min: 9.6,
+                        data: res.score.xAxis,
+                        axisLabel: {interval: 0, rotate: -25},
+                    },
+                    yAxis:{
                         max: 10,
+                        min: 9.6
                     },
                     series: [{
                         name: '评分',

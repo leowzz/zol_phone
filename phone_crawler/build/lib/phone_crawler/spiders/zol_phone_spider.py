@@ -20,7 +20,7 @@ class ZolSpider(scrapy.Spider):
     }
     start_urls = [
         f"https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_{_}.html"
-        for _ in range(1, 2)
+        for _ in range(1, 18)
     ]
 
     def parse(self, response, **kwargs):
