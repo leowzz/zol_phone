@@ -11232,3 +11232,923 @@ Traceback (most recent call last):
 AttributeError: 'dict' object has no attribute 'xframe_options_exempt'
 2023-05-29 13:57:28.780 | ERROR    | django.core.servers.basehttp:log_message:187 - "POST /spiders/run HTTP/1.1" 500 85435
 2023-05-29 13:57:28.780 | ERROR    | django.core.servers.basehttp:log_message:187 - "POST /spiders/run HTTP/1.1" 500 85435
+2023-05-29 14:28:47.221 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /phones/echarts/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001AC714CD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001AC714CD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+    │    │        │    └ (<socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4063)
+    │    │              └ <socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001AC73EA7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+    │    │                   │        └ ('127.0.0.1', 4063)
+    │    │                   └ <socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001AC745A9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001AC745A9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001AC745A83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+    │       └ <function BaseHandler.run at 0x000001AC7458CC10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001AC7458CF70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001AC745A14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001AC745A14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function BaseHandler.get_response at 0x000001AC745576D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB9A0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB910>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB880>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB7F0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB400>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB370>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001AC75FCB6D0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <function View.as_view.<locals>.view at 0x000001AC75CD0040>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/phones/echarts/'>
+           │    └ <function View.dispatch at 0x000001AC73F54E50>
+           └ <apps.visual.views.Echarts object at 0x000001AC7655C970>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/phones/echarts/'>
+           └ <bound method Echarts.get of <apps.visual.views.Echarts object at 0x000001AC7655C970>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 44, in get
+    phone_cmt = cache_handler('phone_cmt', get_phone_cmt, 30)
+                │                          └ <function get_phone_cmt at 0x000001AC75CBFD90>
+                └ <function cache_handler at 0x000001AC75CBEE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_phone_cmt at 0x000001AC75CBFD90>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 34, in get_phone_cmt
+    phones = Phone_sku.objects.order_by('-comment_count')[:10]
+             │         └ <django.db.models.manager.ManagerDescriptor object at 0x000001AC744B2B60>
+             └ <class 'apps.crawler.models.Phone_sku'>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {}
+                   │    │               │      └ ('-comment_count',)
+                   │    │               └ 'order_by'
+                   │    └ <function BaseManager.get_queryset at 0x000001AC73E0F910>
+                   └ <django.db.models.manager.Manager object at 0x000001AC75CC5C90>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\query.py", line 1644, in order_by
+    obj.query.add_ordering(*field_names)
+    │   │                   └ ('-comment_count',)
+    │   └ <property object at 0x000001AC73E01EE0>
+    └ <QuerySet [<Phone_sku: 小米13（8GB/128GB）>, <Phone_sku: 小米13（12GB/256GB）>, <Phone_sku: HUAWEI Mate50（8GB+128GB）>, <Phone_sku: 华为...
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 2202, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+    │    │             │    │     │            │    │     └ <Options for Phone_sku>
+    │    │             │    │     │            │    └ <class 'apps.crawler.models.Phone_sku'>
+    │    │             │    │     │            └ <django.db.models.sql.query.Query object at 0x000001AC741AB460>
+    │    │             │    │     └ '__'
+    │    │             │    └ <method 'split' of 'str' objects>
+    │    │             └ 'comment_count'
+    │    └ <function Query.names_to_path at 0x000001AC73D9B370>
+    └ <django.db.models.sql.query.Query object at 0x000001AC741AB460>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+          └ <class 'django.core.exceptions.FieldError'>
+
+django.core.exceptions.FieldError: Cannot resolve keyword 'comment_count' into field. Choices are: comments_num, id, img_url, img_url_s3, intro, last_modify, name, price, score, url
+2023-05-29 14:28:47.237 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /phones/echarts/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001AC714CD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001AC714CD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+    │    │        │    └ (<socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 23232)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4063)
+    │    │              └ <socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001AC73EA7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+    │    │                   │        └ ('127.0.0.1', 4063)
+    │    │                   └ <socket.socket fd=1740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001AC745A9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001AC745A9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001AC745A83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001AC745A1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001AC764DBF70>
+    │       └ <function BaseHandler.run at 0x000001AC7458CC10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001AC7458CF70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001AC745A14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001AC764DBFA0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001AC745A14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function BaseHandler.get_response at 0x000001AC745576D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB9A0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB910>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB880>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB7F0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB400>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001AC75FCB370>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001AC75FCB6D0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001AC75FEFE50>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <function View.as_view.<locals>.view at 0x000001AC75CD0040>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/phones/echarts/'>
+           │    └ <function View.dispatch at 0x000001AC73F54E50>
+           └ <apps.visual.views.Echarts object at 0x000001AC7655C970>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/phones/echarts/'>
+           └ <bound method Echarts.get of <apps.visual.views.Echarts object at 0x000001AC7655C970>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 44, in get
+    phone_cmt = cache_handler('phone_cmt', get_phone_cmt, 30)
+                │                          └ <function get_phone_cmt at 0x000001AC75CBFD90>
+                └ <function cache_handler at 0x000001AC75CBEE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_phone_cmt at 0x000001AC75CBFD90>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 34, in get_phone_cmt
+    phones = Phone_sku.objects.order_by('-comment_count')[:10]
+             │         └ <django.db.models.manager.ManagerDescriptor object at 0x000001AC744B2B60>
+             └ <class 'apps.crawler.models.Phone_sku'>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {}
+                   │    │               │      └ ('-comment_count',)
+                   │    │               └ 'order_by'
+                   │    └ <function BaseManager.get_queryset at 0x000001AC73E0F910>
+                   └ <django.db.models.manager.Manager object at 0x000001AC75CC5C90>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\query.py", line 1644, in order_by
+    obj.query.add_ordering(*field_names)
+    │   │                   └ ('-comment_count',)
+    │   └ <property object at 0x000001AC73E01EE0>
+    └ <QuerySet [<Phone_sku: 小米13（8GB/128GB）>, <Phone_sku: 小米13（12GB/256GB）>, <Phone_sku: HUAWEI Mate50（8GB+128GB）>, <Phone_sku: 华为...
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 2202, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+    │    │             │    │     │            │    │     └ <Options for Phone_sku>
+    │    │             │    │     │            │    └ <class 'apps.crawler.models.Phone_sku'>
+    │    │             │    │     │            └ <django.db.models.sql.query.Query object at 0x000001AC741AB460>
+    │    │             │    │     └ '__'
+    │    │             │    └ <method 'split' of 'str' objects>
+    │    │             └ 'comment_count'
+    │    └ <function Query.names_to_path at 0x000001AC73D9B370>
+    └ <django.db.models.sql.query.Query object at 0x000001AC741AB460>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+          └ <class 'django.core.exceptions.FieldError'>
+
+django.core.exceptions.FieldError: Cannot resolve keyword 'comment_count' into field. Choices are: comments_num, id, img_url, img_url_s3, intro, last_modify, name, price, score, url
+2023-05-29 14:28:47.259 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113255
+2023-05-29 14:28:47.259 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113255
+2023-05-29 14:29:11.760 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /phones/echarts/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D192D7D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D192D7D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+    │    │        │    └ (<socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4107)
+    │    │              └ <socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D1957A7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+    │    │                   │        └ ('127.0.0.1', 4107)
+    │    │                   └ <socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D195EA9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D195EA9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D195EA83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+    │       └ <function BaseHandler.run at 0x000001D195E90C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D195E90F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D195EA1450>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D195EA1450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function BaseHandler.get_response at 0x000001D195E576D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3490>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D37F0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3760>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D36D0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3520>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D30A0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D1978D3370>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <function View.as_view.<locals>.view at 0x000001D1975D0040>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/phones/echarts/'>
+           │    └ <function View.dispatch at 0x000001D195854E50>
+           └ <apps.visual.views.Echarts object at 0x000001D197E77A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/phones/echarts/'>
+           └ <bound method Echarts.get of <apps.visual.views.Echarts object at 0x000001D197E77A30>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 44, in get
+    phone_cmt = cache_handler('phone_cmt', get_phone_cmt, 30)
+                │                          └ <function get_phone_cmt at 0x000001D1975BBD90>
+                └ <function cache_handler at 0x000001D1975BAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_phone_cmt at 0x000001D1975BBD90>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 34, in get_phone_cmt
+    phones = Phone_sku.objects.order_by('-comments_count')[:10]
+             │         └ <django.db.models.manager.ManagerDescriptor object at 0x000001D195DB2B60>
+             └ <class 'apps.crawler.models.Phone_sku'>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {}
+                   │    │               │      └ ('-comments_count',)
+                   │    │               └ 'order_by'
+                   │    └ <function BaseManager.get_queryset at 0x000001D19570F910>
+                   └ <django.db.models.manager.Manager object at 0x000001D1975CF8B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\query.py", line 1644, in order_by
+    obj.query.add_ordering(*field_names)
+    │   │                   └ ('-comments_count',)
+    │   └ <property object at 0x000001D195701DF0>
+    └ <QuerySet [<Phone_sku: 小米13（8GB/128GB）>, <Phone_sku: 小米13（12GB/256GB）>, <Phone_sku: HUAWEI Mate50（8GB+128GB）>, <Phone_sku: 华为...
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 2202, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+    │    │             │    │     │            │    │     └ <Options for Phone_sku>
+    │    │             │    │     │            │    └ <class 'apps.crawler.models.Phone_sku'>
+    │    │             │    │     │            └ <django.db.models.sql.query.Query object at 0x000001D195B3BC40>
+    │    │             │    │     └ '__'
+    │    │             │    └ <method 'split' of 'str' objects>
+    │    │             └ 'comments_count'
+    │    └ <function Query.names_to_path at 0x000001D19569B370>
+    └ <django.db.models.sql.query.Query object at 0x000001D195B3BC40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+          └ <class 'django.core.exceptions.FieldError'>
+
+django.core.exceptions.FieldError: Cannot resolve keyword 'comments_count' into field. Choices are: comments_num, id, img_url, img_url_s3, intro, last_modify, name, price, score, url
+2023-05-29 14:29:11.778 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /phones/echarts/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D192D7D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D192D7D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+    │    │        │    └ (<socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24288)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4107)
+    │    │              └ <socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D1957A7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+    │    │                   │        └ ('127.0.0.1', 4107)
+    │    │                   └ <socket.socket fd=1240, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D195EA9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D195EA9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D195EA83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D1978C3760>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D197E776D0>
+    │       └ <function BaseHandler.run at 0x000001D195E90C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D195E90F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D195EA1450>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D197E77700>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D195EA1450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function BaseHandler.get_response at 0x000001D195E576D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/phones/echarts/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3490>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D37F0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3760>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D36D0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D3520>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D1978D30A0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/phones/echarts/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D1978D3370>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D1978E7F10>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/phones/echarts/'>
+               └ <function View.as_view.<locals>.view at 0x000001D1975D0040>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/phones/echarts/'>
+           │    └ <function View.dispatch at 0x000001D195854E50>
+           └ <apps.visual.views.Echarts object at 0x000001D197E77A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/phones/echarts/'>
+           └ <bound method Echarts.get of <apps.visual.views.Echarts object at 0x000001D197E77A30>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 44, in get
+    phone_cmt = cache_handler('phone_cmt', get_phone_cmt, 30)
+                │                          └ <function get_phone_cmt at 0x000001D1975BBD90>
+                └ <function cache_handler at 0x000001D1975BAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_phone_cmt at 0x000001D1975BBD90>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 34, in get_phone_cmt
+    phones = Phone_sku.objects.order_by('-comments_count')[:10]
+             │         └ <django.db.models.manager.ManagerDescriptor object at 0x000001D195DB2B60>
+             └ <class 'apps.crawler.models.Phone_sku'>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+                   │    │               │      │       └ {}
+                   │    │               │      └ ('-comments_count',)
+                   │    │               └ 'order_by'
+                   │    └ <function BaseManager.get_queryset at 0x000001D19570F910>
+                   └ <django.db.models.manager.Manager object at 0x000001D1975CF8B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\query.py", line 1644, in order_by
+    obj.query.add_ordering(*field_names)
+    │   │                   └ ('-comments_count',)
+    │   └ <property object at 0x000001D195701DF0>
+    └ <QuerySet [<Phone_sku: 小米13（8GB/128GB）>, <Phone_sku: 小米13（12GB/256GB）>, <Phone_sku: HUAWEI Mate50（8GB+128GB）>, <Phone_sku: 华为...
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 2202, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+    │    │             │    │     │            │    │     └ <Options for Phone_sku>
+    │    │             │    │     │            │    └ <class 'apps.crawler.models.Phone_sku'>
+    │    │             │    │     │            └ <django.db.models.sql.query.Query object at 0x000001D195B3BC40>
+    │    │             │    │     └ '__'
+    │    │             │    └ <method 'split' of 'str' objects>
+    │    │             └ 'comments_count'
+    │    └ <function Query.names_to_path at 0x000001D19569B370>
+    └ <django.db.models.sql.query.Query object at 0x000001D195B3BC40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\db\models\sql\query.py", line 1709, in names_to_path
+    raise FieldError(
+          └ <class 'django.core.exceptions.FieldError'>
+
+django.core.exceptions.FieldError: Cannot resolve keyword 'comments_count' into field. Choices are: comments_num, id, img_url, img_url_s3, intro, last_modify, name, price, score, url
+2023-05-29 14:29:11.798 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113407
+2023-05-29 14:29:11.798 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113407
