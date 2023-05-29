@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import apps.crawler
 
 urlpatterns = [
     # 主页路由IndexView
@@ -23,4 +22,5 @@ urlpatterns = [
     # 包含crawler子应用的urls
     path('', include('apps.crawler.urls')),
     path('', include('apps.control.urls')),
+    path('', include('apps.visual.urls')),
 ]

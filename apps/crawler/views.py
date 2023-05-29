@@ -10,16 +10,15 @@ from loguru import logger
 from apps.crawler.utils import *
 from django.core.cache import cache
 from utils.cacher import cache_handler
+from utils.decorators import resp_500
 
 
 class SpiderView(View):
     # 现代浏览器采用X - Frame - Options
     # HTTP标头，该标头指示是否允许在框架或iframe中加载资源。如果响应包含标头值为的标头，SAMEORIGIN则浏览器将仅在请求源自同一站点的情况下将资源加载到框架中。如果将标头设置为，DENY则无论哪个站点发出请求，浏览器都将阻止资源加载到框架中。
-    @logger.catch
     @xframe_options_exempt
     def get(self, request):
         # 获取所有项目名称
-        raise Exception('test')
         # 缓存处理
         cache_projects = cache_handler('projects', get_project_list, 20 * 60)
         logger.debug(f"{cache_projects=}")

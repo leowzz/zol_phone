@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.crawler',
     'apps.control',
+    'apps.visual',
+    # 'channels', # web socket 通信
+
 ]
 
 MIDDLEWARE = [
@@ -50,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',  # 用于防止点击劫持,
+    # 'utils.middlewares.ExceptionMiddleware',  # 自定义全局异常处理中间件
 ]
 
 ROOT_URLCONF = 'zol_phone.urls'
@@ -89,7 +93,8 @@ CACHES = {
         'LOCATION': 'redis://cent:6379/1',
         'OPTIONS' : {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        }
+        },
+        'KEY_PREFIX': 'zol_phone',
     },
 }
 
