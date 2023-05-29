@@ -24,7 +24,7 @@
                             手机评论数
                         </div>
                         <div class="card-body">
-                            <div id="echarts1" style="width: 100%;height:500px;"></div>
+                            <div id="echarts1" style="width: 100%;height:400px;"></div>
                         </div>
                     </div>
                 </div>
@@ -75,23 +75,10 @@
     let echarts3 = echarts.init(document.getElementById('echarts3'));
     let echarts4 = echarts.init(document.getElementById('echarts4'));
 
-    echarts1.setOption({
-        tooltip: {},
-        legend: {
-            data: ['评论数']
-        },
-        xAxis: {
-            data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子']
-        },
-        yAxis: {},
-        series: [
-            {
-                name: '销量',
-                type: 'bar',
-                data: [5, 20, 36, 10, 10, 20]
-            }
-        ]
-    });
+    echarts1.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
+    echarts2.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
+    echarts3.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
+    echarts4.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
     $.ajax({
         url: '/phones/echarts',
         type: 'get',
@@ -100,171 +87,67 @@
             console.log(res);
             if (res.code === 200) {
                 echarts1.setOption({
-                    xAxis: {
+                    grid: {left: '50%',},
+                    yAxis: {
                         data: res.cmt.xAxis,
-                        axisLabel: {
-                            interval: 0,
-                            rotate: -30
-                        },
+                        inverse: true,
                     },
-                    series: [
-                        {
-                            name: '评论数',
-                            type: 'bar',
-                            data: res.cmt.series
-                        }
-                    ]
+                    series: [{
+                        name: '评论数',
+                        type: 'bar',
+                        data: res.cmt.series
+                    }]
                 });
                 echarts2.setOption({
+                    tooltip: {trigger: 'item'},
+                    grid: {bottom: '30%',},
                     xAxis: {
+                        type: 'category',
+                        inverse: true,
                         data: res.price.xAxis,
-                        axisLabel: {
-                            interval: 0,
-                            rotate: -30
-                        },
+                        axisLabel: {interval: 0, rotate: -30},
                     },
-                    series: [
-                        {
-                            name: '价格',
-                            type: 'line',
-                            data: res.price.series
-                        }
-                    ]
+                    series: [{
+                        name: '价格',
+                        type: 'line',
+                        data: res.price.series
+                    }]
                 });
                 echarts3.setOption({
-                    xAxis: {
+                    grid: {left: '50%',},
+                    yAxis: {
                         data: res.score.xAxis,
-                        axisLabel: {
-                            interval: 0,
-                            rotate: -30
-                        },
+                        inverse: true,
                     },
-                    series: [
-                        {
-                            name: '评分',
-                            type: 'bar',
-                            data: res.score.series
-                        }
-                    ]
+                    xAxis: {
+                        type: 'value',
+                        min: 9.6,
+                        max: 10,
+                    },
+                    series: [{
+                        name: '评分',
+                        type: 'line',
+                        data: res.score.series
+                    }]
                 });
                 echarts4.setOption({
+                    tooltip: {trigger: 'item'},
+                    grid: {bottom: '30%',},
                     xAxis: {
+                        type: 'category',
+                        inverse: true,
                         data: res.jd_price.xAxis,
-                        axisLabel: {
-                            interval: 0,
-                            rotate: -30
-                        },
+                        axisLabel: {interval: 0, rotate: -30},
                     },
-                    series: [
-                        {
-                            name: '评论数',
-                            type: 'line',
-                            data: res.jd_price.series
-                        }
-                    ]
+                    series: [{
+                        name: '价格',
+                        type: 'line',
+                        data: res.jd_price.series
+                    }]
                 });
             }
         }
     })
-
-    echarts2.setOption({
-        xAxis: {
-            type: 'category',
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [
-            {
-                data: [820, 932, 901, 934, 1290, 1330, 1320],
-                type: 'line',
-                smooth: true
-            }
-        ]
-    });
-
-
-    echarts3.setOption({
-        tooltip: {
-            trigger: 'item'
-        },
-        legend: {
-            top: '5%',
-            left: 'center'
-        },
-        series: [
-            {
-                name: 'Access From',
-                type: 'pie',
-                radius: ['40%', '70%'],
-                avoidLabelOverlap: false,
-                itemStyle: {
-                    borderRadius: 10,
-                    borderColor: '#fff',
-                    borderWidth: 2
-                },
-                label: {
-                    show: false,
-                    position: 'center'
-                },
-                emphasis: {
-                    label: {
-                        show: true,
-                        fontSize: '40',
-                        fontWeight: 'bold'
-                    }
-                },
-                labelLine: {
-                    show: false
-                },
-                data: [
-                    {value: 1048, name: 'Search Engine'},
-                    {value: 735, name: 'Direct'},
-                    {value: 580, name: 'Email'},
-                    {value: 484, name: 'Union Ads'},
-                    {value: 300, name: 'Video Ads'}
-                ]
-            }
-        ]
-    });
-
-
-    echarts4.setOption({
-        title: {
-            text: 'Referer of a Website',
-            subtext: 'Fake Data',
-            left: 'center'
-        },
-        tooltip: {
-            trigger: 'item'
-        },
-        legend: {
-            orient: 'vertical',
-            left: 'left'
-        },
-        series: [
-            {
-                name: 'Access From',
-                type: 'pie',
-                radius: '50%',
-                data: [
-                    {value: 1048, name: 'Search Engine'},
-                    {value: 735, name: 'Direct'},
-                    {value: 580, name: 'Email'},
-                    {value: 484, name: 'Union Ads'},
-                    {value: 300, name: 'Video Ads'}
-                ],
-                emphasis: {
-                    itemStyle: {
-                        shadowBlur: 10,
-                        shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)'
-                    }
-                }
-            }
-        ]
-    });
 
 
     //这里是响应式处理
