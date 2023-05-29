@@ -148,8 +148,8 @@ if __name__ == '__main__':
     time.sleep(10)
     jobs = get_jobs(crawl_proj)
     print(f"{jobs=}")
-    cancel = cancel(crawl_proj, '81ed1a0d')
-    print(f"{cancel=}")
+    # cancel = cancel(crawl_proj, '81ed1a0d')
+    # print(f"{cancel=}")
 
     """
     crawl_proj='phone_crawler'

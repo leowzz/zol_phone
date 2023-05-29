@@ -20,8 +20,8 @@
                                                 {{ spider }}
                                             </h4>
                                             <div class="col">
-                                                <button class="btn btn-primary">关注</button>
-                                                <button class="btn btn-outline-primary">消息</button>
+                                                <button class="btn btn-primary">启动</button>
+                                                {#                                                <button class="btn btn-outline-primary">消息</button>#}
                                             </div>
                                         </div>
                                     </div>
@@ -44,7 +44,31 @@
             </div>
         </div>
     {% endfor %}
-
+    <script src="/static/js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function () {
+            $(".btn-primary").click(function () {
+                var project = $(this).parent().parent().parent().parent().find(".card-header").text().split(":")[1].trim();
+                var spider = $(this).parent().parent().find("h4").text().trim();
+                $.ajax({
+                    url: "/spiders/run",
+                    type: "post",
+                    data: {
+                        project: project,
+                        spider: spider
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        if (data.status === 'ok') {
+                            alert("启动成功");
+                        } else {
+                            alert("启动失败");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 
 
 {% endblock %}

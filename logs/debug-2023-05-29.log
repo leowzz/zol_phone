@@ -672,3 +672,1526 @@ INFO 2023-05-29 12:00:26,730 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1
 INFO 2023-05-29 12:00:26,732 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
 INFO 2023-05-29 12:00:26,735 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
 INFO 2023-05-29 12:00:26,883 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:28:00,973 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\urls.py changed, reloading.
+INFO 2023-05-29 12:28:01,851 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:28:30,364 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\urls.py changed, reloading.
+INFO 2023-05-29 12:28:31,122 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:28:41,204 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:29:01,128 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\urls.py changed, reloading.
+INFO 2023-05-29 12:29:01,915 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:29:03,867 autoreload 677 Watching for file changes with StatReloader
+WARNING 2023-05-29 12:29:18,670 log 241 Not Found: /brands/viaual
+WARNING 2023-05-29 12:29:18,672 basehttp 187 "GET /brands/viaual HTTP/1.1" 404 3232
+WARNING 2023-05-29 12:29:22,671 log 241 Not Found: /brands/viaual/
+WARNING 2023-05-29 12:29:22,672 basehttp 187 "GET /brands/viaual/ HTTP/1.1" 404 3235
+INFO 2023-05-29 12:29:34,852 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+ERROR 2023-05-29 12:29:34,907 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.visual.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-29 12:29:34,932 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 77444
+INFO 2023-05-29 12:29:58,816 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:29:59,618 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:30:02,904 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.visual.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-29 12:30:02,935 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 77581
+INFO 2023-05-29 12:31:21,731 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:31:22,549 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:31:27,501 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 28, in get
+    brands = get_brands_pst()
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 16, in get_brands_pst
+    'market_share': brand.marketshare,
+AttributeError: 'Phone_brand' object has no attribute 'marketshare'
+ERROR 2023-05-29 12:31:27,539 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 89762
+INFO 2023-05-29 12:31:37,181 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:31:37,960 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:31:40,665 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 31, in get
+    return JsonResponse(brands)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\http\response.py", line 684, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2023-05-29 12:31:40,696 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 91044
+INFO 2023-05-29 12:31:49,480 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:31:50,295 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:31:51,522 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 31, in get
+    return JsonResponse(brands, safe=False)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\http\response.py", line 691, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "C:\env\Anaconda3\envs\django4\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\env\Anaconda3\envs\django4\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\env\Anaconda3\envs\django4\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\serializers\json.py", line 106, in default
+    return super().default(o)
+  File "C:\env\Anaconda3\envs\django4\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+ERROR 2023-05-29 12:31:51,559 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 114679
+INFO 2023-05-29 12:32:00,564 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:32:01,390 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:32:02,773 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 2388
+INFO 2023-05-29 12:32:18,773 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 2388
+INFO 2023-05-29 12:32:18,951 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:32:19,816 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:32:26,700 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:32:27,505 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:32:59,809 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:33:00,647 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:33:02,575 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:33:05,123 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 26, in get
+    cache_brands = cache_handler('brands_pst', get_brand_list, 30 * 12 * 60 * 60)
+NameError: name 'get_brand_list' is not defined
+ERROR 2023-05-29 12:33:05,162 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 85620
+INFO 2023-05-29 12:33:18,509 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:33:19,342 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 12:33:24,245 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 31, in get
+    return JsonResponse(cache_brands, )
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\http\response.py", line 684, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+ERROR 2023-05-29 12:33:24,272 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 97246
+INFO 2023-05-29 12:33:59,877 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:34:00,705 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:34:04,916 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 2388
+INFO 2023-05-29 12:34:45,632 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:34:46,417 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:40:01,019 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 12:40:01,820 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:41:49,205 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:41:49,423 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:41:49,429 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:41:49,432 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:41:49,449 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:41:49,461 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:41:49,462 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:41:49,490 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:41:49,534 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:41:49,567 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2220
+INFO 2023-05-29 12:41:49,619 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:41:49,655 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:41:49,656 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:41:49,662 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:41:49,668 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:41:49,672 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:41:49,755 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:41:49,857 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:41:49,862 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:41:49,905 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:41:49,908 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:41:49,912 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:41:51,311 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:42:01,909 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:42:01,986 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:42:01,996 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:42:02,008 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:02,243 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:02,248 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:42:02,248 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:02,267 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:42:02,299 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:42:02,337 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:42:02,354 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2220
+INFO 2023-05-29 12:42:02,407 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:42:02,423 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:02,499 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:42:02,499 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:02,529 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:42:02,562 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:02,563 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:02,588 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:42:02,696 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:42:02,702 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:02,705 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:42:03,344 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:42:33,846 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:42:33,916 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:33,917 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:42:33,919 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:42:33,945 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:42:33,957 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:33,958 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:33,986 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:42:34,010 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:42:34,034 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2220
+INFO 2023-05-29 12:42:34,064 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:34,066 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:42:34,092 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:34,092 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:42:34,093 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:34,186 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:42:34,329 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:42:34,421 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:34,425 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:42:34,503 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:34,507 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:42:34,508 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:42:34,764 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:42:38,799 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:42:38,870 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:38,872 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:42:38,874 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:42:38,903 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:42:38,904 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:38,905 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:38,925 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:42:38,968 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:42:38,984 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2220
+INFO 2023-05-29 12:42:39,014 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:42:39,017 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:42:39,035 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:42:39,036 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:42:39,037 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:42:39,172 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:42:39,210 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:42:39,308 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:42:39,517 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:42:39,520 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:39,551 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:42:39,556 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:42:39,557 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:45:22,750 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:45:23,087 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:45:23,118 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:45:23,119 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:45:23,152 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:45:23,160 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:45:23,161 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:45:23,177 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:45:23,206 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:45:23,218 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:45:23,249 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2235
+INFO 2023-05-29 12:45:23,353 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:45:23,355 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:45:23,388 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:45:23,409 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:45:23,454 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:45:23,461 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:45:23,463 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:45:23,464 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:45:23,581 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:45:23,581 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:45:23,584 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:45:24,527 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:45:43,757 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:45:43,825 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:45:43,831 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:45:43,834 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:45:44,074 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:45:44,074 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:45:44,076 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:45:44,097 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:45:44,125 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:45:44,142 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2234
+INFO 2023-05-29 12:45:44,171 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:45:44,173 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:45:44,193 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:45:44,194 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:45:44,195 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:45:44,213 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:45:44,348 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:45:44,457 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:45:44,460 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:45:44,539 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:45:44,543 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:45:44,544 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:45:44,632 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:50:12,044 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:50:12,883 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:50:54,872 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:50:55,650 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:52:06,863 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:52:07,632 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:53:12,497 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:53:13,303 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:53:35,979 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:53:36,759 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:55:01,232 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:55:01,477 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:55:01,478 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:55:01,480 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:55:01,481 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:55:01,482 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:55:01,485 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:55:01,519 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:55:01,539 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:55:01,563 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2304
+INFO 2023-05-29 12:55:01,595 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:55:01,597 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:55:01,606 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:55:01,607 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:55:01,608 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:55:01,733 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:55:01,756 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:55:01,976 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:55:01,981 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:55:02,027 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:55:02,029 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:55:02,033 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:55:02,301 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:56:13,039 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:56:13,979 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:56:16,845 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:56:17,032 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:56:17,035 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:56:17,036 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:56:17,057 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:56:17,067 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:56:17,068 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:56:17,108 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:56:17,124 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:56:17,154 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2753
+INFO 2023-05-29 12:56:17,234 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:56:17,255 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:56:17,256 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:56:17,273 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:56:17,279 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:56:17,511 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:56:17,536 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:56:17,718 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:56:17,720 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:56:17,759 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:56:17,763 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:56:17,767 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:56:17,832 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:56:50,030 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:56:50,872 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:56:52,104 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:56:52,817 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:57:58,986 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:57:59,680 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:58:11,834 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:58:12,663 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:58:15,363 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:58:16,134 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:58:19,807 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:58:20,681 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:58:21,918 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:58:22,063 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:58:22,066 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:58:22,069 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:58:22,081 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:58:22,085 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:58:22,086 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:58:22,114 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:58:22,154 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:58:22,182 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2304
+INFO 2023-05-29 12:58:22,212 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:58:22,216 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:58:22,225 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:58:22,227 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:58:22,229 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:58:22,524 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:58:22,681 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:58:22,727 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:58:22,730 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:58:22,750 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:58:22,766 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:58:22,770 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:58:22,833 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:58:46,932 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:58:47,747 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:58:49,891 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:58:50,166 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:58:50,189 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:58:50,194 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:58:50,195 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:58:50,200 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:58:50,201 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:58:50,234 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:58:50,277 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:58:50,320 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2304
+INFO 2023-05-29 12:58:50,364 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:58:50,368 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:58:50,382 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:58:50,383 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:58:50,387 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:58:50,576 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:58:50,602 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:58:50,606 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:58:50,859 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:58:50,862 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:58:50,882 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:58:50,895 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:58:50,898 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:58:58,661 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 12:58:59,494 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 12:59:11,415 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:59:11,636 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:59:11,637 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:59:11,640 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:59:11,669 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:59:11,684 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:59:11,686 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:59:11,706 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:59:11,724 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:59:11,760 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2307
+INFO 2023-05-29 12:59:11,828 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:59:11,831 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:59:11,834 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:59:11,840 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:59:11,841 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:59:12,241 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:59:12,269 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:59:12,329 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:59:12,493 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:59:12,496 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:59:12,545 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:59:12,547 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:59:12,549 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:02:20,293 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:02:21,186 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:02:53,408 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:02:54,220 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:03:04,279 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:03:05,118 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:03:36,271 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:03:37,043 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:03:48,116 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:03:48,934 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:03:53,749 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:03:53,972 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:03:53,982 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:03:53,985 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:03:53,985 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:03:53,986 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:03:53,988 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:03:54,008 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:03:54,045 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+ERROR 2023-05-29 13:03:54,064 log 241 Internal Server Error: /spiders/jobs/
+ERROR 2023-05-29 13:03:54,066 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 2483
+INFO 2023-05-29 13:03:54,098 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:03:54,102 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:03:54,103 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:03:54,112 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:03:54,113 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:03:54,468 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:03:54,483 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:03:54,685 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:03:54,688 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:03:54,754 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:03:54,755 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:03:55,090 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:04:17,478 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:04:18,310 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:04:19,681 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:04:19,762 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:04:19,762 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:04:19,766 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:04:19,786 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:04:19,810 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:04:19,812 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:04:19,814 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:04:19,857 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+ERROR 2023-05-29 13:04:19,917 log 241 Internal Server Error: /spiders/jobs/
+ERROR 2023-05-29 13:04:19,919 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 2495
+INFO 2023-05-29 13:04:20,040 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:04:20,050 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:04:20,055 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:04:20,056 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:04:20,058 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:04:20,435 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:04:20,463 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:04:20,476 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:04:20,715 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:04:20,716 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:04:20,755 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:04:20,758 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:05:06,571 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:05:07,372 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:05:45,907 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:05:46,703 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:05:51,466 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:05:52,259 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:06:21,289 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:06:22,122 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:07:09,065 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:07:09,869 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:07:43,208 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:07:44,110 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:09:15,569 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:09:16,399 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:09:49,643 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:09:50,435 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:10:38,459 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:10:39,394 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:11:19,058 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:11:19,913 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:11:42,622 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:11:43,502 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:12:41,063 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:12:41,862 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:13:01,361 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:13:02,148 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:13:05,884 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:13:06,693 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:13:10,207 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:13:10,472 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:13:10,473 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:13:10,477 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:13:10,510 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:13:10,516 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:13:10,516 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:13:10,559 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:13:10,572 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:13:11,200 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:13:11,356 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:13:11,358 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 13:13:12,694 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-29 13:13:12,725 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 76761
+INFO 2023-05-29 13:13:12,797 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:14:00,549 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:14:03,722 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:14:03,793 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:14:03,795 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:14:03,796 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:14:03,918 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:14:03,926 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:14:03,926 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:14:03,932 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:14:03,964 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:14:04,677 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:14:04,813 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:14:04,815 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 13:14:06,095 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-29 13:14:06,124 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 76761
+INFO 2023-05-29 13:14:06,193 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:14:21,954 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:14:22,755 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:15:11,860 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:15:12,634 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:15:25,861 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:15:26,649 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:15:32,469 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:15:33,324 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:15:52,145 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:15:54,672 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:15:54,988 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:15:54,999 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:15:54,999 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:15:55,000 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:15:55,003 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:15:55,004 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:15:55,029 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:15:55,073 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:15:55,693 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:15:55,844 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:15:55,846 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 13:15:57,201 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 98, in get
+    'job_status': job_status2render,
+NameError: name 'job_status2render' is not defined
+ERROR 2023-05-29 13:15:57,234 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 90252
+INFO 2023-05-29 13:15:57,296 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:16:12,685 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:16:13,507 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:16:27,541 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:16:28,649 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:16:28,960 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:16:28,971 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:16:28,973 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:16:28,975 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:16:28,977 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:16:28,978 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:16:29,021 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:16:29,057 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:16:29,793 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:16:29,963 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:16:29,969 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:16:31,139 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3187
+INFO 2023-05-29 13:16:31,165 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:16:31,167 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:16:31,218 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:16:31,223 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:16:31,224 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:16:31,289 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:16:31,321 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:16:31,372 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:16:31,375 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:16:31,380 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:19:50,473 basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO 2023-05-29 13:19:50,501 basehttp 187 "GET /home_page/ HTTP/1.1" 200 22061
+INFO 2023-05-29 13:19:50,533 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:19:50,575 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:19:50,756 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:19:50,764 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:19:50,766 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:19:50,769 basehttp 187 "GET /static/plugins/chart.js/chart.min.js HTTP/1.1" 200 197005
+INFO 2023-05-29 13:19:50,836 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:19:50,900 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:19:50,910 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:19:50,912 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:20:03,337 basehttp 187 "GET /static/pages/page-list.html HTTP/1.1" 200 6782
+INFO 2023-05-29 13:20:03,372 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:20:03,375 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:20:03,377 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:20:03,440 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:20:03,604 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:20:03,698 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:20:03,700 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:20:03,722 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:20:03,725 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:23:56,639 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:23:57,517 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:24:06,528 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:24:07,334 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:24:31,079 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:24:31,877 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:24:52,477 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:24:53,308 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:25:22,414 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:25:23,136 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:25:30,565 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:25:31,278 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:27:03,665 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:27:04,466 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:27:20,367 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:27:20,559 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:27:20,560 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:27:20,562 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:27:20,593 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:27:20,614 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:27:20,615 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:27:20,641 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:27:20,654 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:27:21,639 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:27:21,791 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:27:21,793 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:27:22,711 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3023
+INFO 2023-05-29 13:27:22,737 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:27:22,740 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:27:22,767 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:27:22,768 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:27:22,770 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:27:22,891 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:27:22,898 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:27:22,943 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:27:22,945 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:27:22,947 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:27:56,385 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\utils.py changed, reloading.
+INFO 2023-05-29 13:27:57,241 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:28:12,260 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:12,593 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:12,607 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:12,612 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:12,614 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:12,618 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:12,621 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:12,659 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:12,735 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:13,820 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:14,016 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:14,021 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:14,815 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:14,843 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:14,847 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:14,849 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:14,905 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:14,907 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:14,933 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:14,951 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:14,954 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:14,956 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:15,003 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:21,495 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:21,551 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:21,553 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:21,556 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:21,826 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:21,830 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:21,832 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:21,835 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:21,856 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:21,871 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:21,896 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:21,898 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:21,915 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:21,915 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:21,916 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:22,208 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:22,711 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:22,733 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:23,018 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:23,023 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:23,066 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:23,071 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:23,074 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:29,041 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:29,110 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:29,111 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:29,114 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:29,130 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:29,152 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:29,177 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:29,178 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:29,201 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:29,216 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:29,244 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:29,245 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:29,270 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:29,272 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:29,273 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:29,434 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:30,411 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:30,444 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:30,465 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:30,528 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:30,533 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:30,536 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:30,558 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:30,561 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:30,562 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:30,579 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:30,617 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:30,638 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:30,663 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:30,665 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:30,679 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:30,679 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:30,681 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:30,736 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:30,858 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:32,158 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:32,330 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:32,333 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:32,358 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:32,369 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:32,372 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:32,401 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:32,403 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:32,424 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:32,428 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:32,429 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:33,545 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:33,599 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:33,603 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:33,604 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:33,626 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:33,665 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:33,668 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:33,671 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:33,705 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:33,720 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:33,746 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:33,747 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:33,761 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:33,762 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:33,763 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:34,136 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:34,978 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:34,998 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:35,262 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:35,264 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:35,290 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:35,306 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:35,308 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:41,069 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\utils.py changed, reloading.
+INFO 2023-05-29 13:28:41,887 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:28:50,949 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:28:51,169 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:51,171 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:28:51,173 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:28:51,200 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:28:51,217 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:51,219 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:51,237 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:28:51,263 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:28:52,678 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:28:52,882 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:52,884 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:28:53,336 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:28:53,366 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:28:53,368 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:28:53,386 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:28:53,388 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:28:53,389 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:28:53,565 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:28:53,694 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:28:53,698 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:28:53,714 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:28:53,719 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:42,814 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:30:42,887 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:30:42,889 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:42,894 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:30:43,248 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:43,250 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:30:43,253 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:43,256 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:30:43,292 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:30:43,317 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:30:43,350 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:43,353 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:30:43,378 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:43,379 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:30:43,381 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:43,852 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:30:45,136 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:30:45,176 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:30:45,246 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:45,249 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:45,286 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:45,290 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:30:45,292 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:45,674 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:30:46,098 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:30:46,104 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:30:46,114 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:46,133 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:30:46,160 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:46,161 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:46,192 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:30:46,245 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:30:46,274 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:30:46,323 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:46,325 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:30:46,347 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:46,347 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:30:46,349 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:46,562 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:30:48,191 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:30:48,232 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:30:48,611 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:48,615 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:48,646 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:48,649 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:30:48,650 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:49,550 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:30:49,627 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:30:49,630 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:30:49,643 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:49,958 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:49,962 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:30:49,963 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:49,977 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:30:50,040 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:30:50,080 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:30:50,127 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:50,129 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:30:50,162 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:50,165 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:30:50,165 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:50,374 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:30:52,310 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:30:52,342 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:30:52,667 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:30:53,080 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:30:53,085 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:30:53,098 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:53,100 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:30:53,101 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:53,102 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:53,145 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:30:53,190 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:30:53,211 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:30:53,318 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:30:53,323 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:53,337 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:53,338 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:30:53,340 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:53,497 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:30:55,197 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:30:55,229 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:30:55,568 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:55,572 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:55,613 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:55,617 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:30:55,619 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:55,651 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:55,653 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:55,678 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:30:55,686 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:55,690 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:57,250 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:30:57,315 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:57,317 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:30:57,319 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:30:57,345 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:30:57,381 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:30:57,408 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:57,409 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:57,437 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:30:57,454 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:30:57,483 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:30:57,485 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:30:57,496 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:30:57,496 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:30:57,500 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:30:57,883 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:30:59,322 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:30:59,345 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:30:59,674 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:59,677 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:30:59,713 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:30:59,716 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:30:59,718 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:31:07,727 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:31:07,787 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:31:07,789 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:31:07,791 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:31:08,052 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:31:08,053 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:31:08,055 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:31:08,058 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:31:08,099 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:31:08,113 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3370
+INFO 2023-05-29 13:31:08,140 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 13:31:08,142 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:31:08,155 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:31:08,160 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:31:08,162 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:31:08,621 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:31:10,069 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:31:10,102 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:31:10,438 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:31:10,440 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:31:10,487 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:31:10,494 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:31:10,499 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:35:54,898 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:35:54,964 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:35:54,970 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:35:54,973 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:35:54,994 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:35:55,022 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:35:55,324 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:35:55,325 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:35:55,352 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:35:55,374 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:35:55,403 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:35:55,405 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:35:55,464 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:35:55,465 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:35:55,468 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:35:55,953 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:35:57,488 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:35:57,517 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:35:57,791 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:35:57,793 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:35:57,825 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:35:57,836 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:35:57,841 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:36:23,647 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:36:24,489 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:36:29,295 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:36:29,499 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:36:29,500 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:36:29,502 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:36:29,534 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:36:29,569 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:36:29,570 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:36:29,596 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:36:29,630 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:36:31,851 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:36:31,878 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:36:31,881 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:36:31,896 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:36:31,899 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:36:31,899 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:36:32,027 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:36:32,059 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:36:32,109 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:36:32,457 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:36:32,460 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:36:32,485 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:36:32,490 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:36:32,491 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:36:41,145 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:36:42,043 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:36:43,448 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:36:43,513 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:36:43,515 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:36:43,516 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:36:43,538 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:36:43,580 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:36:43,582 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:36:43,583 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:36:43,613 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:36:45,656 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:36:45,681 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:36:45,683 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:36:45,700 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:36:45,701 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:36:45,702 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:36:45,819 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:36:46,004 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:36:46,033 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:36:46,416 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:36:46,422 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:36:46,446 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:36:46,455 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:36:46,463 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:36:56,989 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:36:57,890 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:36:59,355 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:36:59,425 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:36:59,429 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:36:59,431 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:36:59,457 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:36:59,480 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:36:59,502 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:36:59,504 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:36:59,535 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:37:01,575 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:37:01,599 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:37:01,601 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:37:01,617 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:01,619 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:37:01,619 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:01,744 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:37:02,045 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:37:02,071 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:37:02,464 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:02,470 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:02,497 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:37:02,511 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:02,516 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:21,970 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:37:22,270 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:37:22,303 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20274
+INFO 2023-05-29 13:37:22,305 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:37:22,330 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:37:22,330 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:22,331 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:22,346 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:37:22,376 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:37:22,391 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:37:22,419 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20274
+INFO 2023-05-29 13:37:22,420 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:37:22,438 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:22,439 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:37:22,441 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:22,703 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:37:24,822 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:37:24,842 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:37:25,220 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:25,222 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:25,245 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:37:25,252 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:25,255 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:37,475 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:37:37,539 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:37:37,541 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:37:37,543 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:37:37,843 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:37,847 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:37:37,850 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:37,851 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:37:37,874 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:37:37,890 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:37:37,916 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:37:37,918 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:37:37,934 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:37,935 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:37:37,937 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:38,136 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:37:40,481 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:37:40,512 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:37:40,890 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:40,893 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:40,914 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:37:40,920 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:40,924 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:48,945 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:37:49,762 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:37:52,954 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:37:53,192 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:37:53,193 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:37:53,195 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:37:53,225 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:37:53,281 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:53,281 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:53,406 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:37:53,432 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:37:55,474 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3420
+INFO 2023-05-29 13:37:55,530 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:37:55,532 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:37:55,556 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:37:55,557 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:37:55,559 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:37:55,730 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:37:56,351 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:37:56,394 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:37:56,764 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:37:56,767 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:56,796 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:37:56,798 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:37:56,810 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:38:10,483 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:38:10,499 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7193
+INFO 2023-05-29 13:38:10,527 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:38:10,529 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:38:10,652 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:38:10,786 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:38:10,787 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:38:10,788 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:38:10,841 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:38:10,894 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:38:10,896 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:46:45,723 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:46:46,595 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:47:17,859 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:47:18,804 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:47:33,211 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:47:34,094 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:47:40,017 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:47:40,937 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:47:53,202 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\urls.py changed, reloading.
+INFO 2023-05-29 13:47:54,057 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:48:03,116 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\urls.py changed, reloading.
+INFO 2023-05-29 13:48:03,946 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:48:29,920 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\urls.py changed, reloading.
+INFO 2023-05-29 13:48:30,753 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:48:46,128 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\urls.py changed, reloading.
+INFO 2023-05-29 13:48:46,964 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:49:15,024 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:49:15,926 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:49:22,926 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:49:23,771 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:49:40,312 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:49:41,153 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:49:50,233 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:49:51,047 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:50:11,805 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:50:12,007 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:50:12,013 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:50:12,015 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:50:12,036 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:50:12,057 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:50:12,117 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:50:12,119 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:50:12,214 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:50:14,279 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7633
+INFO 2023-05-29 13:50:14,315 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:50:14,317 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:50:14,334 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:50:14,335 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:50:14,337 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:50:14,336 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:50:14,497 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:50:15,415 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:50:15,460 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:50:15,809 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:50:15,811 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:50:15,839 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:50:15,854 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:50:15,858 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+WARNING 2023-05-29 13:50:19,298 log 241 Not Found: /spiders/run
+WARNING 2023-05-29 13:50:19,299 basehttp 187 "POST /spiders/run HTTP/1.1" 404 3236
+INFO 2023-05-29 13:50:32,598 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\urls.py changed, reloading.
+INFO 2023-05-29 13:50:33,483 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:51:15,233 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:51:16,078 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:51:39,076 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:51:39,924 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:51:46,514 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:51:46,733 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:51:46,734 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:51:46,736 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:51:46,758 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:51:46,798 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:51:46,825 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:51:46,830 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:51:46,894 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:51:48,968 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7633
+INFO 2023-05-29 13:51:49,058 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:51:49,062 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:51:49,084 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:51:49,084 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:51:49,086 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:51:49,086 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:51:49,240 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:51:50,177 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:51:50,226 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:51:50,646 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:51:50,650 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:51:50,675 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:51:50,681 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:51:50,755 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+WARNING 2023-05-29 13:51:55,964 log 241 Forbidden (CSRF cookie not set.): /spiders/run
+WARNING 2023-05-29 13:51:55,965 basehttp 187 "POST /spiders/run HTTP/1.1" 403 2870
+INFO 2023-05-29 13:52:24,618 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 13:52:25,505 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:52:33,852 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:52:34,106 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:52:34,114 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:52:34,115 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:52:34,132 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:52:34,160 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:52:34,226 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:52:34,227 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:52:34,351 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:52:36,389 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7633
+INFO 2023-05-29 13:52:36,417 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:52:36,419 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:52:36,441 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:52:36,442 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:52:36,443 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:52:36,444 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:52:36,572 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:52:37,612 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:52:37,651 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:52:38,068 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:52:38,070 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:52:38,097 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:52:38,113 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:52:38,116 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 13:52:39,763 log 241 Internal Server Error: /spiders/run
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 107, in post
+    data = json.loads(request.body.decode('utf-8'))
+NameError: name 'json' is not defined
+ERROR 2023-05-29 13:52:39,792 basehttp 187 "POST /spiders/run HTTP/1.1" 500 85110
+INFO 2023-05-29 13:53:01,054 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:53:01,909 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 13:53:05,130 log 241 Internal Server Error: /spiders/run
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 107, in post
+    class StartSpider(View):
+  File "C:\env\Anaconda3\envs\django4\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\env\Anaconda3\envs\django4\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\env\Anaconda3\envs\django4\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2023-05-29 13:53:05,168 basehttp 187 "POST /spiders/run HTTP/1.1" 500 97254
+INFO 2023-05-29 13:53:06,215 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:53:07,096 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:54:36,034 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:54:36,887 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:55:36,528 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:55:37,389 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:55:43,433 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:55:43,695 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:55:43,695 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:55:43,698 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:55:43,721 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:55:43,744 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:55:43,921 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:55:43,923 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:55:43,959 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:55:46,008 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7633
+INFO 2023-05-29 13:55:46,035 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:55:46,037 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:55:46,044 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:55:46,060 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:55:46,062 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:55:46,063 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:55:46,223 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:55:47,363 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:55:47,396 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+ERROR 2023-05-29 13:55:47,502 log 241 Internal Server Error: /spiders/run
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\middleware\clickjacking.py", line 34, in process_response
+    response.headers["X-Frame-Options"] = self.get_xframe_options_value(
+AttributeError: 'dict' object has no attribute 'headers'
+ERROR 2023-05-29 13:55:47,530 basehttp 187 "POST /spiders/run HTTP/1.1" 500 76007
+INFO 2023-05-29 13:55:47,964 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:55:47,975 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:55:47,980 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:55:47,982 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:55:47,984 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:57:09,850 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 13:57:10,708 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:57:13,548 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 13:57:14,486 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:57:21,455 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:57:22,321 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:57:25,032 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:57:25,181 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:57:25,181 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:57:25,186 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:57:25,212 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:57:25,260 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:57:25,299 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:57:25,301 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:57:25,384 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:57:27,427 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7633
+INFO 2023-05-29 13:57:27,561 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:57:27,567 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:57:27,586 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:57:27,588 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:57:27,589 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:57:27,590 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:57:27,813 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+ERROR 2023-05-29 13:57:28,751 log 241 Internal Server Error: /spiders/run
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 56, in wrapped_view
+    resp.xframe_options_exempt = True
+AttributeError: 'dict' object has no attribute 'xframe_options_exempt'
+ERROR 2023-05-29 13:57:28,779 basehttp 187 "POST /spiders/run HTTP/1.1" 500 85435
+INFO 2023-05-29 13:57:29,585 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:57:29,621 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:57:30,137 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:57:30,139 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:57:30,162 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:57:30,177 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:57:30,180 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:57:47,659 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:57:48,523 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:58:06,010 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:59:09,868 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 13:59:11,811 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 13:59:15,820 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 13:59:16,221 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:59:16,225 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 13:59:16,229 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 13:59:16,251 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 13:59:16,264 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 13:59:16,329 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:59:16,333 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:59:16,393 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 13:59:18,454 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7640
+INFO 2023-05-29 13:59:18,482 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:59:18,485 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:59:18,512 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:59:18,512 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:59:18,514 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:59:18,515 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 13:59:20,736 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 13:59:20,790 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 13:59:21,255 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:59:21,260 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:59:21,315 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:59:21,325 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:59:21,328 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:59:30,042 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-29 13:59:32,226 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 13:59:50,945 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 13:59:58,369 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 3817
+INFO 2023-05-29 13:59:58,396 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 13:59:58,399 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 13:59:58,423 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 13:59:58,425 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 13:59:58,425 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 13:59:58,497 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 13:59:58,505 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 13:59:58,509 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 13:59:58,514 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:00:09,536 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 14:00:46,535 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:00:46,539 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:00:46,542 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:00:46,553 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 14:00:46,562 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:00:46,574 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:00:46,584 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:00:46,604 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:00:46,651 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:00:46,665 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:00:46,670 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:23,162 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-29 14:01:25,281 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 14:01:25,649 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 14:01:25,651 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:25,660 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 14:01:25,661 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:25,661 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:25,664 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 14:01:25,695 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 14:01:25,711 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 14:01:25,713 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:25,731 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:25,751 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 14:01:26,316 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 14:01:27,802 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7997
+INFO 2023-05-29 14:01:27,832 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:27,834 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 14:01:27,863 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:27,866 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:27,866 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 14:01:27,867 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 14:01:27,929 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:01:27,944 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:27,953 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:01:27,964 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:28,352 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 4213
+INFO 2023-05-29 14:01:28,381 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:28,384 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 14:01:28,397 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 14:01:28,404 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:28,407 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:28,473 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:01:28,506 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:01:28,509 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:28,511 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:28,581 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 14:01:31,059 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-29 14:01:37,176 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 14:01:37,490 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 14:01:37,498 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:37,500 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 14:01:37,513 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 14:01:37,514 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:37,517 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:37,548 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 14:01:37,568 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 14:01:37,576 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:37,599 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:37,612 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 14:01:37,647 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 4609
+INFO 2023-05-29 14:01:37,686 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:37,688 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 14:01:37,822 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 14:01:37,830 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:37,830 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:37,874 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:37,878 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:01:37,881 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:37,883 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:01:38,114 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 14:01:43,364 basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO 2023-05-29 14:01:43,385 basehttp 187 "GET /home_page/ HTTP/1.1" 200 22061
+INFO 2023-05-29 14:01:43,424 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:43,425 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 14:01:43,449 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 14:01:43,458 basehttp 187 "GET /static/plugins/chart.js/chart.min.js HTTP/1.1" 200 197005
+INFO 2023-05-29 14:01:43,608 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:43,608 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:43,660 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:01:43,704 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:01:43,727 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:43,730 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:45,478 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 14:01:45,821 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 14:01:45,836 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 14:01:45,837 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:45,856 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:45,862 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 14:01:45,863 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:45,879 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:45,891 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 14:01:45,908 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 14:01:45,917 basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO 2023-05-29 14:01:45,919 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:45,957 basehttp 187 "GET /home_page/ HTTP/1.1" 200 22061
+INFO 2023-05-29 14:01:45,990 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 14:01:45,992 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 14:01:46,012 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 14:01:46,012 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 14:01:46,014 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 14:01:46,016 basehttp 187 "GET /static/plugins/chart.js/chart.min.js HTTP/1.1" 200 197005
+INFO 2023-05-29 14:01:46,082 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 14:01:46,111 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 14:01:46,169 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 14:01:46,171 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 14:01:46,323 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513

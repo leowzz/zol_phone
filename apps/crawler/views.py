@@ -52,45 +52,64 @@ class SpiderView(View):
         })
 
 
+# 所有状态信息 与 中文名称的映射
+_status_names = {
+    'pending' : '等待中',
+    'running' : '运行中',
+    'finished': '已完成',
+}
+
+
 class JobsView(View):
-    @logger.catch
     @xframe_options_exempt
     def get(self, request):
-        # 获取爬虫运行状态
-        job_status = get_status()
-        logger.debug(f"{job_status=}")
-        # 如果scrapyd服务没有启动，返回错误页面
-        if job_status.get('status') != 'ok':
-            return render(request, '50x.html', context={
-                'code': 500,
-                'msg' : job_status.get('status')
-            }, status=500)
+        # 获取所有项目名称
+        cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+        logger.debug(f"{cache_projects=}")
+        # 以状态为键，jobs为值，构建字典
+        jobs_status_list = defaultdict(list)
+        project_names = [_ for _ in cache_projects.get('projects') if _ != 'default']
+        for project in project_names:
+            # 获取爬虫运行状态
+            _jobs = get_jobs(project)
+            logger.debug(f"{_jobs=}")
+            # 如果scrapyd服务没有启动，返回错误页面
+            if _jobs.get('status') != 'ok':
+                return render(request, '50x.html', context={
+                    'code': 500,
+                    'msg' : _jobs.get('msg')
+                }, status=500)
+            for status_name in _status_names:
+                jobs_status_list[status_name].extend(_jobs.get(status_name))
+
+        logger.debug(f"{jobs_status_list=}")
+        jobs_status_cnt = {}
+        for status_name in _status_names:
+            jobs_status_cnt[_status_names[status_name]] = len(jobs_status_list.get(status_name))
+        logger.debug(f"{jobs_status_cnt=}")
+        # 获取所有jobs信息
+        all_jobs = []
+        for status_name in _status_names:
+            for job in jobs_status_list.get(status_name):
+                job['status'] = _status_names[status_name]
+                all_jobs.append(job)
 
         return render(request, 'jobs_list.html', context={
-            'job_status': job_status,
+            'job_status': jobs_status_cnt,
+            'jobs'      : all_jobs,
             'title'     : '爬虫运行状态',
         })
 
 
-def crawl(spider, **kwargs):
-    runner = CrawlerRunner(get_project_settings())
-    dfd = runner.crawl(spider, **kwargs)
-    dfd.addBoth(lambda _: reactor.stop())
-    reactor.run()
+import json
 
 
-def start_spider(request, spider_name):
-    spider = globals().get(spider_name)
-    crawl(spider)
-    return JsonResponse({'msg': 'ok'})
-
-
-def scrape(request):
-    process = CrawlerProcess(get_project_settings())
-    process.crawl(PhoneBrandSpider)
-    process.start()
-    return jsonify({'msg': 'ok'})
-
-
-if __name__ == '__main__':
-    get_status()
+class StartSpider(View):
+    def post(self, request):
+        project = request.POST.get('project')
+        spider = request.POST.get('spider')
+        # 启动爬虫
+        logger.info(f"启动爬虫: {project} {spider}")
+        res = start_spider(project, spider)
+        logger.debug(f"{res=}")
+        return JsonResponse(res)
