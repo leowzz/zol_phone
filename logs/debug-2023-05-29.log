@@ -1,0 +1,674 @@
+INFO 2023-05-29 10:30:45,123 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:33:07,135 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:33:30,018 basehttp 187 "GET /static/index.html HTTP/1.1" 200 28828
+INFO 2023-05-29 10:33:30,081 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 10:33:30,082 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 10:33:30,084 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 10:33:30,119 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 10:33:30,120 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 10:33:30,121 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 10:33:30,177 basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO 2023-05-29 10:33:30,190 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 10:33:31,852 basehttp 187 "GET /home_page/ HTTP/1.1" 200 22061
+INFO 2023-05-29 10:33:31,883 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 10:33:31,886 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 10:33:31,886 basehttp 187 "GET /static/plugins/chart.js/chart.min.js HTTP/1.1" 200 197005
+INFO 2023-05-29 10:33:32,050 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 10:34:54,910 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 10:34:55,749 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:37:36,670 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\urls.py changed, reloading.
+INFO 2023-05-29 10:37:37,448 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:42:45,903 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 10:42:46,142 basehttp 187 "GET /home_page/ HTTP/1.1" 200 22061
+INFO 2023-05-29 10:42:47,405 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 6727
+INFO 2023-05-29 10:42:47,437 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 10:42:50,726 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+ERROR 2023-05-29 10:43:11,835 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view apps.crawler.views.view didn't return an HttpResponse object. It returned None instead.
+ERROR 2023-05-29 10:43:11,866 basehttp 187 "GET /spiders/ HTTP/1.1" 500 76508
+INFO 2023-05-29 10:56:46,967 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 10:56:47,721 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:56:52,423 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 10:56:53,443 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:57:29,348 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 10:57:29,717 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: 'NoneType' object is not callable
+ERROR 2023-05-29 10:57:29,750 basehttp 187 "GET /spiders/ HTTP/1.1" 500 80692
+INFO 2023-05-29 10:58:08,734 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:58:13,637 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 10:58:13,782 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: 'NoneType' object is not callable
+ERROR 2023-05-29 10:58:13,817 basehttp 187 "GET /spiders/ HTTP/1.1" 500 80692
+INFO 2023-05-29 10:58:53,944 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\decorators.py changed, reloading.
+INFO 2023-05-29 10:58:54,734 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 10:58:58,462 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 10:58:58,598 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: 'NoneType' object is not callable
+ERROR 2023-05-29 10:58:58,629 basehttp 187 "GET /spiders/ HTTP/1.1" 500 80692
+INFO 2023-05-29 11:04:55,234 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:04:56,040 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:05:07,090 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:05:07,996 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:05:11,785 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:05:12,565 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:14:23,996 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:14:24,831 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:15:27,525 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 11:15:28,315 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:16:48,936 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\decorators.py changed, reloading.
+INFO 2023-05-29 11:16:49,708 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:16:54,786 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:17:17,583 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:17:18,409 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:17:19,601 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-29 11:17:26,811 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 11:17:40,906 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 98, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 23, in get
+    cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 19, in cache_handler
+    if cache_data := cache.get(key):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 91, in get
+    value = self._get(key, default, version, client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\commands\core.py", line 1801, in get
+    return self.execute_command("GET", name)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 703, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+INFO 2023-05-29 11:17:40,957 basehttp 80 - Broken pipe from ('127.0.0.1', 7596)
+ERROR 2023-05-29 11:17:48,406 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 98, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 23, in get
+    cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 19, in cache_handler
+    if cache_data := cache.get(key):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 91, in get
+    value = self._get(key, default, version, client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\commands\core.py", line 1801, in get
+    return self.execute_command("GET", name)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 703, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+ERROR 2023-05-29 11:17:48,452 basehttp 187 "GET /spiders/ HTTP/1.1" 500 135188
+INFO 2023-05-29 11:18:24,885 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:18:25,690 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:19:02,895 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:19:42,645 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:19:44,540 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 11:20:05,716 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 362, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py", line 49, in process_exception
+    r = R.server_error()
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\result.py", line 37, in server_error
+    StatusCodeEnum.SERVER_ERROR.code,
+  File "C:\env\Anaconda3\envs\django4\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: SERVER_ERROR
+ERROR 2023-05-29 11:20:05,749 basehttp 187 "GET /spiders/ HTTP/1.1" 500 86863
+INFO 2023-05-29 11:20:23,840 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:20:24,616 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:20:44,191 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:20:44,984 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:21:13,961 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:21:14,812 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:21:18,772 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-29 11:21:39,948 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 362, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py", line 50, in process_exception
+    r = R.server_error()
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\result.py", line 37, in server_error
+    StatusCodeEnum.SERVER_ERROR.code,
+  File "C:\env\Anaconda3\envs\django4\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: SERVER_ERROR
+ERROR 2023-05-29 11:21:39,989 basehttp 187 "GET /spiders/ HTTP/1.1" 500 87251
+INFO 2023-05-29 11:21:58,350 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:21:59,168 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:24:47,238 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\result.py changed, reloading.
+INFO 2023-05-29 11:24:48,138 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:24:49,529 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:24:49,532 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:24:49,538 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:24:50,543 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:24:50,602 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:24:50,606 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:24:50,608 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:24:50,642 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:24:50,642 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:24:50,644 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:24:50,683 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:24:50,685 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:24:50,711 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:24:51,029 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:24:51,035 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 11:25:11,814 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 199, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 362, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py", line 50, in process_exception
+    r = R.server_error()
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\result.py", line 37, in server_error
+    StatusCodeEnum.SERVER_ERROR.code,
+  File "C:\env\Anaconda3\envs\django4\lib\enum.py", line 437, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: SERVER_ERROR
+ERROR 2023-05-29 11:25:11,846 basehttp 187 "GET /spiders/ HTTP/1.1" 500 87592
+INFO 2023-05-29 11:25:11,918 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:30:00,147 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:30:00,944 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:30:04,883 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:30:05,084 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:30:05,089 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:30:05,095 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:30:05,136 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:30:05,138 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:30:05,137 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:30:05,208 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:30:05,212 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:30:05,234 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:30:05,381 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:30:05,383 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 11:30:26,298 log 241 Internal Server Error: /spiders/
+ERROR 2023-05-29 11:30:26,300 basehttp 187 "GET /spiders/ HTTP/1.1" 500 2511
+INFO 2023-05-29 11:30:26,368 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:34:21,982 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:34:24,272 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:34:24,342 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:34:24,346 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:34:24,349 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:34:24,377 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:34:24,380 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:34:24,384 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:34:24,403 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:34:24,460 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:34:24,469 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:34:24,543 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:34:24,548 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 11:39:54,551 log 241 Internal Server Error: /spiders/
+ERROR 2023-05-29 11:40:22,078 basehttp 187 "GET /spiders/ HTTP/1.1" 500 2511
+INFO 2023-05-29 11:40:27,765 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:41:19,614 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:41:23,190 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:43:21,968 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:43:23,958 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:43:26,021 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:43:26,210 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+ERROR 2023-05-29 11:43:47,252 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 98, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 23, in get
+    cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 19, in cache_handler
+    if cache_data := cache.get(key):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 91, in get
+    value = self._get(key, default, version, client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\commands\core.py", line 1801, in get
+    return self.execute_command("GET", name)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 703, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+ERROR 2023-05-29 11:43:47,352 basehttp 187 "GET /spiders/ HTTP/1.1" 500 148654
+INFO 2023-05-29 11:43:47,440 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:47:55,197 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:47:55,279 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:47:55,297 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:47:55,374 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:47:55,500 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:47:55,511 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:47:55,512 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:47:55,525 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:47:55,537 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:47:55,567 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:47:55,626 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:47:55,630 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 11:48:16,775 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 98, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 23, in get
+    cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 19, in cache_handler
+    if cache_data := cache.get(key):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 91, in get
+    value = self._get(key, default, version, client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\commands\core.py", line 1801, in get
+    return self.execute_command("GET", name)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 703, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+ERROR 2023-05-29 11:48:16,877 basehttp 187 "GET /spiders/ HTTP/1.1" 500 148654
+INFO 2023-05-29 11:48:16,947 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:48:47,209 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:48:47,271 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:48:47,275 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:48:47,277 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:48:47,307 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:48:47,489 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:48:47,520 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:48:47,539 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:48:47,563 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:48:47,585 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:48:47,637 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:48:47,640 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+ERROR 2023-05-29 11:49:08,781 log 241 Internal Server Error: /spiders/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 31, in _decorator
+    return method(self, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 98, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis TimeoutError: Timeout connecting to server
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 23, in get
+    cache_projects = cache_handler('projects', get_project_list, 20 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 19, in cache_handler
+    if cache_data := cache.get(key):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 91, in get
+    value = self._get(key, default, version, client)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\cache.py", line 38, in _decorator
+    raise e.__cause__
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django_redis\client\default.py", line 258, in get
+    value = client.get(key)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\commands\core.py", line 1801, in get
+    return self.execute_command("GET", name)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\redis\connection.py", line 703, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+ERROR 2023-05-29 11:49:08,875 basehttp 187 "GET /spiders/ HTTP/1.1" 500 148654
+INFO 2023-05-29 11:49:08,940 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:50:57,272 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:50:59,109 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:51:02,047 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:51:03,498 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:51:03,700 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:51:03,755 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:51:03,756 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:51:03,758 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:51:03,761 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:51:03,764 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:51:03,795 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:51:03,817 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:51:03,830 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:51:03,863 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:51:03,905 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+ERROR 2023-05-29 11:51:24,910 log 241 Internal Server Error: /spiders/
+ERROR 2023-05-29 11:51:24,911 basehttp 187 "GET /spiders/ HTTP/1.1" 500 15
+INFO 2023-05-29 11:51:24,981 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:51:36,252 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:51:36,310 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:51:36,312 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:51:36,314 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:51:36,613 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:51:36,662 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:51:36,671 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:51:36,673 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:51:36,678 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:51:36,863 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:51:36,871 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:51:36,937 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+ERROR 2023-05-29 11:51:57,931 log 241 Internal Server Error: /spiders/
+ERROR 2023-05-29 11:51:57,932 basehttp 187 "GET /spiders/ HTTP/1.1" 500 15
+INFO 2023-05-29 11:51:58,002 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:52:46,249 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:52:47,037 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:52:50,752 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:52:51,610 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:53:23,924 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:53:24,748 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:53:26,078 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:53:26,168 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:53:26,201 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:53:26,300 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:53:26,345 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:53:26,347 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:53:26,348 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:53:26,357 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:53:26,406 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:53:26,416 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:53:26,417 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:53:26,442 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:53:47,482 basehttp 187 "GET /spiders/ HTTP/1.1" 200 449
+INFO 2023-05-29 11:53:47,545 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:55:17,906 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:55:18,720 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:55:20,478 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:55:20,760 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:55:20,771 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:55:20,774 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:55:20,775 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:55:20,776 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:55:20,778 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:55:20,810 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:55:20,836 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:55:20,911 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:55:20,989 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:55:20,991 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+WARNING 2023-05-29 11:55:34,734 log 241 Not Found: /50x.html
+WARNING 2023-05-29 11:55:34,735 basehttp 187 "GET /50x.html HTTP/1.1" 404 3056
+WARNING 2023-05-29 11:55:34,890 log 241 Not Found: /favicon.ico
+WARNING 2023-05-29 11:55:34,891 basehttp 187 "GET /favicon.ico HTTP/1.1" 404 3065
+INFO 2023-05-29 11:55:41,982 basehttp 187 "GET /spiders/ HTTP/1.1" 302 0
+WARNING 2023-05-29 11:55:41,997 log 241 Not Found: /50x.html
+WARNING 2023-05-29 11:55:41,998 basehttp 187 "GET /50x.html HTTP/1.1" 404 3056
+INFO 2023-05-29 11:55:42,066 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:55:58,746 basehttp 187 "GET / HTTP/1.1" 302 0
+INFO 2023-05-29 11:55:58,756 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:55:58,830 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:55:58,835 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:55:58,836 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:55:58,843 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:55:58,845 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:55:58,853 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:55:58,911 basehttp 187 "GET /static/pages/welcome.html HTTP/1.1" 200 20301
+INFO 2023-05-29 11:55:58,913 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:55:58,953 basehttp 187 "GET /static/plugins/chart.js/chart.min.js HTTP/1.1" 200 197005
+INFO 2023-05-29 11:55:59,427 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:56:16,526 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:56:17,340 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:56:18,619 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:56:18,695 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:56:18,702 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:56:18,705 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:56:18,751 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:56:18,751 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:56:18,754 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:56:18,795 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:56:18,824 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:56:18,856 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:56:18,928 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:56:18,930 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:56:39,907 basehttp 187 "GET /spiders/ HTTP/1.1" 302 0
+INFO 2023-05-29 11:56:39,916 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:56:39,944 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:56:39,946 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:56:39,948 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:56:40,001 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:56:40,021 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:56:40,023 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:56:40,023 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:56:40,040 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:56:40,053 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:56:40,122 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:56:40,123 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:56:50,890 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 11:56:50,916 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2089
+INFO 2023-05-29 11:56:50,939 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:56:50,941 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 11:56:50,970 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:56:50,970 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 11:56:50,971 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:56:51,038 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 11:56:51,064 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 11:56:51,068 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:56:51,071 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:56:59,512 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\middlewares.py changed, reloading.
+INFO 2023-05-29 11:57:00,312 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:57:03,044 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:57:03,902 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:57:05,287 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:57:16,058 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-29 11:57:16,852 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:57:31,164 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-29 11:57:31,942 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:58:06,308 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 11:58:08,925 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29389
+INFO 2023-05-29 11:58:09,286 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 11:58:09,295 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:58:09,305 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:58:09,309 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 11:58:09,319 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:58:09,322 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 11:58:09,341 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 11:58:09,370 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 11:58:09,407 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 11:58:09,448 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2089
+INFO 2023-05-29 11:58:09,532 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:58:09,533 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:58:09,541 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 11:58:09,544 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:58:09,547 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 11:58:09,601 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:58:09,735 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:58:09,762 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 11:58:09,854 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 11:58:09,864 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:58:09,867 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 11:58:10,090 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 11:58:14,803 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 11:58:16,872 basehttp 187 "GET /spiders/ HTTP/1.1" 200 7193
+INFO 2023-05-29 11:58:16,898 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 11:58:16,900 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 11:58:16,939 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 11:58:16,940 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 11:58:16,941 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 11:58:16,988 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 11:58:17,037 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 11:58:17,040 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 11:58:17,042 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:00:17,985 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:00:18,050 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:00:18,055 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:00:18,056 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:00:18,099 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:00:18,104 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:00:18,106 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:00:18,128 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:00:18,182 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:00:18,349 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:00:18,396 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:00:18,398 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:00:18,438 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2219
+INFO 2023-05-29 12:00:18,483 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:00:18,484 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:00:18,544 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:00:18,545 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:00:18,548 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:00:18,698 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:00:18,765 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:00:18,770 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:00:18,775 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:00:21,065 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 12:00:26,054 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 12:00:26,154 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 12:00:26,186 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:00:26,187 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 12:00:26,398 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 12:00:26,402 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:00:26,403 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:00:26,422 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 12:00:26,439 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 12:00:26,467 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 12:00:26,483 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 2219
+INFO 2023-05-29 12:00:26,530 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20169
+INFO 2023-05-29 12:00:26,532 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 12:00:26,545 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:00:26,547 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:00:26,566 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 12:00:26,566 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 12:00:26,568 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 12:00:26,661 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 12:00:26,730 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 12:00:26,732 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 12:00:26,735 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 12:00:26,883 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
