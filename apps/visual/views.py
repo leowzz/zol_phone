@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from apps.crawler.models import Phone_brand, Phone_sku
+from apps.crawler.models import Phone_brand, Phone_sku, Phone_spu
 from django.views import View
 from loguru import logger
 from django.http import JsonResponse
@@ -29,18 +29,35 @@ class BrandView(View):
 
 
 def get_phone_cmt():
-    res = {'code': 200, 'data': {'xAxis': [], 'series': []}}
+    res = {'code': 200, }
+    for name in ['cmt', 'price', 'score', 'jd_price']:
+        res[name] = {'xAxis': [], 'series': []}
     # 获取手机中评论数最多的前10个品牌
-    phones = Phone_sku.objects.order_by('-comments_num')[:10]
+    phone_cmt = Phone_sku.objects.order_by('-comments_num')[:10]
+    # 获取价格最高的前10个手机
+    phone_price = Phone_sku.objects.order_by('-price')[:10]
+    # 获取手机中评分最高的前10个手机
+    phone_score = Phone_sku.objects.order_by('-score')[:10]
+    # 获取手机详细信息中京东售价前十的手机
+    phone_jd_price = Phone_spu.objects.order_by('-mall_price')[:10]
 
-    for phone in phones:
-        res['data']['xAxis'].append(phone.name)
-        res['data']['series'].append(phone.comments_num)
+    for phone in phone_cmt:
+        res['cmt']['xAxis'].append(phone.name)
+        res['cmt']['series'].append(phone.comments_num)
+    for phone in phone_price:
+        res['price']['xAxis'].append(phone.name)
+        res['price']['series'].append(phone.price)
+    for phone in phone_score:
+        res['score']['xAxis'].append(phone.name)
+        res['score']['series'].append(phone.score)
+    for phone in phone_jd_price:
+        res['jd_price']['xAxis'].append(phone.name)
+        res['jd_price']['series'].append(phone.mall_price)
     return res
 
 
 class Echarts(View):
     def get(self, request):
-        phone_cmt = cache_handler('phone_cmt', get_phone_cmt, 30)
+        phone_cmt = cache_handler('phone_:cmt:price:score', get_phone_cmt, 30)
         logger.debug(f"{phone_cmt=}")
         return JsonResponse(phone_cmt, safe=False)

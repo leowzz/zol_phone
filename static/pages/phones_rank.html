@@ -21,17 +21,17 @@
                 <div class="col">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white">
-                            条形图
+                            手机评论数
                         </div>
                         <div class="card-body">
-                            <div id="echarts1" style="width: 100%;height:400px;"></div>
+                            <div id="echarts1" style="width: 100%;height:500px;"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white">
-                            折线图
+                            手机标价排行
                         </div>
                         <div class="card-body">
                             <div id="echarts2" style="width: 100%;height:400px;"></div>
@@ -41,7 +41,7 @@
                 <div class="col">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white">
-                            空心饼图
+                            手机评分排行
                         </div>
                         <div class="card-body">
                             <div id="echarts3" style="width: 100%;height:400px;"></div>
@@ -51,7 +51,7 @@
                 <div class="col">
                     <div class="card border-0 shadow-sm">
                         <div class="card-header bg-white">
-                            实心饼图
+                            手机京东售价排行
                         </div>
                         <div class="card-body">
                             <div id="echarts4" style="width: 100%;height:400px;"></div>
@@ -71,10 +71,11 @@
 <script>
 
     let echarts1 = echarts.init(document.getElementById('echarts1'));
+    let echarts2 = echarts.init(document.getElementById('echarts2'));
+    let echarts3 = echarts.init(document.getElementById('echarts3'));
+    let echarts4 = echarts.init(document.getElementById('echarts4'));
+
     echarts1.setOption({
-        title: {
-            text: '手机评论数'
-        },
         tooltip: {},
         legend: {
             data: ['评论数']
@@ -99,9 +100,8 @@
             console.log(res);
             if (res.code === 200) {
                 echarts1.setOption({
-
                     xAxis: {
-                        data: res.data.xAxis,
+                        data: res.cmt.xAxis,
                         axisLabel: {
                             interval: 0,
                             rotate: -30
@@ -111,7 +111,55 @@
                         {
                             name: '评论数',
                             type: 'bar',
-                            data: res.data.series
+                            data: res.cmt.series
+                        }
+                    ]
+                });
+                echarts2.setOption({
+                    xAxis: {
+                        data: res.price.xAxis,
+                        axisLabel: {
+                            interval: 0,
+                            rotate: -30
+                        },
+                    },
+                    series: [
+                        {
+                            name: '价格',
+                            type: 'line',
+                            data: res.price.series
+                        }
+                    ]
+                });
+                echarts3.setOption({
+                    xAxis: {
+                        data: res.score.xAxis,
+                        axisLabel: {
+                            interval: 0,
+                            rotate: -30
+                        },
+                    },
+                    series: [
+                        {
+                            name: '评分',
+                            type: 'bar',
+                            data: res.score.series
+                        }
+                    ]
+                });
+                echarts4.setOption({
+                    xAxis: {
+                        data: res.jd_price.xAxis,
+                        axisLabel: {
+                            interval: 0,
+                            rotate: -30
+                        },
+                    },
+                    series: [
+                        {
+                            name: '评论数',
+                            type: 'line',
+                            data: res.jd_price.series
                         }
                     ]
                 });
@@ -119,7 +167,6 @@
         }
     })
 
-    let echarts2 = echarts.init(document.getElementById('echarts2'));
     echarts2.setOption({
         xAxis: {
             type: 'category',
@@ -138,7 +185,6 @@
     });
 
 
-    let echarts3 = echarts.init(document.getElementById('echarts3'));
     echarts3.setOption({
         tooltip: {
             trigger: 'item'
@@ -184,7 +230,6 @@
     });
 
 
-    let echarts4 = echarts.init(document.getElementById('echarts4'));
     echarts4.setOption({
         title: {
             text: 'Referer of a Website',
