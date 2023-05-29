@@ -15,7 +15,7 @@ from django.db import DatabaseError
 from django.http.response import JsonResponse
 from django.http import HttpResponseServerError
 from django.middleware.common import MiddlewareMixin
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from loguru import logger
 

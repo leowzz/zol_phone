@@ -90,7 +90,7 @@ DATABASES = {
 CACHES = {
     'default': {
         'BACKEND' : 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://cent:6379/1',
+        'LOCATION': 'redis://localhost:6379/1',
         'OPTIONS' : {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
