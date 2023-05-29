@@ -7,13 +7,28 @@ from utils.cacher import cache_handler
 
 
 # Create your views here.
-def get_brands_pst():
-    res = []
-    brands = Phone_brand.objects.all()
-    for brand in brands:
-        res.append({
-            'name'        : brand.name,
-            'market_share': brand.market_share,
+def get_brands_():
+    res = {'code': 200, 'brand_pst': [], 'phone_num': [], 'good_pst': []}
+    # 市场占有率
+    brand_pst = Phone_brand.objects.order_by('-market_share')
+    for brand in brand_pst:
+        res['brand_pst'].append({
+            'name' : brand.name,
+            'value': brand.market_share,
+        })
+    # 手机数量
+    brand_num = Phone_brand.objects.order_by('-phone_num')[:20]
+    for brand in brand_num:
+        res['phone_num'].append({
+            'name'     : brand.name,
+            'phone_num': brand.phone_num,
+        })
+    # 好评率
+    brand_price = Phone_brand.objects.order_by('-feedback')[:20]
+    for brand in brand_price:
+        res['good_pst'].append({
+            'name'    : brand.name,
+            'feedback': brand.feedback,
         })
     return res
 
@@ -23,7 +38,7 @@ class BrandView(View):
     def get(self, request):
         # 获取所有品牌名称及市场占有率
         # 缓存处理
-        cache_brands = cache_handler('brands_pst', get_brands_pst, 30 * 12 * 60 * 60)
+        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 1)
         logger.debug(f"{cache_brands=}")
         return JsonResponse(cache_brands, safe=False)
 
@@ -33,7 +48,7 @@ def get_phone_cmt():
     for name in ['cmt', 'price', 'score', 'jd_price']:
         res[name] = {'xAxis': [], 'series': []}
     # 获取手机中评论数最多的前10个品牌
-    phone_cmt = Phone_sku.objects.order_by('-comments_num')[:8]
+    phone_cmt = Phone_sku.objects.order_by('-comments_num')[:15]
     # 获取价格最高的前10个手机
     phone_price = Phone_sku.objects.order_by('-price')[:12]
     # 获取手机中评分最高的前10个手机

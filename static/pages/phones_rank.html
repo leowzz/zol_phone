@@ -24,7 +24,7 @@
                             手机评论数
                         </div>
                         <div class="card-body">
-                            <div id="echarts1" style="width: 100%;height:400px;"></div>
+                            <div id="echarts1" style="width: 100%;height:600px;"></div>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
             console.log(res);
             if (res.code === 200) {
                 echarts1.setOption({
-                    grid: {left: '30%',},
+                    grid: {left: '20%',},
                     yAxis: {
                         data: res.cmt.xAxis,
                         inverse: true,
@@ -103,22 +103,24 @@
                     grid: {bottom: '30%',},
                     xAxis: {
                         type: 'category',
-                        inverse: true,
                         data: res.price.xAxis,
                         axisLabel: {interval: 0, rotate: -25},
                     },
-                    series: [{
-                        name: '价格',
-                        type: 'line',
-                        data: res.price.series
-                    }]
+                    yAxis: {inverse: true,},
+                    series: [
+                        {
+                            name: '价格',
+                            type: 'line',
+                            data: res.price.series
+                        }]
                 });
                 echarts3.setOption({
+                    grid: {bottom: '30%',},
                     xAxis: {
                         data: res.score.xAxis,
                         axisLabel: {interval: 0, rotate: -25},
                     },
-                    yAxis:{
+                    yAxis: {
                         max: 10,
                         min: 9.6
                     },
@@ -129,14 +131,15 @@
                     }]
                 });
                 echarts4.setOption({
+                    grid: {bottom: '45%',},
                     tooltip: {trigger: 'item'},
                     grid: {bottom: '30%',},
                     xAxis: {
                         type: 'category',
-                        inverse: true,
                         data: res.jd_price.xAxis,
-                        axisLabel: {interval: 0, rotate: -30},
+                        axisLabel: {interval: 0, rotate: -25},
                     },
+                    yAxis: {inverse: true,},
                     series: [{
                         name: '价格',
                         type: 'line',

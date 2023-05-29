@@ -12152,3 +12152,1581 @@ Traceback (most recent call last):
 django.core.exceptions.FieldError: Cannot resolve keyword 'comments_count' into field. Choices are: comments_num, id, img_url, img_url_s3, intro, last_modify, name, price, score, url
 2023-05-29 14:29:11.798 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113407
 2023-05-29 14:29:11.798 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /phones/echarts/ HTTP/1.1" 500 113407
+2023-05-29 21:34:38.938 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002356DD0D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002356DD0D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+    │    │        │    └ (<socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4818)
+    │    │              └ <socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000023570727EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+    │    │                   │        └ ('127.0.0.1', 4818)
+    │    │                   └ <socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000023570E29090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000023570E29120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000023570E283A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+    │       └ <function BaseHandler.run at 0x0000023570E10C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000023570E10F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000023572552380>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000023572552380>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x0000023570DD76D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847B50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847AC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847A30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x00000235728479A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847520>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x00000235728477F0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000002357253BD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x00000235707D4E50>
+           └ <apps.visual.views.BrandView object at 0x0000023572DD1210>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x0000023572DD1210>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_pst, 30 * 12 * 60 * 60)
+                   └ <function cache_handler at 0x000002357253AE60>
+
+NameError: name 'get_brands_pst' is not defined
+2023-05-29 21:34:38.955 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002356DD0D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002356DD0D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+    │    │        │    └ (<socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 25916)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4818)
+    │    │              └ <socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000023570727EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+    │    │                   │        └ ('127.0.0.1', 4818)
+    │    │                   └ <socket.socket fd=1172, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000023570E29090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000023570E29120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000023570E283A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000023570E21450>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000023572DD0850>
+    │       └ <function BaseHandler.run at 0x0000023570E10C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000023570E10F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000023572552380>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000023572DD0C40>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000023572552380>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x0000023570DD76D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847B50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847AC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847A30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x00000235728479A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000023572847520>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x00000235728477F0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000002357286BFD0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000002357253BD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x00000235707D4E50>
+           └ <apps.visual.views.BrandView object at 0x0000023572DD1210>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x0000023572DD1210>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_pst, 30 * 12 * 60 * 60)
+                   └ <function cache_handler at 0x000002357253AE60>
+
+NameError: name 'get_brands_pst' is not defined
+2023-05-29 21:34:38.969 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 84432
+2023-05-29 21:34:38.970 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 84432
+2023-05-29 21:34:56.445 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049AB4CD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049AB4CD0>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:34:56.460 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 202, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB48B0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049AB4CD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049AB4CD0>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:34:56.474 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945
+2023-05-29 21:34:56.474 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945
+2023-05-29 21:34:58.346 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049B134F0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049B134F0>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:34:58.359 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049AB49A0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049B134F0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049B134F0>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:34:58.375 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945
+2023-05-29 21:34:58.376 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945
+2023-05-29 21:35:01.166 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049EE7A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049EE7A30>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:35:01.180 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D044DFD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D044DFD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    │        │    └ (<socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 24144)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 4839)
+    │    │              └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D0477D7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │    │                   │        └ ('127.0.0.1', 4839)
+    │    │                   └ <socket.socket fd=1140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D047ED9090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D047ED9120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D047ED83A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D047ED1510>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D049AB4340>
+    │       └ <function BaseHandler.run at 0x000001D047EC0C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D047EC0F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D049B13160>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D047ED14E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function BaseHandler.get_response at 0x000001D047E876D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/brands/visual/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBB50>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBAC0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FBA30>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB9A0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB760>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D0498FB7F0>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/brands/visual/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D0498FB880>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/brands/visual/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D04991FFA0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/brands/visual/'>
+               └ <function View.as_view.<locals>.view at 0x000001D0495EBD00>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/brands/visual/'>
+           │    └ <function View.dispatch at 0x000001D047884E50>
+           └ <apps.visual.views.BrandView object at 0x000001D049EE7A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/brands/visual/'>
+           └ <bound method BrandView.get of <apps.visual.views.BrandView object at 0x000001D049EE7A30>>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+                   │                                    └ <function get_brands_ at 0x000001D0495EBEB0>
+                   └ <function cache_handler at 0x000001D0495EAE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_brands_ at 0x000001D0495EBEB0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+                └ <Phone_brand: U-MAGIC>
+
+AttributeError: 'Phone_brand' object has no attribute 'price'
+2023-05-29 21:35:01.193 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945
+2023-05-29 21:35:01.193 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /brands/visual/ HTTP/1.1" 500 100945

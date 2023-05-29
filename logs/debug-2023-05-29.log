@@ -5162,3 +5162,954 @@ INFO 2023-05-29 18:28:21,739 basehttp 187 "GET /static/plugins/bootstrap/js/boot
 INFO 2023-05-29 18:28:21,759 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
 INFO 2023-05-29 18:28:21,767 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
 INFO 2023-05-29 18:28:21,769 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 20:16:15,346 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:16:16,238 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:16:54,898 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:16:55,722 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:17:06,882 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:17:07,741 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:17:39,130 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:17:40,002 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:18:12,416 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:18:13,262 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:18:20,259 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:18:21,141 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 20:19:03,098 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 20:19:03,960 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:26:18,849 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:26:19,703 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:27:15,091 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:27:15,948 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:27:21,905 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:27:22,731 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:29:34,981 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:29:35,844 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:30:26,259 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:30:27,061 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:32:04,426 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:32:05,263 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:32:21,089 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:32:21,929 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:32:25,284 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:32:26,129 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:33:15,401 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:33:16,254 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 21:34:38,937 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_pst, 30 * 12 * 60 * 60)
+NameError: name 'get_brands_pst' is not defined
+ERROR 2023-05-29 21:34:38,969 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 84432
+INFO 2023-05-29 21:34:52,181 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:34:53,110 autoreload 677 Watching for file changes with StatReloader
+ERROR 2023-05-29 21:34:56,443 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+AttributeError: 'Phone_brand' object has no attribute 'price'
+ERROR 2023-05-29 21:34:56,473 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 100945
+ERROR 2023-05-29 21:34:58,345 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+AttributeError: 'Phone_brand' object has no attribute 'price'
+ERROR 2023-05-29 21:34:58,374 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 100945
+ERROR 2023-05-29 21:35:01,164 log 241 Internal Server Error: /brands/visual/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 39, in get
+    cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30 * 12 * 60 * 60)
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py", line 29, in get_brands_
+    'feedback': brand.price,
+AttributeError: 'Phone_brand' object has no attribute 'price'
+ERROR 2023-05-29 21:35:01,192 basehttp 187 "GET /brands/visual/ HTTP/1.1" 500 100945
+INFO 2023-05-29 21:35:39,711 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:35:40,584 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:35:44,197 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:40:54,133 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:40:55,032 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:41:15,704 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:41:16,533 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:46:02,449 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:46:03,318 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:48:48,384 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:48:49,262 autoreload 677 Watching for file changes with StatReloader
+WARNING 2023-05-29 21:51:11,316 basehttp 187 "GET /static/phones_rank.html HTTP/1.1" 404 1807
+INFO 2023-05-29 21:51:26,272 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 21:51:26,341 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO 2023-05-29 21:51:26,348 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0
+INFO 2023-05-29 21:51:28,537 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 21:54:59,973 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:55:00,978 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:55:19,049 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 304 0
+INFO 2023-05-29 21:55:21,492 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 21:55:28,614 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 21:55:28,685 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:55:28,687 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:55:28,689 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:55:28,719 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:55:28,722 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:55:28,724 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:55:28,732 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:55:28,873 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 21:55:28,882 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:55:28,907 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 21:55:42,726 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 304 0
+INFO 2023-05-29 21:55:43,090 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 21:55:54,882 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 4956
+INFO 2023-05-29 21:56:05,391 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 304 0
+INFO 2023-05-29 21:56:16,869 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:56:16,871 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:56:16,885 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:56:18,388 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 4956
+INFO 2023-05-29 21:56:18,450 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:56:18,456 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:56:18,458 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:56:18,463 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:56:18,464 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:56:18,479 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:56:18,488 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:56:18,719 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:56:18,721 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:56:18,730 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:56:18,855 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:56:54,782 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 4956
+INFO 2023-05-29 21:56:54,845 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:56:54,848 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:56:54,850 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:56:54,880 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:56:54,887 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:56:54,889 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:56:54,894 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:56:54,919 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:56:54,954 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:56:54,956 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:56:55,268 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:57:16,996 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 4886
+INFO 2023-05-29 21:57:17,275 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:57:17,318 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:57:17,322 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:57:17,323 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:57:17,324 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:57:17,325 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:57:17,334 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:57:17,380 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:57:17,385 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:57:17,385 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:57:17,591 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:57:17,620 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:57:17,711 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:57:26,978 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 4886
+INFO 2023-05-29 21:57:27,069 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:57:27,071 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:57:27,072 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:57:27,116 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:57:27,118 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:57:27,120 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:57:27,128 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:57:27,230 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:57:27,492 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:57:27,494 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:57:27,644 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:57:27,666 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:57:27,683 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:57:43,375 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5183
+INFO 2023-05-29 21:57:43,452 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:57:43,462 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:57:43,466 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:57:43,719 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:57:43,721 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:57:43,722 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:57:43,730 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:57:43,761 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:57:43,766 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:57:43,766 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:57:44,073 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:57:44,076 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:57:44,100 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:58:07,177 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5411
+INFO 2023-05-29 21:58:07,472 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:58:07,479 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:58:07,482 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:58:07,491 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:58:07,495 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:58:07,495 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:58:07,502 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:58:07,543 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:58:07,554 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:58:07,556 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:58:07,733 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:58:07,791 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:58:07,806 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:58:18,082 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5384
+INFO 2023-05-29 21:58:18,441 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:58:18,450 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:58:18,455 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:58:18,455 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:58:18,457 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:58:18,459 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:58:18,466 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:58:18,502 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:58:18,524 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:58:18,526 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:58:18,672 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:58:18,727 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:58:18,748 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:59:13,532 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:59:14,396 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:59:19,254 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 21:59:20,163 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:59:21,572 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5384
+INFO 2023-05-29 21:59:21,641 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:59:21,643 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:59:21,645 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:59:21,675 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:59:21,677 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:59:21,679 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:59:21,687 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:59:21,712 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:59:21,735 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:59:21,738 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:59:21,875 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:59:21,927 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 21:59:23,922 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 21:59:54,313 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 21:59:59,000 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5384
+INFO 2023-05-29 21:59:59,346 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 21:59:59,349 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 21:59:59,358 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 21:59:59,368 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 21:59:59,377 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 21:59:59,387 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 21:59:59,395 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 21:59:59,494 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 21:59:59,497 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 21:59:59,498 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 21:59:59,636 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 21:59:59,693 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:00:01,684 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 4229
+INFO 2023-05-29 22:00:35,462 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 22:00:36,346 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 22:01:04,793 basehttp 187 "GET /spiders HTTP/1.1" 301 0
+INFO 2023-05-29 22:01:06,373 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-29 22:01:06,839 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5207
+INFO 2023-05-29 22:01:07,177 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:01:07,182 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:01:07,306 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:01:07,349 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 22:01:07,415 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 22:01:07,452 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:01:07,463 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 22:01:07,510 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 22:01:07,527 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:01:07,532 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:01:08,405 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 6990
+INFO 2023-05-29 22:01:08,454 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:01:08,456 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-29 22:01:08,462 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-29 22:01:08,471 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:01:08,473 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:01:08,557 basehttp 187 "GET /static/css/bootstrap.min.css.map HTTP/1.1" 200 522639
+INFO 2023-05-29 22:01:08,579 basehttp 187 "GET /static/js/bootstrap.min.js.map HTTP/1.1" 200 216913
+INFO 2023-05-29 22:01:08,589 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:01:08,594 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:01:30,558 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 22:01:30,592 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:01:30,594 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:01:30,596 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:01:30,684 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:01:31,056 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:01:31,063 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:01:31,066 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:01:31,073 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:01:31,460 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:01:31,464 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:01:31,482 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:01:31,520 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:02:00,067 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:02:00,432 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:02:00,440 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:02:00,442 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:02:00,445 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:02:00,465 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:02:00,475 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:02:00,498 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:02:00,601 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 22:02:00,757 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:02:00,761 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:02:00,763 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:02:00,765 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:02:00,772 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:02:00,774 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:02:00,789 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:02:00,983 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:02:01,140 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:02:01,596 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:02:09,672 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:02:09,690 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:02:10,434 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:02:10,437 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:02:10,458 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:02:10,459 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:02:39,644 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:02:39,711 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:02:39,718 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:02:39,721 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:02:39,995 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:02:40,001 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:02:40,005 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:02:40,029 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:02:40,063 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:02:40,110 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:02:40,113 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:02:40,116 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:02:40,125 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:02:40,128 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:02:40,129 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:02:40,137 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:02:40,478 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:02:40,621 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:02:41,401 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:02:49,219 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:02:49,246 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:02:49,964 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:02:49,967 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:02:49,998 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:02:50,001 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:03:24,054 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:03:24,131 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:03:24,133 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:03:24,136 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:03:24,411 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:03:24,417 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:03:24,420 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:03:24,424 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:03:24,467 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6473
+INFO 2023-05-29 22:03:24,502 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:03:24,508 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:03:24,510 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:03:24,516 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:03:24,524 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:03:24,529 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:03:24,537 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:03:24,828 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:03:24,858 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:03:25,062 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:03:33,986 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:03:34,017 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:03:34,705 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:03:34,709 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:03:34,739 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:03:34,742 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:04:07,915 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:04:07,996 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:04:08,138 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:04:08,277 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:04:08,318 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:04:08,320 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:04:08,323 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:04:08,326 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:04:08,375 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6434
+INFO 2023-05-29 22:04:08,482 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:04:08,482 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:04:08,486 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:04:08,486 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:04:08,492 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:04:08,494 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:04:08,500 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:04:08,740 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:04:08,832 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:04:08,863 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:04:18,028 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:04:18,049 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:04:18,782 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:04:18,786 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:04:18,818 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:04:18,822 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:04:27,304 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:04:27,404 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:04:27,407 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:04:27,420 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:04:27,712 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:04:27,732 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:04:27,736 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:04:27,742 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:04:27,787 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6444
+INFO 2023-05-29 22:04:27,829 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:04:27,831 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:04:27,833 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:04:27,845 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:04:27,848 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:04:27,851 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:04:27,858 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:04:28,139 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:04:28,175 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:04:28,293 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:04:37,555 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:04:37,576 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:04:38,358 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:04:38,361 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:04:38,391 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:04:38,394 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:04:59,744 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:04:59,821 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:04:59,846 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:04:59,849 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:04:59,883 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:05:00,207 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:00,207 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:05:00,210 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:00,287 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6473
+INFO 2023-05-29 22:05:00,332 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:00,342 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:00,344 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:00,387 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:00,391 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:00,392 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:05:00,400 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:05:00,647 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:05:00,759 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:05:00,829 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:05:10,890 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:10,933 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:11,587 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:11,589 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:11,634 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:11,637 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:17,869 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:05:17,942 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:17,947 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:17,950 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:18,031 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:05:18,299 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:05:18,303 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:18,305 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:18,361 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 22:05:18,412 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:18,414 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:18,416 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:18,436 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:18,439 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:18,440 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:05:18,447 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:05:18,670 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:05:18,707 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:05:18,813 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:05:28,925 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:28,978 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:29,037 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:05:29,117 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:29,121 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:29,123 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:29,178 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:05:29,179 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:29,181 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:29,216 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:05:29,236 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6473
+INFO 2023-05-29 22:05:29,524 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:29,530 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:29,532 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:29,562 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:29,564 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:29,565 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:05:29,572 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:05:29,910 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:30,028 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:05:30,062 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:05:30,182 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:05:41,262 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:41,648 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:41,652 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:41,687 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:41,701 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:41,734 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:41,737 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:41,765 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:05:41,769 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:05:44,201 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:05:44,260 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:44,264 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:44,266 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:44,560 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:44,565 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:05:44,567 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:44,569 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:05:44,601 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6502
+INFO 2023-05-29 22:05:44,635 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:44,636 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:44,639 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:44,666 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:44,669 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:44,671 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:05:44,683 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:05:44,891 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:05:44,947 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:05:45,061 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:05:55,982 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:56,083 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:56,196 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:05:56,310 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:56,315 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:56,318 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:56,333 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:05:56,352 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:56,354 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:56,357 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:05:56,395 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:05:56,437 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:05:56,439 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:05:56,442 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:05:56,448 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:05:56,457 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:05:56,468 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:05:56,474 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:05:56,611 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:05:56,646 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:05:56,736 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:56,760 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:05:56,773 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:06:09,073 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:06:09,077 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:06:09,111 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:06:09,117 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:06:09,165 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:06:09,170 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:06:09,200 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:06:09,204 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:19,717 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 22:07:20,617 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 22:07:26,881 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:07:27,147 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:27,154 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:27,156 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:27,230 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:07:27,231 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:27,232 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:27,274 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:27,321 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:07:27,324 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:27,352 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:27,391 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:07:27,450 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:27,456 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:27,458 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:27,491 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:27,496 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:27,498 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:07:27,507 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:07:27,589 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:27,634 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:27,639 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:27,737 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:07:29,232 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:07:29,782 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3409
+INFO 2023-05-29 22:07:38,643 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 22:07:39,505 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 22:07:43,318 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 22:07:44,167 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 22:07:45,518 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:07:45,603 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:45,608 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:45,612 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:45,687 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:07:45,688 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:45,691 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:45,736 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:45,853 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:45,856 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:07:45,861 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:45,869 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:07:45,963 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:45,974 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:45,976 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:45,987 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:46,022 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:46,026 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:07:46,034 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:07:46,141 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:46,146 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:46,148 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:46,271 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:07:46,564 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:07:48,345 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3409
+INFO 2023-05-29 22:07:52,854 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:07:52,907 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:52,913 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:52,915 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:53,217 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:53,225 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:53,230 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:07:53,231 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:53,256 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:07:53,279 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:53,283 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:53,328 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:07:53,448 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:07:53,451 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:07:53,451 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:07:53,461 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:07:53,461 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:07:53,478 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:07:53,480 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:07:53,596 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:07:53,636 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:07:53,639 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:07:53,772 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:07:53,856 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3409
+INFO 2023-05-29 22:07:53,893 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:08:06,935 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:08:07,261 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:08:07,272 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:08:07,272 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:08:07,275 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:08:07,278 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:08:07,280 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:08:07,319 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:08:07,324 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:08:07,337 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:08:07,358 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6424
+INFO 2023-05-29 22:08:07,359 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:08:07,436 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:08:07,448 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:08:07,451 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:08:07,455 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:08:07,461 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:08:07,461 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:08:07,476 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:08:07,554 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:08:07,559 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:08:07,561 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:08:07,727 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:08:07,756 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:08:08,253 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:08:21,136 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:08:21,217 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:08:21,219 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:08:21,220 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:08:21,551 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:08:21,552 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:08:21,554 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:08:21,580 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:08:21,584 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:08:21,686 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6463
+INFO 2023-05-29 22:08:21,689 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:08:21,692 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:08:21,786 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:08:21,917 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:08:21,919 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:08:21,988 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:08:21,991 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:08:21,993 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:08:22,003 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:08:22,054 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:08:22,077 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:08:22,080 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:08:22,243 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:08:22,343 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:08:22,366 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:09:07,059 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:09:07,421 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:07,431 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:09:07,432 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:07,435 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:07,439 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:07,440 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:07,492 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:09:07,499 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:07,501 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:07,519 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6540
+INFO 2023-05-29 22:09:07,521 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:07,702 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:07,713 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:07,722 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:07,738 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:07,740 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:07,747 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:09:07,757 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:09:07,855 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:07,860 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:07,861 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:08,051 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:09:08,122 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:09:08,149 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:09:33,280 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:09:33,346 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:33,348 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:33,351 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:33,673 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:09:33,674 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:33,677 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:33,678 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:09:33,712 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:33,717 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:33,739 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6556
+INFO 2023-05-29 22:09:33,741 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:34,057 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:34,068 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:34,078 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:34,079 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:34,081 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:34,083 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:09:34,092 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:09:34,156 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:34,161 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:34,166 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:34,288 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:09:34,379 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:09:34,403 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:09:43,286 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:09:43,578 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:43,589 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:43,591 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:43,625 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:09:43,625 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:43,626 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:43,642 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:09:43,653 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:43,672 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:43,686 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6517
+INFO 2023-05-29 22:09:43,688 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:43,758 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:09:43,760 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:09:43,763 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:09:43,766 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:09:43,773 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:09:43,775 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:09:43,783 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:09:43,950 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:09:43,951 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:09:43,964 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:09:44,060 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:09:44,135 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:09:44,159 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:11:02,263 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:11:02,321 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:02,325 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:02,327 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:02,365 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:11:02,392 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:11:02,665 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:02,676 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:02,693 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:02,737 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6517
+INFO 2023-05-29 22:11:02,740 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:02,743 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:02,832 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:02,842 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:02,844 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:02,859 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:02,869 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:02,871 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:11:02,878 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:11:02,954 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:02,963 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:02,978 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:03,092 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:11:03,131 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:11:04,627 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:11:33,845 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:11:34,140 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:34,146 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:34,148 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:34,166 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:11:34,175 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:34,176 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:34,203 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:11:34,211 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:34,238 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:34,261 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:11:34,263 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:34,319 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:34,327 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:34,333 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:34,336 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:34,337 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:34,345 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:11:34,348 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:11:34,546 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:34,565 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:34,569 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:34,667 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:11:34,745 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:11:34,765 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:11:43,569 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:11:43,633 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:43,636 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:43,638 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:44,006 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:11:44,014 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:44,037 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:44,058 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:44,068 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:11:44,106 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:44,109 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:44,126 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:11:44,180 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:11:44,183 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:11:44,185 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:11:44,203 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:11:44,209 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:11:44,211 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:11:44,217 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:11:44,348 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:11:44,390 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:11:44,413 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:11:44,509 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:11:44,524 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:11:44,787 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:12:01,367 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:12:01,427 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:01,431 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:01,433 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:01,754 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:01,767 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:12:01,775 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:01,777 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:01,780 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:12:01,819 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:01,864 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:12:01,864 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:02,152 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:02,174 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:02,175 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:02,177 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:02,179 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:02,180 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:12:02,194 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:12:02,254 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:02,260 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:02,261 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:02,438 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:12:02,465 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:12:02,671 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:12:12,555 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:12:12,855 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:12,862 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:12,864 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:12,882 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:12:12,884 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:12,886 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:12,899 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:12:12,920 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:12,944 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:12,946 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:12,957 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:12:13,042 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:13,048 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:13,050 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:13,113 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:13,116 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:13,122 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:12:13,131 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:12:13,302 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:13,327 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:13,330 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:13,412 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:12:13,483 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:12:13,514 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 3813
+INFO 2023-05-29 22:12:44,834 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-29 22:12:45,715 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-29 22:12:47,213 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:12:47,422 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:47,423 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:47,425 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:47,466 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:12:47,467 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:47,471 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:47,474 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:12:47,496 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:47,499 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:47,512 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:12:47,513 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:47,581 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:12:47,590 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:12:47,592 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:12:47,599 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:12:47,603 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:12:47,607 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:12:47,613 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:12:47,675 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:12:47,676 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:12:47,688 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:12:47,860 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:12:47,902 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:12:49,950 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO 2023-05-29 22:13:05,606 basehttp 187 "GET /static/index.html HTTP/1.1" 200 29298
+INFO 2023-05-29 22:13:05,955 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:13:05,971 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:13:05,973 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:13:05,994 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:13:06,007 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-29 22:13:06,009 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:13:06,043 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-29 22:13:06,054 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:13:06,065 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:13:06,101 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:13:06,171 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6605
+INFO 2023-05-29 22:13:06,250 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:13:06,275 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:13:06,276 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:13:06,278 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:13:06,280 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:13:06,287 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:13:06,317 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:13:06,437 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:13:06,443 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:13:06,467 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:13:06,655 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
+INFO 2023-05-29 22:13:06,705 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-29 22:13:06,733 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO 2023-05-29 22:13:18,651 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 5384
+INFO 2023-05-29 22:13:18,686 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20277
+INFO 2023-05-29 22:13:18,689 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-29 22:13:18,691 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-29 22:13:18,713 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-29 22:13:18,715 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-29 22:13:18,716 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 200 87462
+INFO 2023-05-29 22:13:18,723 basehttp 187 "GET /static/plugins/echarts/echarts.min.js HTTP/1.1" 200 1017477
+INFO 2023-05-29 22:13:18,774 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 451427
+INFO 2023-05-29 22:13:18,796 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 331017
+INFO 2023-05-29 22:13:18,798 basehttp 187 "GET /static/dist/js/BSA.js.map HTTP/1.1" 200 80969
+INFO 2023-05-29 22:13:18,985 basehttp 187 "GET /brands/visual HTTP/1.1" 301 0
+INFO 2023-05-29 22:13:19,045 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 3872
