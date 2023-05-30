@@ -2331,3 +2331,29 @@ INFO 2023-05-30 15:05:31,733 basehttp 187 "GET /static/img/main.png HTTP/1.1" 20
 INFO 2023-05-30 15:05:31,899 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12854
 INFO 2023-05-30 15:06:14,814 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
 INFO 2023-05-30 15:06:15,256 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12814
+INFO 2023-05-30 15:07:47,841 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24166
+INFO 2023-05-30 15:07:48,272 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12814
+INFO 2023-05-30 15:07:55,273 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24164
+INFO 2023-05-30 15:07:55,579 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12814
+INFO 2023-05-30 15:09:06,715 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:09:06,780 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO 2023-05-30 15:09:06,846 basehttp 187 "GET /home_page/ HTTP/1.1" 200 13049
+INFO 2023-05-30 15:10:17,285 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7387
+INFO 2023-05-30 15:10:17,721 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-30 15:11:27,267 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:11:27,467 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO 2023-05-30 15:11:27,629 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:11:27,924 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
+INFO 2023-05-30 15:13:31,948 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\visual\views.py changed, reloading.
+INFO 2023-05-30 15:13:32,839 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-30 15:18:21,318 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO 2023-05-30 15:18:22,179 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-30 15:18:26,308 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:18:28,488 basehttp 187 "GET /home_page/ HTTP/1.1" 200 13049
+INFO 2023-05-30 15:18:31,348 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-30 15:18:32,799 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7387
+INFO 2023-05-30 15:18:34,127 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:18:34,419 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
+INFO 2023-05-30 15:18:36,859 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO 2023-05-30 15:18:51,935 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO 2023-05-30 15:18:52,845 autoreload 677 Watching for file changes with StatReloader

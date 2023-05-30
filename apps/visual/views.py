@@ -38,7 +38,7 @@ class BrandView(View):
     def get(self, request):
         # 获取所有品牌名称及市场占有率
         # 缓存处理
-        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 0)
+        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 20)
         logger.debug(f"{cache_brands=}")
         return JsonResponse(cache_brands, safe=False)
 

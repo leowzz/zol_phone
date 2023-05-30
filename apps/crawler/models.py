@@ -76,18 +76,3 @@ class Phone_spu(models.Model):
         db_table = 'phone_detail'
         verbose_name = '手机详细参数'
         verbose_name_plural = verbose_name
-
-
-class Spider(models.Model):
-    name = models.CharField(max_length=255)
-    status = models.CharField(max_length=255)  # 0:未开始 1:进行中 2:已完成
-    run_times = models.IntegerField(default=0)  # 运行次数
-    last_run_time = models.DateTimeField(auto_now=True)  # 最后一次运行时间
-
-    def __str__(self):
-        return self
-
-    class Meta:
-        db_table = 'spider'
-        verbose_name = '爬虫'
-        verbose_name_plural = verbose_name
