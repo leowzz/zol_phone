@@ -2323,3 +2323,11 @@ INFO 2023-05-30 14:55:21,920 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 140
 INFO 2023-05-30 14:55:32,059 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
 INFO 2023-05-30 14:55:32,168 basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 7058
 INFO 2023-05-30 14:55:32,502 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
+INFO 2023-05-30 15:04:38,709 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24156
+INFO 2023-05-30 15:04:39,045 basehttp 187 "GET /static/dist/img/user.png HTTP/1.1" 200 3272
+INFO 2023-05-30 15:04:39,130 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12854
+INFO 2023-05-30 15:05:31,556 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24151
+INFO 2023-05-30 15:05:31,733 basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO 2023-05-30 15:05:31,899 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12854
+INFO 2023-05-30 15:06:14,814 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-30 15:06:15,256 basehttp 187 "GET /home_page/ HTTP/1.1" 200 12814

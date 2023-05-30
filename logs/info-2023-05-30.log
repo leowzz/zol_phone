@@ -2323,3 +2323,11 @@ INFO basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
 INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
 INFO basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 200 7058
 INFO basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 200 24156
+INFO basehttp 187 "GET /static/dist/img/user.png HTTP/1.1" 200 3272
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 12854
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 200 24151
+INFO basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 12854
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 12814
