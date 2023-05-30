@@ -2555,3 +2555,10 @@ INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
 INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 13049
 INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
 INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 13049
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7387
+INFO basehttp 187 "GET /static/pages/brands.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 1407
+INFO basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0

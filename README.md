@@ -1,6 +1,6 @@
 # 中关村在线 手机信息爬取
 
-基于 Django Scrapy Bootstrap Chart.js MySQL Redis Minio 等技术开发的 手机信息采集与可视化系统
+基于 Django Scrapy Bootstrap ECharts MySQL Redis Minio 等技术开发的 手机信息采集与可视化系统
 
 前端页面使用 [欲饮琵琶码上催/bootstrap-admin](https://gitee.com/ajiho/bootstrap-admin.git) 模板
 
@@ -14,6 +14,11 @@ pip install -r requirements.txt
 
 更改`apps.crawler.setting`中的爬虫配置
 如果不想用对象存储, 可以将`IMAGES_STORE`更改为本地路径
+
+## 项目页面
+
+1. 首页
+2. 
 
 ## 总结
 
