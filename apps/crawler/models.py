@@ -3,16 +3,6 @@ from utils.models import BaseModel
 
 
 class Phone_brand(models.Model):
-    """
-    name = scrapy.Field()  # 品牌名称
-    img_url = scrapy.Field()  # 品牌图片 公网url
-    img_url_s3 = scrapy.Field()  # 品牌图片 本地url
-    market_share = scrapy.Field()  # 市场占有率
-    feedback = scrapy.Field()  # 好评率
-    price_min = scrapy.Field()  # 最低价
-    price_max = scrapy.Field()  # 最高价
-    phone_num = scrapy.Field()  # 机型数量
-    """
     name = models.CharField(max_length=255, verbose_name='品牌名称', primary_key=True)
     img_url = models.CharField(max_length=255, verbose_name='品牌图片')
     img_url_s3 = models.ImageField(max_length=255, verbose_name='品牌图片local', null=True, blank=True, )

@@ -2562,3 +2562,7 @@ INFO 2023-05-30 15:39:17,552 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 44
 INFO 2023-05-30 19:34:32,754 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
 INFO 2023-05-30 19:34:32,776 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
 INFO 2023-05-30 19:34:32,786 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0
+INFO 2023-05-30 19:57:29,869 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO 2023-05-30 19:57:30,844 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-30 20:13:03,929 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6803
+INFO 2023-05-30 20:13:06,251 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411

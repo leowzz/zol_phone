@@ -2562,3 +2562,7 @@ INFO basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
 INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
 INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
 INFO basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6803
+INFO basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
