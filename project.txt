@@ -1,0 +1,253 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 F2AC-386E
+B:.
+├─.idea
+│  ├─dataSources
+│  ├─httpRequests
+│  └─inspectionProfiles
+├─apps
+│  ├─control
+│  │  ├─migrations
+│  │  │  └─__pycache__
+│  │  └─__pycache__
+│  ├─crawler
+│  │  ├─migrations
+│  │  │  └─__pycache__
+│  │  └─__pycache__
+│  ├─visual
+│  │  ├─migrations
+│  │  │  └─__pycache__
+│  │  └─__pycache__
+│  └─__pycache__
+│      └─crawler
+│          ├─management
+│          │  └─commands
+│          ├─migrations
+│          ├─spiders
+│          └─__pycache__
+├─data
+├─logs
+├─phone_crawler
+│  ├─build
+│  │  ├─bdist.win-amd64
+│  │  └─lib
+│  │      └─phone_crawler
+│  │          └─spiders
+│  ├─dbs
+│  ├─eggs
+│  │  └─phone_crawler
+│  ├─logs
+│  │  └─phone_crawler
+│  │      ├─PhoneBaseSpider
+│  │      ├─PhoneBrandSpider
+│  │      └─PhoneDetailSpider
+│  ├─phone_crawler
+│  │  ├─spiders
+│  │  │  └─__pycache__
+│  │  └─__pycache__
+│  └─phone_crawler.egg-info
+├─run
+├─static
+│  ├─assets
+│  │  ├─css
+│  │  ├─images
+│  │  │  ├─backgrounds
+│  │  │  ├─brand
+│  │  │  ├─prv
+│  │  │  └─slider
+│  │  ├─js
+│  │  │  ├─bootstrap
+│  │  │  └─vendor
+│  │  ├─scss
+│  │  │  ├─bootstrap
+│  │  │  │  ├─mixins
+│  │  │  │  └─utilities
+│  │  │  ├─components
+│  │  │  │  └─vendor
+│  │  │  ├─mixins
+│  │  │  └─utilities
+│  │  └─vendor
+│  │      ├─animate
+│  │      ├─bootstrap
+│  │      │  └─css
+│  │      ├─bootstrap-select
+│  │      │  ├─css
+│  │      │  └─js
+│  │      ├─bootstrap-tagsinput
+│  │      ├─clipboard-js
+│  │      ├─fontawesome
+│  │      │  ├─css
+│  │      │  └─js
+│  │      ├─highlight
+│  │      │  ├─css
+│  │      │  └─js
+│  │      ├─holderjs
+│  │      ├─input-mask
+│  │      ├─jquery
+│  │      ├─jquery-scrollbar
+│  │      │  ├─css
+│  │      │  ├─js
+│  │      │  └─sass
+│  │      ├─jquery-scrollLock
+│  │      ├─nouislider
+│  │      │  ├─css
+│  │      │  └─js
+│  │      ├─popper
+│  │      ├─sticky-kit
+│  │      └─textarea-autosize
+│  ├─build
+│  │  ├─js
+│  │  └─scss
+│  │      ├─demo
+│  │      ├─helpers
+│  │      ├─layout
+│  │      ├─mixins
+│  │      ├─pages
+│  │      └─themes
+│  ├─css
+│  ├─dist
+│  │  ├─css
+│  │  ├─img
+│  │  └─js
+│  ├─img
+│  ├─js
+│  ├─pages
+│  └─plugins
+│      ├─bootstrap
+│      │  ├─css
+│      │  └─js
+│      ├─bootstrap-icons
+│      │  └─fonts
+│      ├─chart.js
+│      │  └─chunks
+│      ├─croppie
+│      ├─dropzone
+│      ├─echarts
+│      ├─formvalidation
+│      │  ├─css
+│      │  └─js
+│      │      ├─framework
+│      │      └─language
+│      ├─fullcalendar
+│      │  └─locales
+│      ├─jquery
+│      ├─moment
+│      │  └─locale
+│      ├─popperjs
+│      │  ├─cjs
+│      │  ├─esm
+│      │  │  ├─dom-utils
+│      │  │  ├─modifiers
+│      │  │  └─utils
+│      │  └─umd
+│      ├─prismjs
+│      │  ├─components
+│      │  ├─plugins
+│      │  │  ├─autolinker
+│      │  │  ├─autoloader
+│      │  │  ├─command-line
+│      │  │  ├─copy-to-clipboard
+│      │  │  ├─custom-class
+│      │  │  ├─data-uri-highlight
+│      │  │  ├─diff-highlight
+│      │  │  ├─download-button
+│      │  │  ├─file-highlight
+│      │  │  ├─filter-highlight-all
+│      │  │  ├─highlight-keywords
+│      │  │  ├─inline-color
+│      │  │  ├─jsonp-highlight
+│      │  │  ├─keep-markup
+│      │  │  ├─line-highlight
+│      │  │  ├─line-numbers
+│      │  │  ├─match-braces
+│      │  │  ├─normalize-whitespace
+│      │  │  ├─previewers
+│      │  │  ├─remove-initial-line-feed
+│      │  │  ├─show-invisibles
+│      │  │  ├─show-language
+│      │  │  ├─toolbar
+│      │  │  ├─treeview
+│      │  │  ├─unescaped-markup
+│      │  │  └─wpd
+│      │  └─themes
+│      ├─select2
+│      │  ├─css
+│      │  └─js
+│      │      └─i18n
+│      ├─select2-bootstrap-5-theme
+│      ├─tempus-dominus
+│      │  ├─css
+│      │  ├─js
+│      │  ├─locales
+│      │  └─plugins
+│      │      └─examples
+│      ├─tinymce
+│      │  ├─icons
+│      │  │  └─default
+│      │  ├─langs
+│      │  ├─models
+│      │  │  └─dom
+│      │  ├─plugins
+│      │  │  ├─advlist
+│      │  │  ├─anchor
+│      │  │  ├─autolink
+│      │  │  ├─autoresize
+│      │  │  ├─autosave
+│      │  │  ├─charmap
+│      │  │  ├─code
+│      │  │  ├─codesample
+│      │  │  ├─directionality
+│      │  │  ├─emoticons
+│      │  │  │  └─js
+│      │  │  ├─fullscreen
+│      │  │  ├─help
+│      │  │  ├─image
+│      │  │  ├─importcss
+│      │  │  ├─insertdatetime
+│      │  │  ├─link
+│      │  │  ├─lists
+│      │  │  ├─media
+│      │  │  ├─nonbreaking
+│      │  │  ├─pagebreak
+│      │  │  ├─preview
+│      │  │  ├─quickbars
+│      │  │  ├─save
+│      │  │  ├─searchreplace
+│      │  │  ├─table
+│      │  │  ├─template
+│      │  │  ├─visualblocks
+│      │  │  ├─visualchars
+│      │  │  └─wordcount
+│      │  ├─skins
+│      │  │  ├─content
+│      │  │  │  ├─dark
+│      │  │  │  ├─default
+│      │  │  │  ├─document
+│      │  │  │  ├─tinymce-5
+│      │  │  │  ├─tinymce-5-dark
+│      │  │  │  └─writer
+│      │  │  └─ui
+│      │  │      ├─oxide
+│      │  │      ├─oxide-dark
+│      │  │      ├─tinymce-5
+│      │  │      └─tinymce-5-dark
+│      │  └─themes
+│      │      └─silver
+│      └─ztree_v3
+│          ├─css
+│          │  ├─awesomeStyle
+│          │  │  └─img
+│          │  ├─metroStyle
+│          │  │  └─img
+│          │  └─zTreeStyle
+│          │      └─img
+│          │          └─diy
+│          └─js
+├─templates
+├─utils
+│  ├─minio
+│  │  └─__pycache__
+│  └─__pycache__
+├─zol_phone
+│  └─__pycache__
+└─__pycache__
