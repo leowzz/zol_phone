@@ -3,7 +3,7 @@
 {% block content %}
     <div class="container-fluid">
         <!--四个信息卡-->
-        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-2 g-2 mb-3">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 mb-3">
             <div class="col">
                 <div class="card border-0 shadow-sm   ">
                     <div class="card-body p-4">
@@ -57,7 +57,6 @@
                 </div>
             </div>
         </div>
-
         <!--开源信息-->
         <div class="row mb-3">
             <div class="col">
@@ -90,6 +89,38 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0">
+            <div class="card-header">
+                最后爬取的手机信息
+            </div>
+            <div class="card-body">
+                <!--row-cols-1 控制手机视图中有几列, row-cols-lg-4控制网页视图列数-->
+                <div class="row row-cols-1 row-cols-lg-4">
+                    {% for phone in last_phone_info %}
+                        <div class="col">
+                            <div class="card border-1 shadow-sm" style="height: 600px">
+                                <div class="card-header">
+                                    <p class="text-primary mb-1">手机名称:</p>
+                                    <h4> {{ phone.name }}</h4>
+                                    <span class="text-secondary mb-1">手机价格:</span>
+                                    <h5 class="price">
+                                        {{ phone.price }}
+                                    </h5>
+                                    <p class="text-secondary mb-1">更新时间: {{ phone.last_modify }}</p>
+                                    <button class="btn btn-outline-primary mt-3" href="{{ phone.url }}">查看详情</button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center text-center">
+                                        <img src="{{ phone.img_url }}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
