@@ -87,6 +87,7 @@
             console.log(res);
             if (res.code === 200) {
                 echarts1.setOption({
+                    color: '#4286f4',
                     grid: {left: '20%',},
                     yAxis: {
                         data: res.cmt.xAxis,
@@ -99,6 +100,7 @@
                     }]
                 });
                 echarts2.setOption({
+                    color: '#198754',
                     tooltip: {trigger: 'item'},
                     grid: {bottom: '30%',},
                     xAxis: {
@@ -115,6 +117,7 @@
                         }]
                 });
                 echarts3.setOption({
+                    color: '#ffc107',
                     grid: {bottom: '30%',},
                     xAxis: {
                         data: res.score.xAxis,
@@ -131,6 +134,7 @@
                     }]
                 });
                 echarts4.setOption({
+                    color: '#dc3545',
                     grid: {bottom: '45%',},
                     tooltip: {trigger: 'item'},
                     grid: {bottom: '30%',},
@@ -139,7 +143,9 @@
                         data: res.jd_price.xAxis,
                         axisLabel: {interval: 0, rotate: -25},
                     },
-                    yAxis: {inverse: true,},
+                    yAxis: {
+                        inverse: true,
+                    },
                     series: [{
                         name: '价格',
                         type: 'line',

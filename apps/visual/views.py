@@ -8,7 +8,11 @@ from utils.cacher import cache_handler
 
 # Create your views here.
 def get_brands_():
-    res = {'code': 200, 'brand_pst': [], 'phone_num': [], 'good_pst': []}
+    res = {
+        'code'     : 200, 'brand_pst': [],
+        'phone_num': {'name': [], 'num': []},
+        'good_pst' : {'name': [], 'feedback': []}
+    }
     # 市场占有率
     brand_pst = Phone_brand.objects.order_by('-market_share')
     for brand in brand_pst:
@@ -19,17 +23,13 @@ def get_brands_():
     # 手机数量
     brand_num = Phone_brand.objects.order_by('-phone_num')[:20]
     for brand in brand_num:
-        res['phone_num'].append({
-            'name'     : brand.name,
-            'phone_num': brand.phone_num,
-        })
+        res['phone_num']['name'].append(brand.name)
+        res['phone_num']['num'].append(brand.phone_num)
     # 好评率
     brand_price = Phone_brand.objects.order_by('-feedback')[:20]
     for brand in brand_price:
-        res['good_pst'].append({
-            'name'    : brand.name,
-            'feedback': brand.feedback,
-        })
+        res['good_pst']['name'].append(brand.name)
+        res['good_pst']['feedback'].append(brand.feedback)
     return res
 
 
@@ -38,7 +38,7 @@ class BrandView(View):
     def get(self, request):
         # 获取所有品牌名称及市场占有率
         # 缓存处理
-        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 1)
+        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30)
         logger.debug(f"{cache_brands=}")
         return JsonResponse(cache_brands, safe=False)
 

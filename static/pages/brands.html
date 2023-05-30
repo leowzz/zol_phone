@@ -29,6 +29,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
             <div class="row row-cols-1 row-cols-lg-2 g-3">
                 <div class="col">
                     <div class="card border-0 shadow-sm">
@@ -36,7 +40,7 @@
                             手机数量
                         </div>
                         <div class="card-body">
-                            <div id="echarts2" style="width: 100%;height:400px;"></div>
+                            <div id="echarts2" style="width: 100%;height:800px;"></div>
                         </div>
                     </div>
                 </div>
@@ -46,7 +50,7 @@
                             好评率
                         </div>
                         <div class="card-body">
-                            <div id="echarts3" style="width: 100%;height:400px;"></div>
+                            <div id="echarts3" style="width: 100%;height:800px;"></div>
                         </div>
                     </div>
                 </div>
@@ -65,12 +69,9 @@
     let echarts2 = echarts.init(document.getElementById('echarts2'));
     let echarts3 = echarts.init(document.getElementById('echarts3'));
 
-    echarts2.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
-    echarts3.setOption({xAxis: {type: 'category',}, yAxis: {type: 'value',}, tooltip: {trigger: 'item'},});
     echarts1.setOption({
         title: {
             text: '手机品牌',
-            subtext: '市场占有率',
             left: 'center'
         },
         tooltip: {
@@ -100,6 +101,8 @@
             }
         }]
     });
+    echarts2.setOption({xAxis: {type: 'value',}, yAxis: {type: 'category',}, tooltip: {trigger: 'item'},});
+    echarts3.setOption({xAxis: {type: 'category',}, yAxis: {type: 'value',}, tooltip: {trigger: 'item'},});
     $.ajax({
         url: '/brands/visual',
         type: 'get',
@@ -116,9 +119,9 @@
                         left: 'left'
                     },
                     series: [{
-                        name: 'Access From',
+                        name: '市场占有率',
                         type: 'pie',
-                        radius: '50%',
+                        radius: '80%',
                         data: res.brand_pst,
                         emphasis: {
                             itemStyle: {
@@ -127,6 +130,47 @@
                                 shadowColor: 'rgba(0, 0, 0, 0.5)'
                             }
                         }
+                    }]
+                });
+                echarts2.setOption({
+                    color: ['#198754'],
+                    xAxis: {
+                        type: 'value',
+                    },
+                    yAxis: {
+                        inverse: true,
+                        type: 'category',
+                        data: res.phone_num.name,
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    series: [{
+                        name: '手机数量',
+                        type: 'bar',
+                        data: res.phone_num.num,
+                    }]
+                });
+                echarts3.setOption({
+                    color: ['#6f42c1'],
+                    xAxis: {
+                        type: 'value',
+                        max: 100,
+                        min: 90
+                    },
+                    yAxis: {
+                        inverse: true,
+                        type: 'category',
+                        data: res.good_pst.name,
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    series: [{
+                        name: '好评率',
+                        type: 'line',
+                        areaStyle: {},
+                        data: res.good_pst.feedback,
                     }]
                 });
             }

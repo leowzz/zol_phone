@@ -89,9 +89,9 @@ DATABASES = {
 # session 保存在redis中
 CACHES = {
     'default': {
-        'BACKEND' : 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://localhost:6379/1',
-        'OPTIONS' : {
+        'BACKEND'   : 'django_redis.cache.RedisCache',
+        'LOCATION'  : 'redis://localhost:6379/1',
+        'OPTIONS'   : {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
         'KEY_PREFIX': 'zol_phone',
