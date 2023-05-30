@@ -121,7 +121,12 @@
                     series: [{
                         name: '市场占有率',
                         type: 'pie',
-                        radius: '80%',
+                        radius: [30, 300],
+                        center: ['50%', '50%'],
+                        roseType: 'area',
+                        itemStyle: {
+                            borderRadius: 8
+                        },
                         data: res.brand_pst,
                         emphasis: {
                             itemStyle: {

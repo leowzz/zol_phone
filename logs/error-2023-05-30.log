@@ -1,0 +1,728 @@
+2023-05-30 11:35:48.743 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /home_page/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000017CA44AD3F0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000017CA44AD6C0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+    │    │        │    └ (<socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 13322)
+    │    │              └ <socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000017CA6E97EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+    │    │                   │        └ ('127.0.0.1', 13322)
+    │    │                   └ <socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000017CA7599090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000017CA7599120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000017CA75983A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+    │       └ <function BaseHandler.run at 0x0000017CA7580C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000017CA7580F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000017CA75912A0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000017CA75912A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function BaseHandler.get_response at 0x0000017CA75476D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBBA30>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8F435B0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB9A0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB910>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB6D0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB370>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function BaseHandler._get_response at 0x0000017CA8FBB640>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    │    │              │         └ <function home_page at 0x0000017CA8CABA30>
+    │    │              └ None
+    │    └ <function BaseHandler.check_response at 0x0000017CA75479A0>
+    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+
+ValueError: The view apps.control.views.home_page didn't return an HttpResponse object. It returned None instead.
+2023-05-30 11:35:48.756 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /home_page/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x0000017CA44AD3F0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x0000017CA44AD6C0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+    │    │        │    └ (<socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 28592)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 13322)
+    │    │              └ <socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x0000017CA6E97EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+    │    │                   │        └ ('127.0.0.1', 13322)
+    │    │                   └ <socket.socket fd=1676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x0000017CA7599090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x0000017CA7599120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x0000017CA75983A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x0000017CA75912D0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x0000017CA9561660>
+    │       └ <function BaseHandler.run at 0x0000017CA7580C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x0000017CA7580F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000017CA75912A0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x0000017CA9562440>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x0000017CA75912A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function BaseHandler.get_response at 0x0000017CA75476D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBBA30>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8F435B0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB9A0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB910>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB6D0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x0000017CA8FBB370>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function BaseHandler._get_response at 0x0000017CA8FBB640>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+    │    │              │         └ <function home_page at 0x0000017CA8CABA30>
+    │    │              └ None
+    │    └ <function BaseHandler.check_response at 0x0000017CA75479A0>
+    └ <django.core.handlers.wsgi.WSGIHandler object at 0x0000017CA8FDFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+
+ValueError: The view apps.control.views.home_page didn't return an HttpResponse object. It returned None instead.
+2023-05-30 11:35:48.770 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /home_page/ HTTP/1.1" 500 76503
+2023-05-30 11:35:48.770 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /home_page/ HTTP/1.1" 500 76503
+2023-05-30 11:36:52.497 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /home_page/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C5C8B2D3F0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001C5C8B2D6C0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+    │    │        │    └ (<socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 13443)
+    │    │              └ <socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001C5CB567EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+    │    │                   │        └ ('127.0.0.1', 13443)
+    │    │                   └ <socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001C5CBC69090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001C5CBC69120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001C5CBC683A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+    │       └ <function BaseHandler.run at 0x000001C5CBC50C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001C5CBC50F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C5CBC612A0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C5CBC612A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function BaseHandler.get_response at 0x000001C5CBC176D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68BAC0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B9A0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B910>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B880>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B5B0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B760>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001C5CD68B7F0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/home_page/'>
+               └ <function home_page at 0x000001C5CD37FA30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<WSGIRequest: GET '/home_page/'>,)
+           └ <function home_page at 0x000001C5CD37F9A0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py", line 76, in home_page
+    last_phone_info = cache_handler('last_phone_info', get_last_phone_info, 60)
+                      │                                └ <function get_last_phone_info at 0x000001C5CD37F910>
+                      └ <function cache_handler at 0x000001C5CD37EE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_last_phone_info at 0x000001C5CD37F910>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py", line 58, in get_last_phone_info
+    'price'      : phone.price,
+                   └ <Phone_spu: 小米13（12GB/256GB）>
+
+AttributeError: 'Phone_spu' object has no attribute 'price'
+2023-05-30 11:36:52.509 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /home_page/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C5C8B2D3F0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001C5C8B2D6C0>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+    │    │        │    └ (<socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>>
+    └ <Thread(Thread-2 (process_request_thread), started daemon 24628)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 13443)
+    │    │              └ <socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001C5CB567EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+    │    │                   │        └ ('127.0.0.1', 13443)
+    │    │                   └ <socket.socket fd=1108, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001C5CBC69090>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001C5CBC69120>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001C5CBC683A0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C5CBC612D0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C5CD979510>
+    │       └ <function BaseHandler.run at 0x000001C5CBC50C10>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001C5CBC50F70>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C5CBC612A0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001C5CB8DD330>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C5CBC612A0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function BaseHandler.get_response at 0x000001C5CBC176D0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/home_page/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68BAC0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B9A0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B910>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B880>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B5B0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C5CD68B760>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/home_page/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001C5CD68B7F0>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/home_page/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001C5CD6AFF70>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/home_page/'>
+               └ <function home_page at 0x000001C5CD37FA30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<WSGIRequest: GET '/home_page/'>,)
+           └ <function home_page at 0x000001C5CD37F9A0>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py", line 76, in home_page
+    last_phone_info = cache_handler('last_phone_info', get_last_phone_info, 60)
+                      │                                └ <function get_last_phone_info at 0x000001C5CD37F910>
+                      └ <function cache_handler at 0x000001C5CD37EE60>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py", line 22, in cache_handler
+    cache_data = func(*args, **kwargs)
+                 │     │       └ {}
+                 │     └ ()
+                 └ <function get_last_phone_info at 0x000001C5CD37F910>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py", line 58, in get_last_phone_info
+    'price'      : phone.price,
+                   └ <Phone_spu: 小米13（12GB/256GB）>
+
+AttributeError: 'Phone_spu' object has no attribute 'price'
+2023-05-30 11:36:52.523 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /home_page/ HTTP/1.1" 500 88703
+2023-05-30 11:36:52.523 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /home_page/ HTTP/1.1" 500 88703

@@ -14,7 +14,7 @@ def get_brands_():
         'good_pst' : {'name': [], 'feedback': []}
     }
     # 市场占有率
-    brand_pst = Phone_brand.objects.order_by('-market_share')
+    brand_pst = Phone_brand.objects.order_by('-market_share')[:12]
     for brand in brand_pst:
         res['brand_pst'].append({
             'name' : brand.name,
@@ -38,7 +38,7 @@ class BrandView(View):
     def get(self, request):
         # 获取所有品牌名称及市场占有率
         # 缓存处理
-        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 30)
+        cache_brands = cache_handler('brands_pst_fdbk_num', get_brands_, 0)
         logger.debug(f"{cache_brands=}")
         return JsonResponse(cache_brands, safe=False)
 
