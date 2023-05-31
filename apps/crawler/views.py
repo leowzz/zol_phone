@@ -91,7 +91,10 @@ class JobsView(View):
         all_jobs = []
         for status_name in _status_names:
             for job in jobs_status_list.get(status_name):
+                if status_name == 'finished':
+                    job['end_time'] = job['end_time'].split('.')[0]
                 job['status'] = _status_names[status_name]
+                job['start_time'] = job['start_time'].split('.')[0]
                 all_jobs.append(job)
 
         return render(request, 'jobs_list.html', context={

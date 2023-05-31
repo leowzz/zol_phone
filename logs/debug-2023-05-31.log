@@ -1,0 +1,217 @@
+INFO 2023-05-31 11:54:38,029 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 11:54:44,513 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO 2023-05-31 11:54:45,193 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 11:56:43,396 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 11:56:58,614 basehttp 187 "GET / HTTP/1.1" 302 0
+INFO 2023-05-31 11:56:58,811 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24172
+INFO 2023-05-31 11:56:58,913 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO 2023-05-31 11:56:58,935 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-31 11:56:58,936 basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO 2023-05-31 11:56:59,003 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-31 11:57:01,062 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7387
+INFO 2023-05-31 11:57:02,233 basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO 2023-05-31 11:57:02,275 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:57:06,373 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 11:57:06,410 basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:10,533 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 11:57:19,514 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:19,791 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:57:19,935 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-31 11:57:20,407 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7784
+INFO 2023-05-31 11:57:21,935 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:22,054 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7784
+INFO 2023-05-31 11:57:23,852 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 11:57:24,563 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:57:26,439 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:26,636 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:57:56,564 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:56,674 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:57:58,039 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:57:58,215 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO 2023-05-31 11:58:31,767 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py changed, reloading.
+INFO 2023-05-31 11:58:32,713 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 11:58:35,682 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:58:37,907 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7546
+INFO 2023-05-31 11:58:40,731 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 11:58:42,154 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 11:58:44,583 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:58:47,003 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:58:47,145 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:58:48,360 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:58:48,561 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:59:09,467 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:59:09,815 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:59:30,287 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:59:30,380 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:59:53,980 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:59:54,097 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:59:55,121 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:59:55,217 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 11:59:56,101 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 11:59:56,284 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 12:00:15,595 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 12:00:21,221 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:00:21,311 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 12:02:08,913 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:02:09,013 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO 2023-05-31 12:02:19,756 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 12:02:21,892 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 12:02:26,325 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:02:26,734 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8576
+INFO 2023-05-31 12:02:52,101 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:02:52,213 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8576
+INFO 2023-05-31 12:03:18,576 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 12:03:19,931 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 12:03:23,569 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:03:23,687 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:04:33,426 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:04:34,959 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:04:35,304 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:04:48,119 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:04:49,163 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:04:49,574 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:05:22,598 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:05:22,716 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:07:04,544 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:07:04,650 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:07:05,708 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:07:05,888 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:09:56,193 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:09:56,673 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO 2023-05-31 12:10:00,252 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:10:01,182 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:10:01,321 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:10:03,115 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:10:03,215 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:10:13,887 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 12:10:16,342 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 12:10:18,254 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO 2023-05-31 12:10:20,166 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:10:20,261 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO 2023-05-31 12:10:22,685 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:10:23,071 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO 2023-05-31 12:11:47,528 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:11:47,927 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO 2023-05-31 12:17:50,370 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:17:50,521 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11672
+INFO 2023-05-31 12:18:54,921 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:18:55,795 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:18:57,722 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:18:59,864 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11560
+INFO 2023-05-31 12:19:31,930 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:19:33,086 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:20:22,737 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:20:23,662 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:20:25,716 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-31 12:20:27,892 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 95, in get
+    job['start_time'] = f"{job['start_time']:%Y-%m-%d %H:%M:%S}"
+ValueError: Invalid format specifier
+ERROR 2023-05-31 12:20:27,924 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 101115
+INFO 2023-05-31 12:20:39,647 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:20:40,723 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:20:43,199 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:20:45,438 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11560
+INFO 2023-05-31 12:21:09,843 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:21:10,734 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:21:20,958 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:21:21,894 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:21:23,963 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:21:26,102 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO 2023-05-31 12:21:45,386 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:21:46,304 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:21:49,257 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:21:51,455 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO 2023-05-31 12:21:53,862 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:21:53,956 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO 2023-05-31 12:21:55,840 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:21:56,205 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO 2023-05-31 12:21:57,597 basehttp 187 "GET /static/index.html HTTP/1.1" 200 24172
+INFO 2023-05-31 12:21:57,671 basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO 2023-05-31 12:21:57,677 basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO 2023-05-31 12:21:57,687 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20298
+INFO 2023-05-31 12:21:57,689 basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO 2023-05-31 12:21:57,689 basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO 2023-05-31 12:21:57,691 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-31 12:21:57,696 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-31 12:21:57,753 basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO 2023-05-31 12:21:57,756 basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO 2023-05-31 12:21:57,779 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO 2023-05-31 12:21:57,805 basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20298
+INFO 2023-05-31 12:21:57,807 basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO 2023-05-31 12:21:57,812 basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO 2023-05-31 12:21:57,814 basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO 2023-05-31 12:21:57,823 basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO 2023-05-31 12:21:58,503 basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO 2023-05-31 12:23:41,636 basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO 2023-05-31 12:23:45,496 basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO 2023-05-31 12:23:47,061 basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO 2023-05-31 12:23:52,282 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-31 12:23:52,669 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 96, in get
+    job['end_time'] = job['end_time'].split('.')[0]
+KeyError: 'end_time'
+ERROR 2023-05-31 12:23:52,700 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 100737
+INFO 2023-05-31 12:24:51,930 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:24:52,924 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:24:59,124 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:25:00,048 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:25:11,522 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:25:12,469 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:25:14,681 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR 2023-05-31 12:25:16,874 log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 94, in get
+    if job['status'] != 'finished':
+KeyError: 'status'
+ERROR 2023-05-31 12:25:16,910 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 100714
+INFO 2023-05-31 12:25:39,392 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:25:40,316 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:25:43,397 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:25:44,349 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:25:47,992 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:25:50,187 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO 2023-05-31 12:26:19,071 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:26:19,202 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO 2023-05-31 12:26:20,333 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:26:20,463 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO 2023-05-31 12:26:21,510 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:26:21,651 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO 2023-05-31 12:26:34,354 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:26:35,324 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:26:38,603 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO 2023-05-31 12:26:39,628 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 12:26:41,924 basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO 2023-05-31 12:26:44,227 basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11949

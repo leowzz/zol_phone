@@ -1,0 +1,195 @@
+2023-05-31 11:58:44 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: phone_crawler)
+2023-05-31 11:58:44 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.11 | packaged by Anaconda, Inc. | (main, Apr 20 2023, 18:56:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 23.1.1 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform Windows-10-10.0.19045-SP0
+2023-05-31 11:58:44 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'phone_crawler',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\phone_crawler\\PhoneBaseSpider\\6ea6bbe4ff6711ed816f8cc681ed1a10.log',
+ 'NEWSPIDER_MODULE': 'phone_crawler.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['phone_crawler.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 '
+               'Edg/113.0.1774.57'}
+2023-05-31 11:58:44 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2023-05-31 11:58:44 [scrapy.extensions.telnet] INFO: Telnet Password: 37688544a030d965
+2023-05-31 11:58:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-05-31 11:58:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-05-31 11:58:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from before-call.apigateway to before-call.api-gateway
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\endpoints.json
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\sdk-default-configuration.json
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Event choose-service-name: calling handler <function handle_service_name_alias at 0x000002AFD6D91900>
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\s3\2006-03-01\endpoint-rule-set-1.json.gz
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\partitions.json
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x000002AFD6D11870>
+2023-05-31 11:58:45 [botocore.hooks] DEBUG: Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x000002AFD6D11630>
+2023-05-31 11:58:45 [botocore.endpoint] DEBUG: Setting s3 timeout as (60, 60)
+2023-05-31 11:58:45 [botocore.loaders] DEBUG: Loading JSON file: C:\env\Anaconda3\envs\django4\lib\site-packages\botocore\data\_retry.json
+2023-05-31 11:58:45 [botocore.client] DEBUG: Registering retry handlers for service: s3
+2023-05-31 11:58:45 [botocore.utils] DEBUG: Registering S3 region redirector handler
+2023-05-31 11:58:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['phone_crawler.pipelines.BrandImagePipeline',
+ 'phone_crawler.pipelines.MysqlPipeline']
+2023-05-31 11:58:45 [scrapy.core.engine] INFO: Spider opened
+2023-05-31 11:58:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-05-31 11:58:45 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-05-31 11:58:45 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/robots.txt>
+2023-05-31 11:59:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:09 [scrapy.robotstxt] WARNING: Failure while parsing robots.txt. File either contains garbage or is in an encoding other than UTF-8, treating it as an empty file.
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\scrapy\robotstxt.py", line 15, in decode_robotstxt
+    robotstxt_body = robotstxt_body.decode("utf-8")
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc9 in position 465: invalid continuation byte
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:09 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_8.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_6.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_7.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_5.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_3.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_4.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_1.html>
+2023-05-31 11:59:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_2.html>
+2023-05-31 11:59:32 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://10.1.1.36/robots.txt> (referer: None)
+2023-05-31 11:59:32 [protego] DEBUG: Rule at line 2 without any user agent to enforce it on.
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:32 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:45 [scrapy.extensions.logstats] INFO: Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_11.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_12.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_16.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_15.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_13.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_9.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_14.html>
+2023-05-31 11:59:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_10.html>
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_1.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 11:59:55 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_17.html>
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_15.html>
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_17.html>
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_16.html>
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_14.html>
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_13.html>
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_11.html>
+2023-05-31 12:00:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_12.html>
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:18 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_10.html>
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_9.html>
+2023-05-31 12:00:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: http://10.1.1.36/chkuser?url=)
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_7.html>
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_8.html>
+2023-05-31 12:00:41 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:41 [scrapy.core.downloader.tls] WARNING: Remote certificate is not valid for hostname "detail.zol.com.cn"; VerificationError(errors=[DNSMismatch(mismatched_id=DNS_ID(hostname=b'detail.zol.com.cn'))])
+2023-05-31 12:00:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://10.1.1.36/chkuser?url=> (referer: None)
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_6.html>
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_3.html>
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_4.html>
+2023-05-31 12:00:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_5.html>
+2023-05-31 12:00:45 [scrapy.extensions.logstats] INFO: Crawled 20 pages (at 18 pages/min), scraped 0 items (at 0 items/min)
+2023-05-31 12:01:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_2.html>
+2023-05-31 12:01:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://10.1.1.36/chkuser?url=> from <GET https://detail.zol.com.cn/cell_phone_index/subcate57_0_list_3500-100000_0_1_2_0_1.html>
+2023-05-31 12:01:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-05-31 12:01:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 20024,
+ 'downloader/request_count': 55,
+ 'downloader/request_method_count/GET': 55,
+ 'downloader/response_bytes': 69911,
+ 'downloader/response_count': 55,
+ 'downloader/response_status_count/200': 19,
+ 'downloader/response_status_count/302': 35,
+ 'downloader/response_status_count/404': 1,
+ 'dupefilter/filtered': 288,
+ 'elapsed_time_seconds': 138.588875,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 5, 31, 4, 1, 4, 532486),
+ 'log_count/DEBUG': 81,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 36,
+ 'request_depth_max': 1,
+ 'response_received_count': 20,
+ 'robotstxt/request_count': 2,
+ 'robotstxt/response_count': 2,
+ 'robotstxt/response_status_count/200': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 52,
+ 'scheduler/dequeued/memory': 52,
+ 'scheduler/enqueued': 52,
+ 'scheduler/enqueued/memory': 52,
+ 'start_time': datetime.datetime(2023, 5, 31, 3, 58, 45, 943611)}
+2023-05-31 12:01:04 [scrapy.core.engine] INFO: Spider closed (finished)

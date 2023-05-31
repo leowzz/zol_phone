@@ -1,0 +1,1172 @@
+2023-05-31 12:20:27.894 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002BBC52CD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002BBC52CD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+    │    │        │    └ (<socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9250)
+    │    │              └ <socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000002BBC7CF7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+    │    │                   │        └ ('127.0.0.1', 9250)
+    │    │                   └ <socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000002BBC84A55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000002BBC84A5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000002BBC84A48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+    │       └ <function BaseHandler.run at 0x000002BBC8495120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000002BBC8495480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000002BBC847B850>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000002BBC847B850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000002BBC845BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2DD0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC7D7B7F0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2D40>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2CB0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2950>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2B00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000002BBC9EF2B90>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000002BBC9B87A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000002BBC7DA4E50>
+           └ <apps.crawler.views.JobsView object at 0x000002BBCA051ED0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000002BBCA051ED0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000002BBCA051ED0>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000002BBC9B87880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 95, in get
+    job['start_time'] = f"{job['start_time']:%Y-%m-%d %H:%M:%S}"
+    └ {'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '92e951ecfde111edb5188cc681ed1a10', 'start_time': '2023-05-2...
+
+ValueError: Invalid format specifier
+2023-05-31 12:20:27.910 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000002BBC52CD3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000002BBC52CD6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+    │    │        │    └ (<socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31056)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9250)
+    │    │              └ <socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000002BBC7CF7EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+    │    │                   │        └ ('127.0.0.1', 9250)
+    │    │                   └ <socket.socket fd=1460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000002BBC84A55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000002BBC84A5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000002BBC84A48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000002BBC9C17670>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000002BBCA051540>
+    │       └ <function BaseHandler.run at 0x000002BBC8495120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000002BBC8495480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000002BBC847B850>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000002BBCA0517B0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000002BBC847B850>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000002BBC845BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2DD0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC7D7B7F0>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2D40>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2CB0>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2950>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000002BBC9EF2B00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000002BBC9EF2B90>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000002BBC9E9BA60>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000002BBC9B87A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000002BBC7DA4E50>
+           └ <apps.crawler.views.JobsView object at 0x000002BBCA051ED0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000002BBCA051ED0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000002BBCA051ED0>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000002BBC9B87880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 95, in get
+    job['start_time'] = f"{job['start_time']:%Y-%m-%d %H:%M:%S}"
+    └ {'project': 'phone_crawler', 'spider': 'PhoneBrandSpider', 'id': '92e951ecfde111edb5188cc681ed1a10', 'start_time': '2023-05-2...
+
+ValueError: Invalid format specifier
+2023-05-31 12:20:27.924 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 101115
+2023-05-31 12:20:27.925 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 101115
+2023-05-31 12:23:52.671 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C77480D3F0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001C77480D6C0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+    │    │        │    └ (<socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9378)
+    │    │              └ <socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001C777207EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+    │    │                   │        └ ('127.0.0.1', 9378)
+    │    │                   └ <socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001C7779C55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001C7779C5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001C7779C48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+    │       └ <function BaseHandler.run at 0x000001C7779B5120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001C7779B5480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C77799B8E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C77799B8E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000001C77797BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EEF0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940ED40>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940ECB0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EC20>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940C0D0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EB00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001C77940EB90>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000001C779097A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000001C7772B4E50>
+           └ <apps.crawler.views.JobsView object at 0x000001C77999D000>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000001C77999D000>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000001C77999D000>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000001C779097880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 96, in get
+    job['end_time'] = job['end_time'].split('.')[0]
+    │                 └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+    └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+
+KeyError: 'end_time'
+2023-05-31 12:23:52.687 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001C77480D3F0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001C77480D6C0>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+    │    │        │    └ (<socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>>
+    └ <Thread(Thread-5 (process_request_thread), started daemon 1728)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9378)
+    │    │              └ <socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001C777207EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+    │    │                   │        └ ('127.0.0.1', 9378)
+    │    │                   └ <socket.socket fd=1864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001C7779C55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001C7779C5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001C7779C48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001C77799B4C0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001C7798FDF60>
+    │       └ <function BaseHandler.run at 0x000001C7779B5120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001C7779B5480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C77799B8E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001C7798FCFD0>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001C77799B8E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000001C77797BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EEF0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940ED40>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940ECB0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EC20>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940C0D0>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001C77940EB00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001C77940EB90>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001C7793AB7C0>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000001C779097A30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000001C7772B4E50>
+           └ <apps.crawler.views.JobsView object at 0x000001C77999D000>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000001C77999D000>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000001C77999D000>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000001C779097880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 96, in get
+    job['end_time'] = job['end_time'].split('.')[0]
+    │                 └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+    └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+
+KeyError: 'end_time'
+2023-05-31 12:23:52.701 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 100737
+2023-05-31 12:23:52.701 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 100737
+2023-05-31 12:25:16.876 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D70B33D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D70B33D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+    │    │        │    └ (<socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9632)
+    │    │              └ <socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D70DD47EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+    │    │                   │        └ ('127.0.0.1', 9632)
+    │    │                   └ <socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D70E4E55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D70E4E5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D70E4E48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+    │       └ <function BaseHandler.run at 0x000001D70E4D5120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D70E4D5480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D70E4BB8E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D70E4BB8E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000001D70E49BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F250>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F130>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F0A0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F010>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3EB90>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3EB00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D70FF3ED40>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000001D70FBDBA30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000001D70DDF4E50>
+           └ <apps.crawler.views.JobsView object at 0x000001D710092380>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000001D710092380>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000001D710092380>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000001D70FBDB880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 94, in get
+    if job['status'] != 'finished':
+       └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+
+KeyError: 'status'
+2023-05-31 12:25:16.895 | ERROR    | django.utils.log:log_response:241 - Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 973, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001D70B33D3F0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001D70B33D6C0>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+    │    │        │    └ (<socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr...
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 31788)>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 9632)
+    │    │              └ <socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <function BaseServer.finish_request at 0x000001D70DD47EB0>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+    │    │                   │        └ ('127.0.0.1', 9632)
+    │    │                   └ <socket.socket fd=1344, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000), raddr=...
+    │    └ <class 'django.core.servers.basehttp.WSGIRequestHandler'>
+    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\socketserver.py", line 747, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x000001D70E4E55A0>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 204, in handle
+    self.handle_one_request()
+    │    └ <function WSGIRequestHandler.handle_one_request at 0x000001D70E4E5630>
+    └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\servers\basehttp.py", line 227, in handle_one_request
+    handler.run(self.server.get_app())
+    │       │   │    │      └ <function WSGIServer.get_app at 0x000001D70E4E48B0>
+    │       │   │    └ <django.core.servers.basehttp.WSGIServer object at 0x000001D70E4BB4C0>
+    │       │   └ <django.core.servers.basehttp.WSGIRequestHandler object at 0x000001D710091CF0>
+    │       └ <function BaseHandler.run at 0x000001D70E4D5120>
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+    │    │        │           │    │        │    └ <function BaseHandler.start_response at 0x000001D70E4D5480>
+    │    │        │           │    │        └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+    │    │        │           │    └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+    │    │        │           └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+    │    │        └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D70E4BB8E0>
+    │    └ None
+    └ <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\contrib\staticfiles\handlers.py", line 80, in __call__
+    return self.application(environ, start_response)
+           │    │           │        └ <bound method BaseHandler.start_response of <django.core.servers.basehttp.ServerHandler object at 0x000001D710091F60>>
+           │    │           └ {'ALLUSERSPROFILE': 'C:\\ProgramData', 'APPDATA': 'C:\\Users\\leo\\AppData\\Roaming', 'CLASSPATH': '.;C:\\env\\Java\\jdk1.8.0...
+           │    └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+           └ <django.contrib.staticfiles.handlers.StaticFilesHandler object at 0x000001D70E4BB8E0>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+               │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function BaseHandler.get_response at 0x000001D70E49BBE0>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+               │    │                 └ <WSGIRequest: GET '/spiders/jobs/'>
+               │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F250>
+               └ <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F130>
+               │           └ <SecurityMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F0A0>
+               │           └ <SessionMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3F010>
+               │           └ <CommonMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3EB90>
+               │           └ <AuthenticationMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function convert_exception_to_response.<locals>.inner at 0x000001D70FF3EB00>
+               │           └ <MessageMiddleware get_response=convert_exception_to_response.<locals>.inner>
+               └ None
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+               │           │    │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               │           │    └ <function BaseHandler._get_response at 0x000001D70FF3ED40>
+               │           └ <XFrameOptionsMiddleware get_response=BaseHandler._get_response>
+               └ None
+
+> File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               │            └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x000001D70FF60B20>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               │                │         │                └ {}
+               │                │         └ ()
+               │                └ <WSGIRequest: GET '/spiders/jobs/'>
+               └ <function View.as_view.<locals>.view at 0x000001D70FBDBA30>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           │    │        │         │       └ {}
+           │    │        │         └ ()
+           │    │        └ <WSGIRequest: GET '/spiders/jobs/'>
+           │    └ <function View.dispatch at 0x000001D70DDF4E50>
+           └ <apps.crawler.views.JobsView object at 0x000001D710092380>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           │       │         │       └ {}
+           │       │         └ ()
+           │       └ <WSGIRequest: GET '/spiders/jobs/'>
+           └ <bound method JobsView.get of <apps.crawler.views.JobsView object at 0x000001D710092380>>
+
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+           │          │       └ {}
+           │          └ (<apps.crawler.views.JobsView object at 0x000001D710092380>, <WSGIRequest: GET '/spiders/jobs/'>)
+           └ <function JobsView.get at 0x000001D70FBDB880>
+
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 94, in get
+    if job['status'] != 'finished':
+       └ {'project': 'phone_crawler', 'spider': 'PhoneDetailSpider', 'id': 'efa5641cff6a11ed9b118cc681ed1a10', 'pid': 21692, 'start_ti...
+
+KeyError: 'status'
+2023-05-31 12:25:16.910 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 100714
+2023-05-31 12:25:16.911 | ERROR    | django.core.servers.basehttp:log_message:187 - "GET /spiders/jobs/ HTTP/1.1" 500 100714

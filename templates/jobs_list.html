@@ -29,6 +29,8 @@
                             <th scope="col">项目名称</th>
                             <th scope="col">状态</th>
                             <th scope="col">爬虫id</th>
+                            <th scope="col">开始时间</th>
+                            <th scope="col">结束时间</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -38,6 +40,8 @@
                                 <td>{{ job.project }}</td>
                                 <td><span class="badge rounded-pill {{ job.status }}">{{ job.status }}</span></td>
                                 <td>{{ job.id }}</td>
+                                <td>{{ job.start_time }}</td>
+                                <td>{{ job.end_time }}</td>
 {#                                <td>{{ job.duration }}</td>#}
 {#                                <td>#}
 {#                                    <a href="{% url 'job_detail' job.id %}" class="btn btn-sm btn-outline-primary">Detail</a>#}

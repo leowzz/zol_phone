@@ -2566,3 +2566,4 @@ INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\mod
 INFO autoreload 677 Watching for file changes with StatReloader
 INFO basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6803
 INFO basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.

@@ -64,17 +64,17 @@ def get_last_phone_info():
 @xframe_options_exempt
 def home_page(request):
     # 获取手机信息数
-    phone_data_cnt = cache_handler('phone_data_cnt', get_phone_data_cnt, 60)
+    phone_data_cnt = cache_handler('phone_data_cnt', get_phone_data_cnt, 20)
     phone_info_cnt, phone_detail_cnt, brand_info_cnt = phone_data_cnt
     # 获取数据条数
     data_cnt = sum([phone_info_cnt, phone_detail_cnt, brand_info_cnt])
     # 获取爬虫数
-    spider_cnt = cache_handler('spider_cnt', get_spider_num, 60)
+    spider_cnt = cache_handler('spider_cnt', get_spider_num, 20)
     # 获取日志条数
     log_cnt = cache_handler('log_cnt', get_log_nums, 20)
 
     # 获取最后爬取的手机信息
-    last_phone_info = cache_handler('last_phone_info', get_last_phone_info, 60)
+    last_phone_info = cache_handler('last_phone_info', get_last_phone_info, 20)
 
     return render(request, 'home_page.html', context={
         'data_cnt'  : data_cnt,

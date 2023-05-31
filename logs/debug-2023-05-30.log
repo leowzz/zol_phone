@@ -2566,3 +2566,4 @@ INFO 2023-05-30 19:57:29,869 autoreload 266 B:\02_Important\Python\0a_project\zo
 INFO 2023-05-30 19:57:30,844 autoreload 677 Watching for file changes with StatReloader
 INFO 2023-05-30 20:13:03,929 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6803
 INFO 2023-05-30 20:13:06,251 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4411
+INFO 2023-05-31 11:54:37,072 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.

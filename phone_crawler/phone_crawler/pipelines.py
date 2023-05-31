@@ -56,7 +56,7 @@ class BrandImagePipeline(ImagesPipeline, ):
         return md5_file_name
 
     def item_completed(self, results, item, info):
-        logger.info(f"item completed: {item=}")
+        logger.info(f"item completed: {item.get('name')=}")
         return item
 
     @logger.catch
@@ -75,5 +75,5 @@ class BrandImagePipeline(ImagesPipeline, ):
                 headers={"Content-Type": "image/jpeg"},
             )
             item["img_url_s3"] = get_public_url(path)
-            logger.debug(f"{item=}")
+            logger.debug(f"{item.get('name')=}, {item.get('img_url_s3')=}")
         return checksum

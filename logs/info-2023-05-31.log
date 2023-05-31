@@ -1,0 +1,217 @@
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\zol_phone\settings.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET / HTTP/1.1" 302 0
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 200 24172
+INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7387
+INFO basehttp 187 "GET /home_page HTTP/1.1" 301 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /static/js/jquery-3.7.0.min.js HTTP/1.1" 304 0
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7784
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 7784
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7545
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\control\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7546
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8180
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8576
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8576
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 8974
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 9372
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11672
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11560
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 95, in get
+    job['start_time'] = f"{job['start_time']:%Y-%m-%d %H:%M:%S}"
+ValueError: Invalid format specifier
+ERROR basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 101115
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11560
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 200 24172
+INFO basehttp 187 "GET /static/plugins/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 88585
+INFO basehttp 187 "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 163873
+INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20298
+INFO basehttp 187 "GET /static/dist/img/logo-icon.png HTTP/1.1" 200 2065
+INFO basehttp 187 "GET /static/img/main.png HTTP/1.1" 200 27266
+INFO basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO basehttp 187 "GET /spiders/jobs HTTP/1.1" 301 0
+INFO basehttp 187 "GET /static/plugins/bootstrap-icons/fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf HTTP/1.1" 200 112440
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11448
+INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 200 20298
+INFO basehttp 187 "GET /static/css/bootstrap.min.css HTTP/1.1" 200 194901
+INFO basehttp 187 "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60404
+INFO basehttp 187 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78129
+INFO basehttp 187 "GET /static/dist/js/BSA.js HTTP/1.1" 200 24803
+INFO basehttp 187 "GET /static/dist/img/favicon-32x32.png HTTP/1.1" 200 513
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 96, in get
+    job['end_time'] = job['end_time'].split('.')[0]
+KeyError: 'end_time'
+ERROR basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 100737
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+ERROR log 241 Internal Server Error: /spiders/jobs/
+Traceback (most recent call last):
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\env\Anaconda3\envs\django4\lib\site-packages\django\views\decorators\clickjacking.py", line 55, in wrapped_view
+    resp = view_func(*args, **kwargs)
+  File "B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py", line 94, in get
+    if job['status'] != 'finished':
+KeyError: 'status'
+ERROR basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 500 100714
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11956
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\views.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11949
