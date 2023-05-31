@@ -215,3 +215,21 @@ INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\vie
 INFO autoreload 677 Watching for file changes with StatReloader
 INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
 INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11949
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /static/dist/css/BSA.css HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11968
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /home_page/ HTTP/1.1" 200 7549
+INFO basehttp 187 "GET /spiders/ HTTP/1.1" 200 5282
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 11968
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "POST /spiders/run HTTP/1.1" 200 85
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 12469
+INFO autoreload 266 B:\02_Important\Python\0a_project\zol_phone\apps\crawler\models.py changed, reloading.
+INFO autoreload 677 Watching for file changes with StatReloader
+INFO basehttp 187 "GET /static/index.html HTTP/1.1" 304 0
+INFO basehttp 187 "GET /spiders/jobs/ HTTP/1.1" 200 12469

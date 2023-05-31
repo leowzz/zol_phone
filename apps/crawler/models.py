@@ -28,8 +28,8 @@ class Phone_sku(models.Model):
     price = models.IntegerField(null=True, blank=True, verbose_name='手机价格')
     score = models.FloatField(null=True, blank=True, verbose_name='手机评分')
     url = models.CharField(max_length=255, null=True, blank=True, verbose_name='手机详情页url')
-    img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
-    img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
+    img_url = models.ImageField(max_length=255, null=True, blank=True, verbose_name='手机图片')
+    img_url_s3 = models.ImageField(max_length=255, null=True, blank=True, verbose_name='手机图片s3存储url')
     comments_num = models.IntegerField(null=True, blank=True, verbose_name='手机评论数')
     last_modify = models.DateTimeField(auto_now_add=True, verbose_name='此条信息最后更新时间', null=True, blank=True, )
 
@@ -46,8 +46,8 @@ class Phone_spu(models.Model):
     _id = models.CharField(max_length=124, verbose_name='手机id', primary_key=True)
     name = models.CharField(max_length=255, verbose_name='手机名称/型号')
     url = models.CharField(max_length=255, verbose_name='页面url')
-    img_url = models.ImageField(null=True, blank=True, verbose_name='手机图片')
-    img_url_s3 = models.ImageField(null=True, blank=True, verbose_name='手机图片s3存储url')
+    img_url = models.ImageField(max_length=255, null=True, blank=True, verbose_name='手机图片')
+    img_url_s3 = models.ImageField(max_length=255, null=True, blank=True, verbose_name='手机图片s3存储url')
     last_modify = models.DateTimeField(auto_now_add=True, verbose_name='此条信息最后更新时间', null=True, blank=True, )
     mall_price = models.IntegerField(null=True, blank=True, verbose_name='商城价格')
     # 详细参数
