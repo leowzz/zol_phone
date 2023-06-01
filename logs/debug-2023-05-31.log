@@ -249,3 +249,7 @@ INFO 2023-05-31 17:20:10,196 basehttp 187 "GET /brands/visual/ HTTP/1.1" 200 136
 INFO 2023-05-31 17:20:26,080 basehttp 187 "GET /static/pages/phones_rank.html HTTP/1.1" 200 6803
 INFO 2023-05-31 17:20:26,199 basehttp 187 "GET /phones/echarts HTTP/1.1" 301 0
 INFO 2023-05-31 17:20:26,238 basehttp 187 "GET /phones/echarts/ HTTP/1.1" 200 4417
+INFO 2023-05-31 19:35:33,392 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py changed, reloading.
+INFO 2023-05-31 19:35:34,822 autoreload 677 Watching for file changes with StatReloader
+INFO 2023-05-31 19:36:15,050 autoreload 266 B:\02_Important\Python\0a_project\zol_phone\utils\cacher.py changed, reloading.
+INFO 2023-05-31 19:36:16,136 autoreload 677 Watching for file changes with StatReloader
