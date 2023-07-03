@@ -18,7 +18,9 @@ def req_decorator(func):
 
     def wrapper(*args, **kwargs):
         try:
-            return func(*args, **kwargs)
+            res = func(*args, **kwargs)
+            logger.debug(f"{func.__name__} res: {res}", args=args, kwargs=kwargs)
+            return res
         except Exception as e:
             logger.error(e)
             return err_return
