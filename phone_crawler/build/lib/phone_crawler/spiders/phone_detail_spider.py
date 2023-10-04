@@ -58,7 +58,9 @@ class PhoneDetail(scrapy.Spider):
             table_detail = tables[i]
             basic_info = {}
             for tr in table_detail.css('table tr'):
-                basic_info[f"{tr.css('th span::text').get()}"] = tr.css('td span::text').get()
+                param_name = tr.css('th span::text').get()
+                if param_name:
+                    basic_info[f"{param_name}"] = tr.css('td span::text').get()
             item[detail_table_names[i]] = json.dumps(basic_info, ensure_ascii=False)
 
         logger.debug(item)
