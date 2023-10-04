@@ -30,5 +30,5 @@
 *.less linguist-detectable=false
 
 # 统计文件
-static/pages/* linguist-detectable=true
-templates/* linguist-detectable=true
+# static/pages/* linguist-detectable=true
+# templates/* linguist-detectable=true
